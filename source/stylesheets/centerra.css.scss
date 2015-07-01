@@ -1,4 +1,25 @@
-$primary-color: #333;
+$background: #333;
 
 body {
+}
+
+/* Body Border Effect */
+$body-border-size: 14px;
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: $background;
+    left: 0;
+    right: 0;
+    height: $body-border-size;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+    border-left: $body-border-size solid $background;
+    border-right: $body-border-size solid $background;
 }
