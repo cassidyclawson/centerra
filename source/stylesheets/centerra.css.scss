@@ -1,6 +1,23 @@
 $background: #333;
 
+/* Font Stacks */
+
+$font-headline: "abril-titling-condensed", Georgia, serif;
+$font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
+$font-body: "ff-tisa-web-pro", Georgia, serif;
+
 body {
+    font-family: $font-body;
+}
+
+h1 {
+    font-family: $font-headline;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: $font-subheadline;
+    text-transform: uppercase;
 }
 
 /* Body Border Effect */
@@ -22,4 +39,38 @@ body:after {
 body {
     border-left: $body-border-size solid $background;
     border-right: $body-border-size solid $background;
+}
+
+/* Mean Menu Mobile Navigation */
+
+header nav {
+    text-align: center;
+    background: #efefef;
+}
+header nav ul {
+    margin: 0;
+    padding: 1em;
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline;
+    margin-left: 1em;
+}
+header nav ul li:first-child {
+    margin-left: 0;
+}
+header nav ul li ul {
+    display: none;
+}
+a {
+    color: #f77564;
+}
+a:hover {
+    color: #333;
+}
+a, a:hover {
+    -o-transition: color 0.25s ease-in;
+    -webkit-transition: color 0.25s ease-in;
+    -moz-transition: color 0.25s ease-in;
+    transition: color 0.25s ease-in;
 }

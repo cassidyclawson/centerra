@@ -4,11 +4,11 @@
   <%= partial "/layouts/partials/head" %>
 
   <body class="<%= page_classes %>">
-  <div class
-  <div class="container">
+    <%= partial "/layouts/partials/nav" %>
 
-    <%= yield %>
-
+    <div class="container">
+      <%= yield %>
+    </div>
 
   </body>
 </html>
