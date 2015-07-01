@@ -1,0 +1,1 @@
+body:before,body:after{content:"";position:fixed;background:#333;left:0;right:0;height:14px}body:before{top:0}body:after{bottom:0}body{border-left:14px solid #333;border-right:14px solid #333}
