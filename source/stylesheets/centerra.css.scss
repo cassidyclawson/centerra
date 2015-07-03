@@ -1,4 +1,8 @@
-$background: #333;
+/* Colors */
+
+$background: #FFF;
+$primary-color: #FFCA26;
+$primary-dark: #4A5157;
 
 /* Font Stacks */
 
@@ -8,6 +12,10 @@ $font-body: "ff-tisa-web-pro", Georgia, serif;
 
 body {
     font-family: $font-body;
+}
+
+.nav-container {
+  background-color: $primary-dark;
 }
 
 h1 {
@@ -21,56 +29,22 @@ h2 {
 }
 
 /* Body Border Effect */
-$body-border-size: 14px;
-body:before, body:after {
-    content: "";
-    position: fixed;
-    background: $background;
-    left: 0;
-    right: 0;
-    height: $body-border-size;
-}
-body:before {
-    top: 0;
-}
-body:after {
-    bottom: 0;
-}
-body {
-    border-left: $body-border-size solid $background;
-    border-right: $body-border-size solid $background;
-}
-
-/* Mean Menu Mobile Navigation */
-
-header nav {
-    text-align: center;
-    background: #efefef;
-}
-header nav ul {
-    margin: 0;
-    padding: 1em;
-    list-style-type: none;
-}
-header nav ul li {
-    display: inline;
-    margin-left: 1em;
-}
-header nav ul li:first-child {
-    margin-left: 0;
-}
-header nav ul li ul {
-    display: none;
-}
-a {
-    color: #f77564;
-}
-a:hover {
-    color: #333;
-}
-a, a:hover {
-    -o-transition: color 0.25s ease-in;
-    -webkit-transition: color 0.25s ease-in;
-    -moz-transition: color 0.25s ease-in;
-    transition: color 0.25s ease-in;
-}
+// $body-border-size: 18px;
+// body:before, body:after {
+//     content: "";
+//     position: fixed;
+//     background: $background;
+//     left: 0;
+//     right: 0;
+//     height: $body-border-size;
+// }
+// body:before {
+//     top: 0;
+// }
+// body:after {
+//     bottom: 0;
+// }
+// body {
+//     border-left: ($body-border-size - 3px) solid $background;
+//     border-right: ($body-border-size - 3px) solid $background;
+// }

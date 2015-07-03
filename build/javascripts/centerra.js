@@ -1,1 +1,1 @@
-console.log("hello");
+jQuery(document).ready(function(){FastClick.attach(document.body),jQuery(".nav-primary").meanmenu({meanScreenWidth:"640"})});

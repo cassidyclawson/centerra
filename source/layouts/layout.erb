@@ -5,10 +5,7 @@
 
   <body class="<%= page_classes %>">
     <%= partial "/layouts/partials/nav" %>
-
-    <div class="container">
-      <%= yield %>
-    </div>
-
+    <%= yield %>
+    <%= partial "/layouts/partials/footer" %>
   </body>
 </html>

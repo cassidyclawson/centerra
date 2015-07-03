@@ -4,5 +4,5 @@ jQuery(document).ready(function () {
     FastClick.attach(document.body);
 
     // Instantiate Meanmenu for mobile navigation
-    jQuery('.nav-primary').meanmenu({ meanScreenWidth: "640" });
+    $(".flexnav").flexNav({ hoverIntent: true, hoverIntentTimeout: 50, calcItemWidths: true });
 });
