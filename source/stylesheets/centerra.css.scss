@@ -1,31 +1,17 @@
-/* Colors */
-
-$background: #FFF;
-$primary-color: #FFCA26;
-$primary-dark: #4A5157;
-
-/* Font Stacks */
-
-$font-headline: "abril-titling-condensed", Georgia, serif;
-$font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
-$font-body: "ff-tisa-web-pro", Georgia, serif;
-
-body {
-    font-family: $font-body;
+@mixin outline-container {
+  border: solid $light-gray $line-thick;
+  padding: $tab;
 }
 
-.nav-container {
-  background-color: $primary-dark;
+.services {
+  // padding: $tab;
+  p {
+    // margin-left: $tab;
+  }
 }
 
-h1 {
-    font-family: $font-headline;
-    text-transform: uppercase;
-}
+.scroll_nav {
 
-h2 {
-    font-family: $font-subheadline;
-    text-transform: uppercase;
 }
 
 /* Body Border Effect */

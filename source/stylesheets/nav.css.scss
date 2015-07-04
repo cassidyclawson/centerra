@@ -1,35 +1,6 @@
-
-#site-header {
-  min-height: 196px; }
-
-.site-title {
-  position: relative; }
-  .site-title h1 {
-    border-top: 6px solid #3a3261;
-    font-family: "ff-dax-compact-web-pro-1","ff-dax-compact-web-pro-2";
-    font-weight: 100;
-    font-size: 1.7em;
-    margin-top: 0;
-    margin-bottom: 0px;
-    font-weight: 900;
-    padding: 7px 0 0;
-    background: none;
-    display: inline-block;
-    color: #3a3261;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-rendering: optimizeLegibility; }
-    .site-title h1 a {
-      color: #3a3261;
-      text-decoration: none; }
-  .site-title h2 {
-    font-size: 1em;
-    margin-bottom: 5%;
-    font-weight: 100; }
-
-
-
 /* Flexnav Base Styles */
+// NOTE TO ALOK: WE SHOULD TRY TO REMOVE AS MUCH OF THIS AS POSSIBLE
+// So we can control styles ourselves
 
 $nav_text: #222;
 $top_level: #a6a6a2;

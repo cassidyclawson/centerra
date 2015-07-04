@@ -3,4 +3,5 @@
 //= require hoverintent
 //= require fastclick
 //= require flexnav
+//= require scrollnav
 //= require centerra
