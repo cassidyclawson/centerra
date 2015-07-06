@@ -2,33 +2,6 @@
 // NOTE TO ALOK: WE SHOULD TRY TO REMOVE AS MUCH OF THIS AS POSSIBLE
 // So we can control styles ourselves
 
-$nav_text: #fff;
-$top_level: #a6a6a2;
-$second_level: #b2b2af;
-$third_level: #bfbfbc;
-$fourth_level: #cbcbc9;
-$font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
-
-
-.nav-container {
-  background: #464c52;
-  height: 91px;
-}
-
-.nav-container .columns {
-  background: transparent;
-}
-
-.logo {
-  margin-top: 23px;
-  margin-left: 36px;
-  display: inline-block;
-}
-
-.logo img{
-  height: 47px;
-  width: 185px;
-}
 
 .flexnav {
 	-webkit-transition: none;
@@ -37,7 +10,7 @@ $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
   transition: none;
 	-webkit-transform-style: preserve-3d; // stop webkit flicker
   overflow: hidden;
-	margin: 0 auto;
+	margin: 12px auto 0px;
 	width: 100%;
   max-height: 0;
   padding: 0px;
@@ -99,13 +72,13 @@ $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
 
 	li ul li a {
 		display: block;
-		background: $second_level;
+		background: $dark_gray;
 	}
 	ul li ul li a {
-		background: $third_level;
+		background: $dark_gray;
 	}
 	ul li ul li ul li a {
-		background: $fourth_level;
+		background: $dark_gray;
 	}
 	.touch-button {
 		position: absolute;
@@ -133,7 +106,7 @@ $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
 	position: relative;
 	display: block;
 	padding: 1em;
-	background: $top_level;
+	background: $dark_gray;
 	color: $nav_text;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(0,0,0,.2);
@@ -155,6 +128,7 @@ $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
 		height: 50px;
 		display: inline-block;
 		text-align: center;
+    display: none;
 
 		.navicon {
 			font-size: 16px;

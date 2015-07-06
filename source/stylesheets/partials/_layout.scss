@@ -1,0 +1,31 @@
+.service-block {
+  border: $line-thick solid $light-gray;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: $default-radius;
+  padding: 75px;
+  min-height: 530px;
+
+  .head {
+    border-bottom: 3px solid $light-gray;
+    padding-bottom: 34px;
+    overflow: hidden;
+
+    .icon-box {
+      width: 104px;
+      height: 104px;
+      float:left;
+      background: $light-gray;
+      border-radius: $default-radius;
+      text-align: center;
+      font-size: 75px;
+      padding: 15px;
+      box-sizing: border-box;
+      color: $secondary;
+    }
+
+    .head-inner {
+      float: left;
+    }
+  }
+}

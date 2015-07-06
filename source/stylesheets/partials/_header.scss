@@ -1,0 +1,19 @@
+.nav-container {
+  background: $dark_gray;
+  height: 91px;
+
+  .columns {
+    background: transparent;
+  }
+}
+
+.logo {
+  margin-top: 23px;
+  margin-left: 36px;
+  display: inline-block;
+
+  img{
+    height: 47px;
+    width: 185px;
+  }
+}
