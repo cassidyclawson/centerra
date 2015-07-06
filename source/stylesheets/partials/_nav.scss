@@ -9,6 +9,14 @@ $third_level: #bfbfbc;
 $fourth_level: #cbcbc9;
 $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
 
+
+.nav-container {
+  background: #A6A6A2;
+}
+
+.nav-container .columns {
+  background: #A6A6A2;
+}
 .flexnav {
 	-webkit-transition: none;
   -moz-transition: none;
@@ -19,6 +27,7 @@ $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
 	margin: 0 auto;
 	width: 100%;
   max-height: 0;
+  padding: 0px;
 
   &.opacity {
     opacity: 0;
@@ -36,11 +45,10 @@ $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
 		position: fixed;
 		top: 50px;
 		right: 5%;
-		max-width: 200px;
 	}
 
 	li {
-		font-size: 100%;
+		font-size: 1.8rem;
 		position: relative;
 		overflow: hidden;
 	}
@@ -51,19 +59,21 @@ $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
 		z-index: 2;
 		overflow: hidden;
 		color: $nav_text;
-		background: #a6a6a2;
 		border-bottom: 1px solid rgba(0,0,0,.15);
 		text-transform: uppercase;
 		font-weight: bold;
 		font-family: $font-subheadline;
+    text-decoration: none;
 		}
 	li ul {
 		width: 100%;
+    padding: 0px;
 
 		li {
-			font-size: 100%;
+			font-size: 1.6rem;
 			position: relative;
 			overflow: hidden;
+      font-weight: 400;
 		}
 	}
 	li ul.flexnav-show {
@@ -160,9 +170,7 @@ $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
 			list-style: none;
 			float: left;
 			display: block;
-			background-color: #a6a6a2;
 			overflow: visible;
-      width: 20%;
 		}
 		li a {
 			border-left: 1px solid #acaca1;
@@ -223,8 +231,7 @@ $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
 			list-style: none;
 			float: left;
 			display: block;
-			background-color: #a6a6a2;
-      width: 20%;
+
 			min-height: 50px;
 			overflow: visible;
 		}
