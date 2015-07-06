@@ -28,9 +28,6 @@
 - Media Queries
 */
 
-/* Global Variables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 $background: #FFF;
 $primary: #FFCA26;
 $secondary: #4A5157;
@@ -47,6 +44,8 @@ $line-thick: 16px;
 $line-medium: 6px;
 $line-thin: 3px;
 $tab: 5.7rem;
+
+
 
 // FOR DEVELOPMENT ONLY
 .columns {
@@ -81,7 +80,7 @@ $tab: 5.7rem;
 .container {
   position: relative;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1750px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
