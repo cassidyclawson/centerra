@@ -1,6 +1,6 @@
 body {
   font-family: $font-body;
-  font-size: 22px;
+  font-size: 62.5%x;
   font-weight: normal;
   line-height: 34px;
   color: $secondary;
@@ -9,8 +9,10 @@ body {
 .heading {
   font-family: $font-headline;
   font-size: 44px;
+  font-size: 4.4rem;
   font-weight: bold;
   line-height: 59px;
+  line-height: 5.9rem;
   text-transform: none;
   margin: 0px;
 }
@@ -18,7 +20,21 @@ body {
 .subheading {
   font-family: $font-subheadline;
   font-size: 22px;
+  font-size: 2.2rem;
   font-weight: bold;
   line-height: 27px;
+  line-height: 2.7rem;
   margin: 0px;
+}
+
+.footer-heading {
+  font-family: $font-subheadline;
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 32px;
+  line-height: 3.2rem;
+  text-transform: none;
+  margin: 0px 0px 26px;
+  margin: 0px 0px 2.6rem;
+  letter-spacing: 0.88px;
 }

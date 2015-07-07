@@ -1,0 +1,50 @@
+footer .container{
+   background:$footer-gray;
+   box-shadow: inset rgba(0,0 ,0, 0.2);
+   height: 375px;
+   height: 37.5rem;
+   color: $background;
+   font-size: 15px;
+   font-size: 1.5rem;
+   line-height: 28px;
+   line-height: 2.8rem;
+   font-family: $font-subheadline;
+   font-weight: 700;
+   padding: 72px !important;
+   padding: 7.2rem !important;
+   border-radius: $default-radius;
+
+   address {
+     font-style: normal;
+   }
+
+   .footer-tel, .footer-email, address {
+     margin-bottom: 20px;
+     margin-bottom: 2.0rem;
+     display: block;
+
+     span.icon-location {
+       margin-right: 10px;
+       margin-right: 1.0rem;
+       font-size: 25px;
+       font-size: 2.5rem;
+     }
+   }
+
+   ul {
+     padding: 0px;
+     margin: 0px;
+
+     li {
+       list-style: none;
+       padding: 0px;
+       margin: 0px;
+
+     }
+   }
+
+   a {
+     color: $background;
+     text-decoration: none;
+   }
+}
