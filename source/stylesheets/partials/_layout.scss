@@ -42,3 +42,29 @@
     }
   }
 }
+
+.banner-home {
+  background: #FFCA26 ;
+  box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.10);
+  border-radius: 0px 0px 3px 3px;
+  height: 698px;
+  height: 69.8rem;
+
+  .banner-home-inner {
+    width: 662px;
+    height: 698px;
+    height: 69.8rem;
+    display: table;
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+
+  .banner-content {
+    width: 662px;
+    width: 66.2rem;
+    text-align: center;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

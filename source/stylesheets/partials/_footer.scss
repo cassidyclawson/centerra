@@ -1,4 +1,4 @@
-footer .container{
+footer .footer-top{
    background:$footer-gray;
    box-shadow: inset rgba(0,0 ,0, 0.2);
    height: 375px;
@@ -16,18 +16,59 @@ footer .container{
 
    address {
      font-style: normal;
+
+
+     .country-name {
+       display: block;
+     }
+
+     &::before{
+        position: absolute;
+        content: "\e947";
+        font-family: 'icomoon';
+        font-size: 25px;
+        font-size: 2.5rem;
+        left: 0px;
+     }
    }
 
    .footer-tel, .footer-email, address {
      margin-bottom: 20px;
      margin-bottom: 2.0rem;
      display: block;
+     position: relative;
+     padding-left: 35px;
+     padding-left: 3.5rem;
 
-     span.icon-location {
+     .icon-phone, .icon-envelop {
        margin-right: 10px;
        margin-right: 1.0rem;
        font-size: 25px;
        font-size: 2.5rem;
+     }
+   }
+
+   .footer-tel {
+
+     &::before{
+        position: absolute;
+        content: "\e942";
+        font-family: 'icomoon';
+        font-size: 25px;
+        font-size: 2.5rem;
+        left: 0px;
+     }
+   }
+
+   .footer-email {
+
+     &::before{
+        position: absolute;
+        content: "\e945";
+        font-family: 'icomoon';
+        font-size: 25px;
+        font-size: 2.5rem;
+        left: 0px;
      }
    }
 
@@ -47,4 +88,23 @@ footer .container{
      color: $background;
      text-decoration: none;
    }
+
+   .trusted_logo {
+
+     li{
+       float: left;
+       margin-right: 40px;
+       margin-right: 4.0rem
+     }
+   }
+}
+
+footer .container {
+  .copyright {
+    font-size: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0px;
+    margin: 1.0rem 0rem;
+  }
 }

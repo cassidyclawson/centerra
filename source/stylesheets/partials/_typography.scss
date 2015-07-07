@@ -38,3 +38,31 @@ body {
   margin: 0px 0px 2.6rem;
   letter-spacing: 0.88px;
 }
+
+.banner-heading-home {
+  font-family: $font-headline;
+  font-size: 128px;
+  font-size: 12.8rem;
+  font-weight: bold;
+  line-height: 120px;
+  line-height: 12.0rem;
+  letter-spacing: 0.93px;
+  margin: 0px;
+  border-bottom: 6px solid $dark_gray;
+  display: inline-block;
+  color: $dark_gray;
+  text-align: left;
+  padding-bottom: 44px;
+  padding-bottom: 4.4rem;
+}
+
+.banner-text{
+  font-family: $font-subheadline;
+  font-size: 38px;
+  font-size: 3.8rem;
+  line-height: 44px;
+  line-height: 4.4rem;
+  text-transform: uppercase;
+  letter-spacing: -0.76px;
+  text-align: left;
+}
