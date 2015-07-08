@@ -71,6 +71,34 @@
   }
 }
 
+/* Banner area */
+.banner {
+  h1 {
+    font-family: $font-headline;
+    font-size: 128px;
+    font-size: 12.8rem;
+    font-weight: bold;
+    line-height: 120px;
+    line-height: 12.0rem;
+    letter-spacing: 0.93px;
+    margin: 0px;
+    display: inline-block;
+    color: $dark_gray;
+    text-align: left;
+  }
+
+  p {
+    font-family: $font-subheadline;
+    font-size: 38px;
+    font-size: 3.8rem;
+    line-height: 44px;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    letter-spacing: -0.76px;
+    text-align: left;
+  }
+}
+
 .banner-box {
   background: #FFCA26 ;
   box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.10);
@@ -100,18 +128,49 @@
     margin: 0 auto;
     display: table-cell;
     vertical-align: middle;
+
+    h1 {
+      border-bottom: 6px solid $dark_gray;
+      padding-bottom: 44px;
+      padding-bottom: 4.4rem;
+    }
   }
 }
 
 /* Banner of inner pages */
 .banner-inner {
   @extend .banner-box;
+  margin-bottom: 30px;
+  margin-bottom: 3.0rem;
+  min-height: 348px;
+  min-height: 34.8rem;
+  padding: 50px;
+  padding: 5.0rem;
+  display: table;
 
   h1 {
-
+    font-size: 100px;
+    font-size: 10rem;
+    line-height: 134px;
+    line-height: 13.4rem;
   }
 
   p {
+<<<<<<< HEAD
 
+=======
+    margin: 0px;
+  }
+
+  .banner-head {
+    float: left;
+  }
+
+  span {
+    font-size: 130px;
+    font-size: 13.0rem;
+    float: left;
+    margin-right: 23px;
+>>>>>>> inner-pages
   }
 }
