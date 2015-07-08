@@ -1,8 +1,12 @@
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .nav-container {
   margin-top: 35px;
+  margin-top: 3.5rem;
   background: $dark_gray;
   height: 91px;
-  border-radius: 3px 3px 0px 0px;
+  height: 9.1rem;
+  border-radius: $default-radius $default-radius 0px 0px;
 
   .columns {
     background: transparent;
@@ -11,11 +15,15 @@
 
 .logo {
   margin-top: 23px;
+  margin-top: 2.3rem;
   margin-left: 36px;
+  margin-left: 3.6rem;
   display: inline-block;
 
   img{
     height: 47px;
+    height: 4.7rem;
     width: 185px;
+    width: 18.5rem;
   }
 }

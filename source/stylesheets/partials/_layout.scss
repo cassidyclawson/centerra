@@ -1,3 +1,5 @@
+/* Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .service-block {
   border: $line-thick solid $light-gray;
   margin-top: 2%;
@@ -46,7 +48,7 @@
 .banner-home {
   background: #FFCA26 ;
   box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.10);
-  border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px $default-radius $default-radius;
   height: 698px;
   height: 69.8rem;
 

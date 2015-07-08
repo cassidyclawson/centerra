@@ -1,3 +1,5 @@
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer .footer-top{
    background:$footer-gray;
    box-shadow: inset rgba(0,0 ,0, 0.2);
@@ -90,11 +92,37 @@ footer .footer-top{
    }
 
    .trusted_logo {
+     margin-top: 5px;
+     margin-top: 0.5rem;
 
      li{
-       float: left;
+       display: inline-block;
        margin-right: 40px;
-       margin-right: 4.0rem
+       margin-right: 4.0rem;
+
+       &:last-child  {
+         margin-right: 0px;
+       }
+
+       @include breakpoint(xl) {
+         margin-right: 30px;
+         margin-right: 3.0rem;
+    	}
+
+       a {
+           .logo_abc {
+             margin-top: 3px;
+           }
+           .logo_ups {
+             margin-top: 4px;
+           }
+
+           .logo_ext {
+             position: relative;
+             top: -11px;
+           }
+
+       }
      }
    }
 }
