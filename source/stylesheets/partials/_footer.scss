@@ -1,6 +1,6 @@
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer .footer-top{
+footer .footer-top {
    background:$footer-gray;
    box-shadow: inset rgba(0,0 ,0, 0.2);
    min-height: 375px;
@@ -20,6 +20,24 @@ footer .footer-top{
      padding: 42px !important;
      padding: 4.2rem !important;
    }
+
+   @include breakpoint(sm)  {
+     padding: 42px !important;
+     padding: 4.2rem !important;
+   }
+
+   .one-half.column {
+
+     @include breakpoint(lg)  {
+         width: 100%;
+         margin-left: 0px;
+       }
+
+       @include breakpoint(lm)  {
+           width: 100%;
+           margin-left: 0px;
+         }
+     }
 
    address {
      font-style: normal;
@@ -87,7 +105,6 @@ footer .footer-top{
        list-style: none;
        padding: 0px;
        margin: 0px;
-
      }
    }
 
@@ -104,9 +121,16 @@ footer .footer-top{
        text-align: center;
      }
 
-       @include breakpoint(lg) {
-       border: 0px;
-     }
+      @include breakpoint(lg)  {
+        margin-bottom: 25px;
+        margin-bottom: 2.5rem;
+      }
+
+      @include breakpoint(lm)  {
+        margin-bottom: 25px;
+        margin-bottom: 2.5rem;
+        text-align: center;
+      }
 
      li{
        display: inline-block;
@@ -122,6 +146,12 @@ footer .footer-top{
          margin: 0px 2.0rem 0.5rem;
          text-align: center;
     	}
+
+      @include breakpoint(lm)  {
+        margin: 0px 20px 5px;
+        margin: 0px 2.0rem 0.5rem;
+        text-align: center;
+      }
 
        a {
            .logo_abc {
@@ -139,6 +169,13 @@ footer .footer-top{
        }
      }
    }
+}
+
+footer .vcard {
+  @include breakpoint(sm)  {
+    margin-top: 15px;
+    margin-top: 1.5rem
+  }
 }
 
 footer .container {
