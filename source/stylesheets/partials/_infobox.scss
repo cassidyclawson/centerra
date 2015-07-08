@@ -1,0 +1,38 @@
+/* Various Boxes in content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.infobox {
+  border: $line-thick solid $light-gray;
+  border-radius: $default-radius;
+
+  header {
+    background: $light-gray;
+    padding: 0px 50px $line-thick;
+
+    h2 {
+      margin: 0px;
+      font-size: 30px;
+    }
+  }
+
+  .infobox-content {
+    padding: 50px;
+
+    .indent {
+      margin: 0px 50px;
+
+      img {
+        margin-left: -50px;
+      }
+    }
+
+    h3, h4 {
+      margin: 5px 0px;
+    }
+
+    img {
+      float: left;
+      margin: 1rem 2rem 0 0;
+    }
+  }
+}
