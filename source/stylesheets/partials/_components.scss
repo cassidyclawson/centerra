@@ -4,6 +4,12 @@ img {
   max-width: 100%;
 }
 
+.container {
+  @include breakpoint(xl)  {
+    width: 95%;
+  }
+}
+
 .columns {
   background: none;
 }

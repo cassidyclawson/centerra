@@ -3,8 +3,8 @@
 footer .footer-top{
    background:$footer-gray;
    box-shadow: inset rgba(0,0 ,0, 0.2);
-   height: 375px;
-   height: 37.5rem;
+   min-height: 375px;
+   min-height: 37.5rem;
    color: $background;
    font-size: 15px;
    font-size: 1.5rem;
@@ -15,6 +15,11 @@ footer .footer-top{
    padding: 72px !important;
    padding: 7.2rem !important;
    border-radius: $default-radius;
+
+   @include breakpoint(xl)  {
+     padding: 42px !important;
+     padding: 4.2rem !important;
+   }
 
    address {
      font-style: normal;
@@ -95,18 +100,13 @@ footer .footer-top{
      margin-top: 5px;
      margin-top: 0.5rem;
 
-    /*  @include breakpoint(xl)  {
-       border: 1px solid red;
+     @include breakpoint(xl)  {
+       text-align: center;
      }
 
        @include breakpoint(lg) {
        border: 0px;
-     } */
-
-     @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-        border: 1px solid red; }
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        border: 0px; }
+     }
 
      li{
        display: inline-block;
@@ -118,8 +118,9 @@ footer .footer-top{
        }
 
        @include breakpoint(xl) {
-         margin-right: 20px;
-         margin-right: 2.0rem;
+         margin: 0px 20px 5px;
+         margin: 0px 2.0rem 0.5rem;
+         text-align: center;
     	}
 
        a {

@@ -11,6 +11,13 @@
   min-height: 530px;
   min-height: 53.0rem;
 
+  @include breakpoint(xl)  {
+    padding: 15px 25px;
+    padding: 1.5rem 2.5rem;
+    min-height: 370px;
+    min-height: 37.0rem;
+  }
+
   .head {
     border-bottom: 3px solid $light-gray;
     padding-bottom: 34px;
@@ -22,18 +29,29 @@
       height: 104px;
       width: 10.4rem;
       height: 10.4rem;
+      line-height: 104px;
+      line-height: 10.4rem;
       float:left;
       background: $light-gray;
       border-radius: $default-radius;
       text-align: center;
       font-size: 75px;
       font-size: 7.5rem;
-      padding: 15px;
-      padding: 1.5rem;
       box-sizing: border-box;
       color: $secondary;
       margin-top: 10px;
       margin-top: 1.0rem;
+
+      @include breakpoint(xl)  {
+          width: 84px;
+          height: 84px;
+          width: 8.4rem;
+          height: 8.4rem;
+          line-height: 84px;
+          line-height: 8.4rem;
+          font-size: 65px;
+          font-size: 6.5rem;
+        }
     }
 
     .head-inner {
@@ -42,6 +60,13 @@
       width: 42.0rem;
       margin-left: 19px;
       margin-left: 1.9rem;
+
+        @include breakpoint(xl)  {
+          width: 270px;
+          width: 27.0rem;
+          margin-left: 10px;
+          margin-left: 1.0rem;
+        }
     }
   }
 }

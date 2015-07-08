@@ -8,6 +8,16 @@ body {
   color: $secondary;
 }
 
+p  {
+  font-size: 2.6rem;
+  line-height: 1.46;
+
+  @include breakpoint(xl)  {
+    font-size: 20px;
+    font-size: 2.0rem;
+  }
+}
+
 .heading {
   font-family: $font-headline;
   font-size: 44px;
@@ -17,6 +27,13 @@ body {
   line-height: 5.9rem;
   text-transform: none;
   margin: 0px;
+
+  @include breakpoint(xl)  {
+    font-size: 34px;
+    font-size: 3.4rem;
+    line-height: 49px;
+    line-height: 4.9rem;
+  }
 }
 
 .subheading {
@@ -27,6 +44,15 @@ body {
   line-height: 27px;
   line-height: 2.7rem;
   margin: 0px;
+
+  @include breakpoint(xl)  {
+    font-size: 17px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 22px;
+    line-height: 2.2rem;
+  }
+
 }
 
 .footer-heading {
@@ -39,6 +65,13 @@ body {
   margin: 0px 0px 26px;
   margin: 0px 0px 2.6rem;
   letter-spacing: 0.88px;
+
+  @include breakpoint(xl)  {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+  }
 }
 
 .banner-heading-home {
