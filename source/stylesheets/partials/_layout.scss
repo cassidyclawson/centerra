@@ -1,3 +1,4 @@
+/* Services blocks on home page */
 .service-block {
   border: $line-thick solid $light-gray;
   margin-top: 2%;
@@ -43,15 +44,21 @@
   }
 }
 
-.banner-home {
+.banner-box {
   background: #FFCA26 ;
   box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.10);
   border-radius: 0px 0px 3px 3px;
+}
+
+/* Banner area of home page */
+.banner-home {
+  @extend .banner-box;
   height: 698px;
   height: 69.8rem;
 
   .banner-home-inner {
     width: 662px;
+    width: 66.2rem;
     height: 698px;
     height: 69.8rem;
     display: table;
@@ -66,5 +73,18 @@
     margin: 0 auto;
     display: table-cell;
     vertical-align: middle;
+  }
+}
+
+/* Banner of inner pages */
+.banner-inner {
+  @extend .banner-box;
+
+  h1 {
+
+  }
+
+  p {
+    
   }
 }
