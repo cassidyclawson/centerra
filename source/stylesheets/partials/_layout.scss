@@ -113,12 +113,33 @@
 /* Banner of inner pages */
 .banner-inner {
   @extend .banner-box;
+  margin-bottom: 30px;
+  margin-bottom: 3.0rem;
+  min-height: 348px;
+  min-height: 34.8rem;
+  padding: 50px;
+  padding: 5.0rem;
+  display: table;
 
   h1 {
-
+    font-size: 100px;
+    font-size: 10rem;
+    line-height: 134px;
+    line-height: 13.4rem;
   }
 
   p {
+    margin: 0px;
+  }
 
+  .banner-head {
+    float: left;
+  }
+
+  span {
+    font-size: 130px;
+    font-size: 13.0rem;
+    float: left;
+    margin-right: 23px;
   }
 }
