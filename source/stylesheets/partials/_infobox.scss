@@ -4,8 +4,7 @@
 $infobox-indent: 50px;
 
 .infobox {
-  border: $line-thick solid $light-gray;
-  border-radius: $default-radius;
+  @extend .bordered-box;
   margin: 50px 0px 70px;
 
   header {

@@ -8,10 +8,10 @@ jQuery(document).ready(function () {
 
     // Instantiate secondary content navigation and setup classes.
     // Inserts before #cta
-    $(".navigable").scrollNav({ insertTarget: "#cta",
+    /*$(".navigable").scrollNav({ insertTarget: "#cta",
                                 sections: "h3",
                                 subSections: "h4",
-                                showHeadline: false });
+                                showHeadline: false });*/
 
     // And setup fixed sidebar on scroll
     // Using this method to fix nav instead of the built in way so we can fix
@@ -19,12 +19,12 @@ jQuery(document).ready(function () {
 
     // Set sidebar height to same height as content area (article)
 
-    $('.sidebar-container').height( $('article').height() )
-    var length = $('.sidebar-container').height() - $('.sidebar').height() + $('.sidebar-container').offset().top;
+    /*$('.sidebar-container').height( $('article').height() )
+    var length = $('.sidebar-container').height() - $('.sidebar').height() + $('.sidebar-container').offset().top;*/
 
     // Consider refactoring this into classes and adding to css files.
 
-    $(window).scroll(function () {
+    /*$(window).scroll(function () {
 
         var scroll = $(this).scrollTop();
         var height = $('.sidebar').height() + 'px';
@@ -50,5 +50,5 @@ jQuery(document).ready(function () {
                 'width': $('.sidebar-container').width()
             });
         }
-    });
+    });*/
 });

@@ -25,3 +25,14 @@ $break-xs: 320px;
 
   }
 }
+
+.bordered-box {
+  border: solid $light-gray $line-thick;
+  border-radius: $default-radius;
+}
+
+.action-box {
+  background: $lightest-gray;
+  box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.10);
+  border-radius: $default-radius;
+}

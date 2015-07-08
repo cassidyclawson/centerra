@@ -477,37 +477,3 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
-
-
-
-// SUB NAVIGATION
-
-.siderbar {
-  position: absolute;
-}
-
-.scroll-nav {
-  @include outline-container;
-  ol {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-        }
-
-  a {
-    display: block;
-    color: $secondary;
-    margin-bottom: ($tab*0.3);
-  }
-
-  .active {
-    border-bottom: solid $accent $line-thin;
-  }
-  .scroll-nav__link {
-    @include font-nav;
-    }
-  .scroll-nav__sub-link {
-    @include font-subnav;
-    margin-left: ($tab*0.5);
-    }
-}
