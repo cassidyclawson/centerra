@@ -8,6 +8,27 @@ img {
   @include breakpoint(xl)  {
     width: 95%;
   }
+
+  @include breakpoint(lg)  {
+    width: 95%;
+  }
+
+  @include breakpoint(lm)  {
+    width: 95%;
+  }
+
+  @include breakpoint(md)  {
+    width: 95%;
+  }
+
+  @include breakpoint(sm)  {
+    width: 95%;
+    padding: 0px;
+  }
+
+  @include breakpoint(xs)  {
+    width: 95%;
+  }
 }
 
 .columns {

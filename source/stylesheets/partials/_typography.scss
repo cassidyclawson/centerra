@@ -16,6 +16,11 @@ p  {
     font-size: 20px;
     font-size: 2.0rem;
   }
+
+  @include breakpoint(sm)  {
+    font-size: 20px;
+    font-size: 2.0rem;
+  }
 }
 
 .heading {
@@ -34,6 +39,13 @@ p  {
     line-height: 49px;
     line-height: 4.9rem;
   }
+
+  @include breakpoint(sm)  {
+    font-size: 30px;
+    font-size: 3.0rem;
+    line-height: 45px;
+    line-height: 4.5rem;
+  }
 }
 
 .subheading {
@@ -46,6 +58,14 @@ p  {
   margin: 0px;
 
   @include breakpoint(xl)  {
+    font-size: 17px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 22px;
+    line-height: 2.2rem;
+  }
+
+  @include breakpoint(sm)  {
     font-size: 17px;
     font-size: 1.7rem;
     font-weight: bold;
@@ -72,4 +92,22 @@ p  {
     line-height: 28px;
     line-height: 2.8rem;
   }
+
+  @include breakpoint(lm)  {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+  }
+
+  @include breakpoint(sm)  {
+    font-size: 20px;
+    font-size: 2.0rem;
+    line-height: 24px;
+    line-height: 2.4rem;
+    margin: 0px 0px 16px;
+    margin: 0px 0px 1.6rem;
+  }
+
+
 }
