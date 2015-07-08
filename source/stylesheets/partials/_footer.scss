@@ -95,6 +95,19 @@ footer .footer-top{
      margin-top: 5px;
      margin-top: 0.5rem;
 
+    /*  @include breakpoint(xl)  {
+       border: 1px solid red;
+     }
+
+       @include breakpoint(lg) {
+       border: 0px;
+     } */
+
+     @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+        border: 1px solid red; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        border: 0px; }
+
      li{
        display: inline-block;
        margin-right: 40px;
@@ -105,8 +118,8 @@ footer .footer-top{
        }
 
        @include breakpoint(xl) {
-         margin-right: 30px;
-         margin-right: 3.0rem;
+         margin-right: 20px;
+         margin-right: 2.0rem;
     	}
 
        a {
