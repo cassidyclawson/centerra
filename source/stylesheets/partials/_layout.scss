@@ -1,5 +1,26 @@
 /* Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Generic Classes */
+.indent {
+  margin: 0px 56px;
+}
+
+.footnote {
+  font-size: 18px;
+}
+
+article {
+  margin: 0px 50px;
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: $line-thin solid $light-gray;
+}
+
 /* Services blocks on home page */
 .service-block {
   border: $line-thick solid $light-gray;
@@ -148,11 +169,16 @@
   padding: 5.0rem;
   display: table;
 
+  .banner {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+
   h1 {
     font-size: 100px;
     font-size: 10rem;
-    line-height: 134px;
-    line-height: 13.4rem;
+    line-height: 100px;
+    line-height: 10rem;
   }
 
   p {
@@ -168,5 +194,6 @@
     font-size: 13.0rem;
     float: left;
     margin-right: 23px;
+    margin-top: 28px;
   }
 }

@@ -30,3 +30,24 @@ img {
   padding: 0px 10px;
   padding: 0px 1.0rem;
 }
+
+.tag {
+  background: $accent;
+  border-radius: $default-radius;
+  color: $btns;
+  display: inline-block;
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-family: $font-subheadline;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 27px;
+  line-height: 2.7rem;
+  padding: 0px 10px;
+  padding: 0px 1.0rem;
+  position: relative;
+  top: -5px;
+  top: -.5rem;
+  margin-right: 18px;
+}

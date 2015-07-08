@@ -1,0 +1,58 @@
+/* Various Boxes in content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$infobox-indent: 50px;
+
+.infobox {
+  border: $line-thick solid $light-gray;
+  border-radius: $default-radius;
+  margin: 50px 0px 70px;
+
+  header {
+    background: $light-gray;
+    padding: 0px 0px $line-thick $infobox-indent;
+    overflow: hidden;
+
+    h2 {
+      margin: 0px;
+      font-size: 30px;
+      float: left;
+    }
+
+    .btn_yellow {
+      float: right;
+      width: 132px;
+      text-align: center;
+      line-height: 14px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+    }
+  }
+
+  .infobox-content {
+    padding: 50px;
+
+    .indent {
+      margin: 0px $infobox-indent;
+
+      img {
+        margin-left: -$infobox-indent;
+      }
+    }
+
+    h3 {
+      line-height: 72px;
+      line-height: 7.2rem;
+    }
+
+    h3, h4 {
+      margin: 5px 0px;
+    }
+
+    img {
+      float: left;
+      margin: 1rem 2rem 0 0;
+      border-radius: $default-radius;
+    }
+  }
+}
