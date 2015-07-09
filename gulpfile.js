@@ -48,8 +48,9 @@ gulp.task('webserver', function() {
 
 //Default task and watch expression
 gulp.task('watch', function() {
-    gulp.watch(paths.scssSource + '*.scss', ['sass']);
-    gulp.watch(paths.scssSource + 'partials/*.scss', ['sass']);
+    gulp.watch(paths.scssSource + '**/*.scss', ['sass']);
+    //gulp.watch(paths.scssSource + 'partials/*.scss', ['sass']);
+    gulp.watch(paths.html_tempaltes + '**/*.html', ['fileinclude']);
 })
 
-gulp.task('default', ['webserver', 'sass', 'watch']);
+gulp.task('default', ['webserver', 'sass', 'fileinclude', 'watch']);

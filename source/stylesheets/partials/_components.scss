@@ -1,4 +1,4 @@
-/* GLobal Components
+/* Global Components
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 img {
   max-width: 100%;
@@ -39,8 +39,9 @@ h5 {
   font-weight: normal;
 }
 
-.btn_yellow {
+.btn_yellow, input[type='submit'].btn_yellow {
   background: $primary;
+  border: none;
   border-radius: $default-radius;
   color: $btns;
   display: inline-block;

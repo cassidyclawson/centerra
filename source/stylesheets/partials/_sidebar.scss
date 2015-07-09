@@ -50,4 +50,21 @@
   padding: $tab;
   margin-top: 25px;
   margin-top: 2.5rem;
+
+  h4 {
+    margin: 0px;
+  }
+
+  p {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+
 }

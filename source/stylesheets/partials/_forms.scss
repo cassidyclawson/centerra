@@ -1,0 +1,8 @@
+/* Form Elements
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[type='text'] {
+  background: $background;
+  border: $line-thin solid $light-gray;
+  border-radius: $default-radius;
+}

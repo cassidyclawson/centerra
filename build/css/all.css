@@ -7,7 +7,7 @@
   border: solid #ECEDED 16px;
   border-radius: 3px; }
 
-.action-box, #cta {
+.action-box, #contact-box, #cta {
   background: #F6F6F6;
   box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
   border-radius: 3px; }
@@ -109,7 +109,7 @@ p {
       margin: 0px 0px 16px;
       margin: 0px 0px 1.6rem; } }
 
-/* GLobal Components
+/* Global Components
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 img {
   max-width: 100%; }
@@ -140,8 +140,9 @@ img {
 h5 {
   font-weight: normal; }
 
-.btn_yellow {
+.btn_yellow, input[type='submit'].btn_yellow {
   background: #FFCA26;
+  border: none;
   border-radius: 3px;
   color: #494747;
   display: inline-block;
@@ -564,6 +565,9 @@ hr {
           width: 100%;
           margin-left: 0px; } }
 
+#contact-box {
+  padding: 5.7rem; }
+
 /* Banner area */
 .banner h1 {
   font-family: "abril-titling-condensed", Georgia, serif;
@@ -704,8 +708,8 @@ hr {
   .banner-inner h1 {
     font-size: 100px;
     font-size: 10rem;
-    line-height: 100px;
-    line-height: 10rem; }
+    line-height: 140px;
+    line-height: 14rem; }
   .banner-inner p {
     margin: 0px; }
   .banner-inner .banner-head {
@@ -714,7 +718,8 @@ hr {
     font-size: 130px;
     font-size: 13.0rem;
     float: left;
-    margin-right: 23px; }
+    margin-right: 23px;
+    margin-top: 40px; }
 
 /* Sidebar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -750,6 +755,16 @@ hr {
   padding: 5.7rem;
   margin-top: 25px;
   margin-top: 2.5rem; }
+  #cta h4 {
+    margin: 0px; }
+  #cta p {
+    font-size: 16px;
+    font-size: 1.6rem; }
+  #cta span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-size: 1.2rem; }
 
 /* Various Boxes in content
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -916,6 +931,13 @@ footer .container .copyright {
   text-align: center;
   margin: 10px 0px;
   margin: 1.0rem 0rem; }
+
+/* Form Elements
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type='text'] {
+  background: #FFF;
+  border: 3px solid #ECEDED;
+  border-radius: 3px; }
 
 
 

@@ -128,3 +128,8 @@ hr {
     }
   }
 }
+
+#contact-box {
+  @extend .action-box;
+  padding: $tab;
+}
