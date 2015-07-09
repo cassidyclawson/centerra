@@ -37,7 +37,6 @@
 }*/
 
 .nav-container nav {
-  background: $dark_gray;
 	float: right;
 	position: relative;
 	z-index: 101;
@@ -129,7 +128,7 @@
 		right: 0;
 		width: 50px;
 		height: 50px;
-		display: inline-block;
+		display: none;
 		background: #acaca1;
 		background: rgba(0,0,0,.075);
 		text-align: center;
@@ -168,7 +167,7 @@
 		right: 0;
 		width: 50px;
 		height: 50px;
-		display: inline-block;
+		display: none;
 		text-align: center;
     display: none;
 
@@ -208,7 +207,7 @@
 		li > ul {
 			position: absolute;
 			top: auto;
-			right: 28px;
+			right: 30px;
 
 			li {
 				width: 100%;
@@ -222,7 +221,7 @@
 		li ul li > ul.flexnav-show {
 		}
 		li ul li a {
-			border-bottom: none;
+			border-bottom: 2px solid #666a6f;
 		}
 		li ul.open {
 			display: block;
@@ -280,7 +279,7 @@
 			background:#acaca1;
 			position: absolute;
 			top: auto;
-			right: 28px;
+			right: 30px;
 			display: none;
 			z-index: 1;
 			overflow: visible;
