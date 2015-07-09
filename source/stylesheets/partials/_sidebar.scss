@@ -33,6 +33,11 @@
 
   .scroll-nav__sub-item {
     margin-left: 37px;
+
+    a {
+      font-size: 16px;
+      font-size: 1.6rem;
+    }
   }
 
   .active a {
@@ -42,5 +47,5 @@
 
 #cta {
   @extend .action-box;
-  min-height: 500px;
+  padding: $tab;
 }
