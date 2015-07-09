@@ -46,35 +46,6 @@ $line-thin: 3px;
 $tab: 5.7rem;
 
 
-
-// FOR DEVELOPMENT ONLY
-.columns {
-  background-color: #F6F6F6;
-}
-
-@mixin outline-container {
-  background-color: $background;
-  border: solid $light-gray $line-thick;
-  border-radius: 3px;
-  padding: ($tab);
-}
-
-@mixin font-nav {
-  font-family: $font-subheadline;
-  font-weight: 700;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-@mixin font-subnav {
-  font-family: $font-subheadline;
-  font-weight: 400;
-  font-size: 1.8rem;
-  text-decoration: none;
-}
-
-
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
