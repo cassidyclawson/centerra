@@ -154,12 +154,12 @@
 /* Banner of inner pages */
 .banner-inner {
   @extend .banner-box;
-  margin-bottom: 30px;
-  margin-bottom: 3.0rem;
-  min-height: 348px;
-  min-height: 34.8rem;
-  padding: 50px;
-  padding: 5.0rem;
+  margin-bottom: 30px !important;
+  margin-bottom: 3.0rem !important;
+  height: 348px;
+  height: 34.8rem;
+  padding: 50px !important;
+  padding: 5.0rem !important;
   display: table;
 
   .banner {
@@ -187,6 +187,5 @@
     font-size: 13.0rem;
     float: left;
     margin-right: 23px;
-    margin-top: 28px;
   }
 }

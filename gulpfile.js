@@ -32,6 +32,7 @@ gulp.task('webserver', function() {
 //Default task and watch expression
 gulp.task('watch', function() {
   gulp.watch(scssSource + '*.scss', ['sass']);
+    gulp.watch(scssSource + 'partials/*.scss', ['sass']);
 })
 
 gulp.task('default', ['webserver', 'sass', 'watch']);
