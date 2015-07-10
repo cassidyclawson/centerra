@@ -39,7 +39,7 @@
       font-size: 3rem;
       line-height: 30px;
       line-height: 3rem;
-}
+    }
   }
 
   p {
@@ -161,6 +161,12 @@
   padding: 50px !important;
   padding: 5.0rem !important;
   display: table;
+  box-sizing: border-box;
+
+  @include breakpoint(sm)  {
+    padding: 50px 20px !important;
+    padding: 5.0rem 2rem !important;
+  }
 
   .banner {
     display: table-cell;
@@ -172,6 +178,13 @@
     font-size: 10rem;
     line-height: 140px;
     line-height: 14rem;
+
+    @include breakpoint(sm)  {
+      font-size: 50px;
+      font-size: 5rem;
+      line-height: 60px;
+      line-height: 6rem;
+    }
   }
 
   p {

@@ -157,6 +157,11 @@ h5 {
   padding: 0px 10px;
   padding: 0px 1.0rem; }
 
+input[type='submit'].btn_yellow {
+  white-space: normal;
+  line-height: 14px;
+  letter-spacing: normal; }
+
 .tag {
   background: #5DC1B7;
   border-radius: 3px;
@@ -706,7 +711,12 @@ hr {
   height: 34.8rem;
   padding: 50px !important;
   padding: 5.0rem !important;
-  display: table; }
+  display: table;
+  box-sizing: border-box; }
+  @media (max-width: 480px) {
+    .banner-inner {
+      padding: 50px 20px !important;
+      padding: 5.0rem 2rem !important; } }
   .banner-inner .banner {
     display: table-cell;
     vertical-align: bottom; }
@@ -715,6 +725,12 @@ hr {
     font-size: 10rem;
     line-height: 140px;
     line-height: 14rem; }
+    @media (max-width: 480px) {
+      .banner-inner h1 {
+        font-size: 50px;
+        font-size: 5rem;
+        line-height: 60px;
+        line-height: 6rem; } }
   .banner-inner p {
     margin: 0px; }
   .banner-inner .banner-head {
@@ -1086,6 +1102,18 @@ input.btn_yellow[type="submit"] {
     width: 100%;
     margin-left: 0px; } }
 
+@media (max-width: 980px) {
+  .contact-page .five.columns, .contact-page .seven.columns {
+    width: 100%; } }
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  #contact-box .one-half.column {
+    width: 100%;
+    margin-left: 0px; } }
+@media (max-width: 980px) {
+  #contact-box .one-half.column {
+    width: 100%;
+    margin-left: 0px; } }
 #contact-box h2 {
   font-size: 28px;
   font-size: 2.8rem; }
@@ -1154,7 +1182,9 @@ input.btn_yellow[type="submit"] {
   font-family: "effra", "Arial Black", Gadget, sans-serif;
   display: block;
   margin-bottom: 3px;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  margin-left: 15px;
+  margin-left: 1.5rem; }
 
 
 

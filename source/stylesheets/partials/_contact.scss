@@ -1,4 +1,23 @@
+.contact-page {
+  .five.columns, .seven.columns {
+    @include breakpoint(lm)  {
+      width: 100%;
+    }
+  }
+}
+
 #contact-box {
+  .one-half.column {
+    @include breakpoint(xl)  {
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    @include breakpoint(lm)  {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
   h2 {
     font-size: 28px;
     font-size: 2.8rem;
@@ -96,5 +115,7 @@
     display: block;
     margin-bottom: 3px;
     margin-bottom: 0.3rem;
+    margin-left: 15px;
+    margin-left: 1.5rem;
   }
 }
