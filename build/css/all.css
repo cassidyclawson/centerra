@@ -1006,13 +1006,13 @@ footer .container .copyright {
 
 /* Form Elements
 ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
-input[type='text'] {
+input[type='text'], textarea {
   background: #FFF;
   border: 3px solid #ECEDED;
   border-radius: 3px; }
-  input[type='text'].phone-input {
+  input[type='text'].phone-input, textarea.phone-input {
     width: 100%; }
-  input[type='text'].name-input {
+  input[type='text'].name-input, textarea.name-input {
     float: left; }
 
 input.btn_yellow[type="submit"] {
@@ -1086,6 +1086,10 @@ input.btn_yellow[type="submit"] {
     width: 100%;
     margin-left: 0px; } }
 
+#contact-box h2 {
+  font-size: 28px;
+  font-size: 2.8rem; }
+
 .contact-info address {
   font-style: normal; }
   .contact-info address span {
@@ -1129,6 +1133,28 @@ input.btn_yellow[type="submit"] {
   font-size: 25px;
   font-size: 2.5rem;
   left: 0px; }
+
+.contact-form input[type='text'], .contact-form textarea {
+  width: 100%;
+  font-family: "effra", "Arial Black", Gadget, sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #464C52;
+  outline: none; }
+.contact-form textarea {
+  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
+  line-height: 1.2;
+  max-width: 100%;
+  min-width: 100%; }
+.contact-form .opt-label {
+  font-size: 8px;
+  line-height: 1.2;
+  font-family: "effra", "Arial Black", Gadget, sans-serif;
+  display: block;
+  margin-bottom: 3px;
+  margin-bottom: 0.3rem; }
 
 
 

@@ -1,7 +1,7 @@
 /* Form Elements
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-input[type='text'] {
+input[type='text'], textarea {
   background: $background;
   border: $line-thin solid $light-gray;
   border-radius: $default-radius;
