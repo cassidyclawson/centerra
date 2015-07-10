@@ -5,4 +5,18 @@ input[type='text'] {
   background: $background;
   border: $line-thin solid $light-gray;
   border-radius: $default-radius;
+
+  &.phone-input {
+    width: 100%;
+  }
+
+  &.name-input {
+    float: left;
+  }
+}
+
+input.btn_yellow[type="submit"] {
+  float: right;
+  width: 110px;
+  width: 11.0rem;
 }

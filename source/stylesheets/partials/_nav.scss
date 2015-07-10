@@ -123,6 +123,9 @@
 	li ul li a {
 		display: block;
 		background: $dark_gray;
+			&:hover {
+
+			}
 	}
 	ul li ul li a {
 		background: $dark_gray;

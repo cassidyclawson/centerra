@@ -28,30 +28,99 @@ $infobox-indent: 50px;
     }
   }
 
-  .infobox-content {
-    padding: 50px;
+}
 
-    .indent {
-      margin: 0px $infobox-indent;
+.infobox-content {
+  padding: 50px;
 
-      img {
-        margin-left: -$infobox-indent;
-      }
-    }
-
-    h3 {
-      line-height: 72px;
-      line-height: 7.2rem;
-    }
-
-    h3, h4 {
-      margin: 5px 0px;
-    }
+  .indent {
+    margin: 0px $infobox-indent;
 
     img {
+      margin-left: -$infobox-indent;
+    }
+
+    .quotes-left {
       float: left;
-      margin: 1rem 2rem 0 0;
-      border-radius: $default-radius;
+      display: block;
+      font-size: 110px;
+      font-size: 11.0rem;
+      color: $light-gray;
+      margin-right: 20px;
+      margin-right: 2.0rem;
     }
   }
+
+  h3 {
+    line-height: 72px;
+    line-height: 7.2rem;
+  }
+
+  h3, h4 {
+    margin: 5px 0px;
+  }
+
+  img {
+    float: left;
+    margin: 1rem 2rem 0 0;
+    border-radius: $default-radius;
+  }
+}
+
+.infobox-bottom {
+  h5 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.58;
+    height: 29px;
+    height: 2.9rem;
+    background-color: $light-gray;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 12px;
+    padding: 0rem 1.2rem;
+    font-family: $font-subheadline;
+  }
+
+  li {
+    list-style: none;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.58;
+    font-family: $font-subheadline;
+  }
+}
+
+.title-box {
+    @extend .action-box;
+    margin: 50px 50px 0px;
+    text-align: center;
+    padding: 15px 0px 35px;
+    padding: 1.5rem 0px 3.5rem;
+
+    time {
+      font-size: 13.50px;
+      font-size: 1.35rem;
+      line-height: 1.20;
+      font-family: $font-subheadline;
+    }
+
+    h2 {
+      margin: 0px;
+      font-size: 44px;
+      font-size: 4.4rem;
+      line-height: 1.20;
+      font-family: $font-headline;
+
+      small{
+        display: block;
+        font-size: 30px;
+        font-size: 3.0rem;
+        line-height: 1.20;
+        font-family: $font-subheadline;
+        margin: 15px 0px;
+        margin: 1.5rem 0rem;
+      }
+    }
 }

@@ -12,7 +12,7 @@ $break-xs: 320px;
      @media only screen and (min-width: $break-lg + 1) and  (max-width: $break-xl) { @content ; }
   }
    @else if $point == lg {
-      @media  only screen and (min-width: $break-lm + 1) and (max-width: $break-lg) { @content ; }
+      @media  only screen and (min-width: $break-lm) and (max-width: $break-lg) { @content ; }
   }
 
   @else if $point == lm {
