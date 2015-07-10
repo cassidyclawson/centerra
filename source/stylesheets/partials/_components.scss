@@ -57,6 +57,12 @@ h5 {
   padding: 0px 1.0rem;
 }
 
+input[type='submit'].btn_yellow {
+  white-space: normal;
+  line-height: 14px;
+  letter-spacing: normal;
+}
+
 .tag {
   background: $accent;
   border-radius: $default-radius;
