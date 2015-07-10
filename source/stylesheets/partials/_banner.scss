@@ -179,9 +179,9 @@
     line-height: 140px;
     line-height: 14rem;
 
-    @include breakpoint(sm)  {
-      font-size: 50px;
-      font-size: 5rem;
+    @include breakpoint(md)  {
+      font-size: 45px;
+      font-size: 4.5rem;
       line-height: 60px;
       line-height: 6rem;
     }

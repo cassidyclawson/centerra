@@ -6,6 +6,7 @@ $infobox-indent: 50px;
 .infobox {
   @extend .bordered-box;
   margin: 50px 0px 70px;
+  margin: 5rem 0rem 7rem;
 
   header {
     background: $light-gray;
@@ -21,9 +22,12 @@ $infobox-indent: 50px;
     .btn_yellow {
       float: right;
       width: 132px;
+      width: 13.2rem;
       text-align: center;
       line-height: 14px;
+      line-height: 1.4rem;
       padding: 5px 10px;
+      padding: 0.5rem 1.0rem;
       box-sizing: border-box;
     }
   }
@@ -32,12 +36,25 @@ $infobox-indent: 50px;
 
 .infobox-content {
   padding: 50px;
+  padding: 5rem;
+
+  @include breakpoint(md)  {
+    padding: 30px;
+    padding: 3rem;
+  }
 
   .indent {
     margin: 0px $infobox-indent;
 
     img {
       margin-left: -$infobox-indent;
+
+      @include breakpoint(md)  {
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        float: none;
+      }
     }
 
     .quotes-para {
@@ -76,6 +93,18 @@ $infobox-indent: 50px;
 }
 
 .infobox-bottom {
+  .one-half.column {
+    @include breakpoint(md)  {
+      width: 100%;
+      margin-left: 0px;
+    }
+    ul {
+      @include breakpoint(sm)  {
+        padding-left: 10px;
+        padding-left: 1.0rem;
+      }
+    }
+  }
   h5 {
     font-size: 18px;
     font-size: 1.8rem;
@@ -103,9 +132,15 @@ $infobox-indent: 50px;
 .title-box {
     @extend .action-box;
     margin: 50px 50px 0px;
+    margin: 5rem 5rem 0rem;
     text-align: center;
     padding: 15px 0px 35px;
     padding: 1.5rem 0px 3.5rem;
+
+    @include breakpoint(md)  {
+      margin: 30px 30px 0px;
+      margin: 3rem 3rem 0rem;
+    }
 
     time {
       font-size: 13.50px;
@@ -121,10 +156,15 @@ $infobox-indent: 50px;
       line-height: 1.20;
       font-family: $font-headline;
 
+      @include breakpoint(md)  {
+        font-size: 30px;
+        font-size: 3rem;
+      }
+
       small{
         display: block;
-        font-size: 30px;
-        font-size: 3.0rem;
+        font-size: 20px;
+        font-size: 2.0rem;
         line-height: 1.20;
         font-family: $font-subheadline;
         margin: 15px 0px;
@@ -141,6 +181,28 @@ $infobox-indent: 50px;
 
     hr {
       margin-bottom: 0px;
+    }
+  }
+}
+
+
+/* Funds */
+.funds {
+ ul{
+    @include breakpoint(sm)  {
+      padding-left: 0px;
+    }
+  }
+  .infobox-content {
+    padding-bottom: 0px;
+
+    hr {
+      margin-bottom: 0px;
+    }
+
+    .tag {
+      margin-left: 10px;
+      margin-left: 1.0rem
     }
   }
 }
