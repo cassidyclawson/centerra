@@ -40,6 +40,10 @@ $infobox-indent: 50px;
       margin-left: -$infobox-indent;
     }
 
+    .quotes-para {
+      font-style: italic;
+    }
+
     .quotes-left {
       float: left;
       display: block;
@@ -48,6 +52,10 @@ $infobox-indent: 50px;
       color: $light-gray;
       margin-right: 20px;
       margin-right: 2.0rem;
+    }
+
+    .icon-quotes-right {
+      color: $light-gray;
     }
   }
 
@@ -123,4 +131,16 @@ $infobox-indent: 50px;
         margin: 1.5rem 0rem;
       }
     }
+}
+
+.transactions {
+  .infobox-content {
+    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-top: 2.0rem;
+
+    hr {
+      margin-bottom: 0px;
+    }
+  }
 }
