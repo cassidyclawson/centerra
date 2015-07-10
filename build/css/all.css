@@ -789,8 +789,8 @@ hr {
     .scroll-nav .scroll-nav__sub-item a {
       font-size: 16px;
       font-size: 1.6rem; }
-  .scroll-nav .active a {
-    border-bottom: solid #5DC1B7 6px; }
+    .scroll-nav .scroll-nav__sub-item.active > a {
+      border-bottom: solid #5DC1B7 6px; }
 
 #cta {
   padding: 5.7rem;

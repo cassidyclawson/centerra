@@ -38,11 +38,13 @@
       font-size: 16px;
       font-size: 1.6rem;
     }
+
+    &.active > a {
+      border-bottom: solid $accent ($line-thin*2);
+    }
   }
 
-  .active a {
-    border-bottom: solid $accent ($line-thin*2);
-  }
+
 }
 
 #cta {
