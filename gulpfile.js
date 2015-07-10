@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-ruby-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    gutil = require('gulp-util');
+    gutil = require('gulp-util'),
+    concat = require('gulp-concat');
 
 //Paths
 var paths = {
@@ -14,16 +15,36 @@ var paths = {
     cssDestination: 'build/css/'
 }
 
+var jsSources = [
+   'source/javascripts/typekit.js',
+   'source/javascripts/jquery-1.11.3.js',
+   'source/javascripts/hoverintent.js',
+   'source/javascripts/fastclick.js',
+   'source/javascripts/jquery.flexnav.js',
+   'source/javascripts/scrollnav.js',
+   'source/javascripts/centerra.js'
+]
+
+gulp.task('js', function() {
+  return gulp.src(jsSources)
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('build/js/'))
+    .on('error', gutil.log)
+    .pipe(connect.reload());;
+});
+
 gulp.task('fileinclude', function() {
     return gulp.src(paths.html_tempaltes + '*.tpl.html')
     .pipe(fileinclude())
+    .on('error', gutil.log)
     .pipe(rename({
       extname: ""
     }))
     .pipe(rename({
       extname: ".html"
     }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build'))
+    .pipe(connect.reload());;
 });
 
 //Task: Sass
@@ -34,7 +55,8 @@ gulp.task('sass', function () {
         })
         .pipe(autoprefixer('last 2 versions'))
         .pipe(sourcemaps.write('../maps'))
-        .pipe(gulp.dest(paths.cssDestination));
+        .pipe(gulp.dest(paths.cssDestination))
+        .pipe(connect.reload());;
 });
 
 //Task: webserver
@@ -49,8 +71,8 @@ gulp.task('webserver', function() {
 //Default task and watch expression
 gulp.task('watch', function() {
     gulp.watch(paths.scssSource + '**/*.scss', ['sass']);
-    //gulp.watch(paths.scssSource + 'partials/*.scss', ['sass']);
     gulp.watch(paths.html_tempaltes + '**/*.html', ['fileinclude']);
+    gulp.watch(jsSources, ['js']);
 })
 
-gulp.task('default', ['webserver', 'sass', 'fileinclude', 'watch']);
+gulp.task('default', ['webserver', 'sass', 'fileinclude', 'js', 'watch']);

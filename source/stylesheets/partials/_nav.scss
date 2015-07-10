@@ -42,6 +42,10 @@
 		right: 5%;
 	}
 
+	& > li:hover {
+		border-bottom: 6px solid $accent;
+	}
+
 	li {
 		font-size: 1.8rem;
 		position: relative;
@@ -94,23 +98,28 @@
 			padding: 0px 20.7px;
 	    padding: 0rem 2.07rem;
 	  }
+	}
 
-		&:hover {
-			border-bottom: 6px solid $accent;
-		}
-
-		}
 	li ul {
-		width: 160px;
-		width: 16.0rem;
+		width: 190px;
+		width: 19.0rem;
     padding: 0px;
 		text-align: center;
+		border-top: 6px solid $accent;
 
 		li {
 			font-size: 1.6rem;
 			position: relative;
 			overflow: hidden;
       font-weight: 400;
+			text-align: right;
+
+			a {
+				height: 65px;
+				height: 6.5rem;
+				line-height: 65px;
+				line-height: 6.5rem;
+			}
 		}
 	}
 	li ul.flexnav-show {
@@ -219,9 +228,6 @@
 		}
 		li a {
 			border-bottom: none;
-			&:hover {
-				border-bottom: 6px solid $accent;
-			}
 		}
 		li > ul {
 			position: absolute;
@@ -293,9 +299,6 @@
 		li a {
 			border-bottom: none;
 			overflow: visible;
-			&:hover {
-				border-bottom: 6px solid $accent;
-			}
 		}
 		li > ul {
 			background:#acaca1;

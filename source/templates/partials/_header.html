@@ -31,12 +31,12 @@
       <div class="nine columns u-pull-right u-max-full-width">
         <div class="menu-button">Menu</div>
         <nav>
-          <ul data-breakpoint="800" class="flexnav">
-            <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
-            <li><a href="real-estate.html">Real Estate</a></li>
-            <li><a href="funds.html">Investments</a></li>
-            <li><a href="agriculture.html">Agriculture</a></li>
-            <li><a href="#">About</a>
+          <ul data-breakpoint="1023" class="flexnav">
+            <li @@if (name === 'corporate-advisory') {class="active"}><a href="corporate-advisory.html">Corporate Advisory</a></li>
+            <li @@if (name === 'real-estate') {class="active"}><a href="real-estate.html">Real Estate</a></li>
+            <li @@if (name === 'funds') {class="active"}><a href="funds.html">Investments</a></li>
+            <li @@if (name === 'agriculture') {class="active"}><a href="agriculture.html">Agriculture</a></li>
+            <li @@if (name === 'about') {class="active"}><a href="#">About</a>
               <ul>
                   <li><a href="leadership.html">Leadership</a></li>
                   <li><a href="transactions.html">Transactions</a></li>

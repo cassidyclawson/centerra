@@ -1,1 +1,0 @@
-jQuery(document).ready(function(){FastClick.attach(document.body),$(".flexnav").flexNav({hoverIntent:!0,hoverIntentTimeout:50,calcItemWidths:!1})});
