@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* Global Variables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /* Breakpoints
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .bordered-box, .service-block, .scroll-nav, .infobox {
   border: solid #ECEDED 16px;
   border-radius: 3px; }
@@ -13,7 +13,7 @@
   border-radius: 3px; }
 
 /* Typogarphy
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 body {
   font-family: "ff-tisa-web-pro", Georgia, serif;
   font-size: 62.5% x;
@@ -110,7 +110,7 @@ p {
       margin: 0px 0px 1.6rem; } }
 
 /* Global Components
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 img {
   max-width: 100%; }
 
@@ -182,7 +182,7 @@ h5 {
   margin-bottom: 6.0rem; }
 
 /* Header
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .nav-container {
   margin-top: 35px;
   margin-top: 3.5rem;
@@ -206,7 +206,7 @@ h5 {
     width: 18.5rem; }
 
 /* Navigation
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /* Flexnav Base Styles */
 .nav-container nav {
   float: right;
@@ -460,7 +460,7 @@ h5 {
   width: 19.9%; }
 
 /* Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /* Generic Classes */
 .indent {
   margin: 0px 56px;
@@ -570,7 +570,8 @@ hr {
           margin-left: 0px; } }
 
 #contact-box {
-  padding: 5.7rem; }
+  padding: 5.7rem;
+  overflow: hidden; }
 
 /* Banner area */
 .banner h1 {
@@ -726,7 +727,7 @@ hr {
     margin-top: 40px; }
 
 /* Sidebar
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .scroll-nav {
   padding: 2.85rem 5.7rem; }
   .scroll-nav ol {
@@ -773,7 +774,7 @@ hr {
     overflow: hidden; }
 
 /* Various Boxes in content
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .infobox {
   margin: 50px 0px 70px; }
   .infobox header {
@@ -862,7 +863,7 @@ hr {
       margin: 1.5rem 0rem; }
 
 /* Footer
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 footer .footer-top {
   background: #4B5258;
   box-shadow: inset rgba(0, 0, 0, 0.2);
@@ -993,7 +994,7 @@ footer .container .copyright {
   margin: 1.0rem 0rem; }
 
 /* Form Elements
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 input[type='text'] {
   background: #FFF;
   border: 3px solid #ECEDED;
@@ -1076,8 +1077,9 @@ input.btn_yellow[type="submit"] {
 
 .contact-info address {
   font-style: normal; }
-  .contact-info address .country-name {
-    display: block; }
+  .contact-info address span {
+    display: block;
+    line-height: 1.43; }
   .contact-info address::before {
     position: absolute;
     content: "\e947";
@@ -1085,18 +1087,37 @@ input.btn_yellow[type="submit"] {
     font-size: 25px;
     font-size: 2.5rem;
     left: 0px; }
-.contact-info .footer-tel, .contact-info .footer-email, .contact-info address {
+.contact-info .contact-tel, .contact-info .contact-email, .contact-info address {
   margin-bottom: 20px;
   margin-bottom: 2.0rem;
   display: block;
   position: relative;
   padding-left: 35px;
-  padding-left: 3.5rem; }
-  .contact-info .footer-tel .icon-phone, .contact-info .footer-tel .icon-envelop, .contact-info .footer-email .icon-phone, .contact-info .footer-email .icon-envelop, .contact-info address .icon-phone, .contact-info address .icon-envelop {
+  padding-left: 3.5rem;
+  color: #4A5157;
+  font-family: "effra", "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  font-size: 2.0rem;
+  text-decoration: none; }
+  .contact-info .contact-tel .icon-phone, .contact-info .contact-tel .icon-envelop, .contact-info .contact-email .icon-phone, .contact-info .contact-email .icon-envelop, .contact-info address .icon-phone, .contact-info address .icon-envelop {
     margin-right: 10px;
     margin-right: 1.0rem;
     font-size: 25px;
     font-size: 2.5rem; }
+.contact-info .contact-tel::before {
+  position: absolute;
+  content: "\e942";
+  font-family: 'icomoon';
+  font-size: 25px;
+  font-size: 2.5rem;
+  left: 0px; }
+.contact-info .contact-email::before {
+  position: absolute;
+  content: "\e945";
+  font-family: 'icomoon';
+  font-size: 25px;
+  font-size: 2.5rem;
+  left: 0px; }
 
 
 
