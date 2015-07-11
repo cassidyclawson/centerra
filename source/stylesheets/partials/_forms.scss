@@ -12,11 +12,36 @@ input[type='text'], textarea {
 
   &.name-input {
     float: left;
+    width: 70%;
+
+    @include breakpoint(xl)  {
+      width: 100%;
+    }
+
+    @include breakpoint(lg)  {
+      width: 100%;
+    }
+
+    @include breakpoint(sm)  {
+      width: 100%;
+    }
   }
 }
 
 input.btn_yellow[type="submit"] {
   float: right;
-  width: 110px;
-  width: 11.0rem;
+  width: 28%;
+  padding: 0px;
+
+  @include breakpoint(xl)  {
+    width: 40%;
+  }
+
+  @include breakpoint(lg)  {
+    width: 50%;
+  }
+
+  @include breakpoint(sm)  {
+    width: 100%;
+  }
 }

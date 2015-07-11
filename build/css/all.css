@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* Global Variables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /* Breakpoints
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .bordered-box, .service-block, .scroll-nav, .infobox {
   border: solid #ECEDED 16px;
   border-radius: 3px; }
@@ -13,7 +13,7 @@
   border-radius: 3px; }
 
 /* Typogarphy
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 body {
   font-family: "ff-tisa-web-pro", Georgia, serif;
   font-size: 62.5% x;
@@ -110,7 +110,7 @@ p {
       margin: 0px 0px 1.6rem; } }
 
 /* Global Components
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 img {
   max-width: 100%; }
 
@@ -187,7 +187,7 @@ input[type='submit'].btn_yellow {
   margin-bottom: 6.0rem; }
 
 /* Header
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .nav-container {
   margin-top: 35px;
   margin-top: 3.5rem;
@@ -211,12 +211,18 @@ input[type='submit'].btn_yellow {
     width: 18.5rem; }
 
 /* Navigation
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /* Flexnav Base Styles */
 .nav-container nav {
   float: right;
   position: relative;
   z-index: 101; }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    .nav-container nav {
+      width: 100%; } }
+  @media (max-width: 980px) {
+    .nav-container nav {
+      width: 100%; } }
 
 .flexnav {
   -webkit-transition: none;
@@ -293,6 +299,12 @@ input[type='submit'].btn_yellow {
     padding: 0px;
     text-align: center;
     border-top: 6px solid #5DC1B7; }
+    @media only screen and (min-width: 980px) and (max-width: 1024px) {
+      .flexnav li ul {
+        width: 100%; } }
+    @media (max-width: 980px) {
+      .flexnav li ul {
+        width: 100%; } }
     .flexnav li ul li {
       font-size: 1.6rem;
       position: relative;
@@ -468,7 +480,7 @@ input[type='submit'].btn_yellow {
   width: 19.9%; }
 
 /* Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /* Generic Classes */
 .indent {
   margin: 0px 56px;
@@ -763,9 +775,16 @@ hr {
     margin-top: 40px; }
 
 /* Sidebar
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
+aside {
+  margin-bottom: 60px;
+  margin-bottom: 6.0rem; }
+
 .scroll-nav {
   padding: 2.85rem 5.7rem; }
+  @media (max-width: 480px) {
+    .scroll-nav {
+      padding: 2.85rem; } }
   .scroll-nav ol {
     list-style: none;
     text-transform: uppercase;
@@ -780,12 +799,20 @@ hr {
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 19px;
+    line-height: 1.9rem;
     display: inline-block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-bottom: 1.0rem; }
   .scroll-nav .scroll-nav__link {
     font-weight: 700; }
   .scroll-nav .scroll-nav__sub-item {
-    margin-left: 37px; }
+    margin-left: 37px;
+    margin-left: 3.7rem; }
+    @media (max-width: 480px) {
+      .scroll-nav .scroll-nav__sub-item {
+        width: 100%;
+        margin-left: 17px;
+        margin-left: 1.7rem; } }
     .scroll-nav .scroll-nav__sub-item a {
       font-size: 16px;
       font-size: 1.6rem; }
@@ -815,7 +842,7 @@ hr {
     margin-left: 0px !important; } }
 
 /* Various Boxes in content
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .infobox {
   margin: 50px 0px 70px;
   margin: 5rem 0rem 7rem; }
@@ -959,7 +986,7 @@ hr {
     margin-left: 1rem; }
 
 /* Footer
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 footer .footer-top {
   background: #4B5258;
   box-shadow: inset rgba(0, 0, 0, 0.2);
@@ -1080,7 +1107,9 @@ footer .footer-top {
 @media (max-width: 480px) {
   footer .vcard {
     margin-top: 15px;
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem;
+    margin-bottom: 15px;
+    margin-bottom: 1.5rem; } }
 
 footer .container .copyright {
   font-size: 15px;
@@ -1090,7 +1119,7 @@ footer .container .copyright {
   margin: 1.0rem 0rem; }
 
 /* Form Elements
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 input[type='text'], textarea {
   background: #FFF;
   border: 3px solid #ECEDED;
@@ -1098,12 +1127,31 @@ input[type='text'], textarea {
   input[type='text'].phone-input, textarea.phone-input {
     width: 100%; }
   input[type='text'].name-input, textarea.name-input {
-    float: left; }
+    float: left;
+    width: 70%; }
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+      input[type='text'].name-input, textarea.name-input {
+        width: 100%; } }
+    @media only screen and (min-width: 980px) and (max-width: 1024px) {
+      input[type='text'].name-input, textarea.name-input {
+        width: 100%; } }
+    @media (max-width: 480px) {
+      input[type='text'].name-input, textarea.name-input {
+        width: 100%; } }
 
 input.btn_yellow[type="submit"] {
   float: right;
-  width: 110px;
-  width: 11.0rem; }
+  width: 28%;
+  padding: 0px; }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    input.btn_yellow[type="submit"] {
+      width: 40%; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    input.btn_yellow[type="submit"] {
+      width: 50%; } }
+  @media (max-width: 480px) {
+    input.btn_yellow[type="submit"] {
+      width: 100%; } }
 
 .bio img {
   border-radius: 3px;

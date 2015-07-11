@@ -9,6 +9,15 @@
 	float: right;
 	position: relative;
 	z-index: 101;
+
+	@include breakpoint(lg)  {
+		width: 100%;
+	}
+
+	@include breakpoint(lm)  {
+		width: 100%;
+	}
+
 }
 .flexnav {
 	-webkit-transition: none;
@@ -106,6 +115,14 @@
     padding: 0px;
 		text-align: center;
 		border-top: 6px solid $accent;
+
+		@include breakpoint(lg)  {
+			width: 100%;
+		}
+
+		@include breakpoint(lm)  {
+			width: 100%;
+		}
 
 		li {
 			font-size: 1.6rem;
