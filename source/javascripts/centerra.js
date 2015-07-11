@@ -22,7 +22,7 @@ jQuery(document).ready(function () {
 
     // Set sidebar height to same height as content area (article)
 
-    if ($(window).width > 980 ) {
+    if ($(window).width() > 980 ) {
       $('.sidebar-container').height( $('.content-block').height() )
       var length = $('.sidebar-container').height() - $('.sidebar').height() + $('.sidebar-container').offset().top;
     }
@@ -31,7 +31,7 @@ jQuery(document).ready(function () {
 
     $(window).scroll(function () {
 
-      if ($(window).width > 980 ) {
+      if ($(window).width() > 980 ) {
         var scroll = $(this).scrollTop();
         var height = $('.sidebar').height() + 'px';
 
