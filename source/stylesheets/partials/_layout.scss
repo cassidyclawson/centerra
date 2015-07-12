@@ -30,6 +30,9 @@ hr {
 }
 
 .content-block {
+  min-height: 560px;
+  min-height: 56.0rem;
+  
   @include breakpoint(lm)  {
     width: 100% !important;
     margin-left: 0px !important;

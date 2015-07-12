@@ -504,18 +504,21 @@ hr {
   border-width: 0;
   border-top: 3px solid #ECEDED; }
 
-@media (max-width: 980px) {
-  .content-block {
-    width: 100% !important;
-    margin-left: 0px !important; } }
-@media (max-width: 768px) {
-  .content-block .indent {
-    margin: 0px 36px !important;
-    margin: 0rem 3.6rem !important; } }
-@media (max-width: 768px) {
-  .content-block .indent {
-    margin: 0px 16px !important;
-    margin: 0rem 1.6rem !important; } }
+.content-block {
+  min-height: 560px;
+  min-height: 56.0rem; }
+  @media (max-width: 980px) {
+    .content-block {
+      width: 100% !important;
+      margin-left: 0px !important; } }
+  @media (max-width: 768px) {
+    .content-block .indent {
+      margin: 0px 36px !important;
+      margin: 0rem 3.6rem !important; } }
+  @media (max-width: 768px) {
+    .content-block .indent {
+      margin: 0px 16px !important;
+      margin: 0rem 1.6rem !important; } }
 
 /* Services blocks on home page */
 .service-block {
@@ -776,10 +779,6 @@ hr {
 
 /* Sidebar
 ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
-aside {
-  margin-bottom: 60px;
-  margin-bottom: 6.0rem; }
-
 .scroll-nav {
   padding: 2.85rem 5.7rem; }
   @media (max-width: 480px) {
@@ -822,7 +821,9 @@ aside {
 #cta {
   padding: 5.7rem;
   margin-top: 25px;
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+  margin-bottom: 60px;
+  margin-bottom: 6.0rem; }
   #cta h4 {
     margin: 0px; }
   #cta p {
