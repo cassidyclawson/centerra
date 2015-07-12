@@ -25,16 +25,16 @@ jQuery(document).ready(function () {
 
     // Set sidebar height to same height as content area (article)
 
-    if ($(window).width() > 980 ) {
-      $('.sidebar-container').height( $('.content-block').height() )
-      var length = $('.sidebar-container').height() - $('.sidebar').height() + $('.sidebar-container').offset().top;
+    if ($(window).width() > 980 && $('aside').length > 0 ) {
+        $('.sidebar-container').height( $('.content-block').height() )
+        var length = $('.sidebar-container').height() - $('.sidebar').height() + $('.sidebar-container').offset().top;
     }
 
     // Consider refactoring this into classes and adding to css files.
 
     $(window).scroll(function () {
 
-      if ($(window).width() > 980 ) {
+      if ($(window).width() > 980 && $('aside').length > 0 ) {
         var scroll = $(this).scrollTop();
         var height = $('.sidebar').height() + 'px';
 
@@ -60,5 +60,44 @@ jQuery(document).ready(function () {
             });
         }
       }
+    });
+
+    //form validation
+    var formspree = 'http://formspree.io/alokjain@hsrtech.com';
+
+    $("#cta-form").validate({
+      submitHandler: function() {
+            $('#submit_btn').addClass('btn_loading');
+            $.post(formspree,
+            $('form#cta-form').serialize() ,
+            function(data){
+                $('#submit_btn').removeClass('btn_loading')
+                                .addClass('btn_success')
+                                .val('Success')
+                                .prop('disabled', true);
+                $("#cta .msg").addClass('pulse');
+                $('#cta-contact').prop('disabled', true);
+                $('#cta-name').prop('disabled', true);
+            }, "json");
+        }
+    });
+
+
+    $("#contact-form").validate({
+      submitHandler: function() {
+            $('#submit_btn').addClass('btn_loading');
+            $.post(formspree,
+            $('form#contact-form').serialize() ,
+            function(data){
+                $('#submit_btn').removeClass('btn_loading')
+                                .addClass('btn_success')
+                                .val('Success')
+                                .prop('disabled', true);
+                $('#cf-name').prop('disabled', true);
+                $('#cf-contact').prop('disabled', true);
+                $('#cf-company').prop('disabled', true);
+                $('#cf-message').prop('disabled', true);
+            }, "json");
+        }
     });
 });

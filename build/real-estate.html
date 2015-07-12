@@ -21,34 +21,33 @@
 </head>
 
 
-  <body class="index">
-    <header>
-  <div class="container">
-    <div class="nav-container row">
-      <div class="three columns">
-        <a href="index.html" class="logo"><img alt="Centerra Capital" src="images/logo.svg" /></a>
-      </div>
-      <div class="nine columns u-pull-right u-max-full-width">
-        <div class="menu-button">Menu</div>
-        <nav>
-          <ul data-breakpoint="1023px" class="flexnav">
-            <li ><a href="corporate-advisory.html">Corporate Advisory</a></li>
-            <li class="active"><a href="real-estate.html">Real Estate</a></li>
-            <li ><a href="funds.html">Investments</a></li>
-            <li ><a href="agriculture.html">Agriculture</a></li>
-            <li ><a href="#">About</a>
-              <ul>
-                  <li><a href="leadership.html">Leadership</a></li>
-                  <li><a href="transactions.html">Transactions</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+<body class="index ">
+  <header>
+    <div class="container">
+      <div class="nav-container row" id="navigation">
+        <div class="three columns">
+          <a href="index.html" class="logo"><img alt="Centerra Capital" src="images/logo.svg" /></a>
+        </div>
+        <div class="nine columns u-pull-right u-max-full-width">
+          <nav>
+            <ul class="headernav">
+              <li ><a href="corporate-advisory.html"><span class="icon-corporate"></span> Corporate Advisory</a></li>
+              <li class="active"><a href="real-estate.html"><span class="icon-real-estate"></span>Real Estate</a></li>
+              <li ><a href="funds.html"><span class="icon-investment-04"></span>Investments</a></li>
+              <li ><a href="agriculture.html"><span class="icon-agriculture"></span>Agriculture</a></li>
+              <li ><a href="#"><span class="icon-animal"></span>About</a>
+                <ul>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
 
 <div class="container banner-inner">
@@ -155,12 +154,12 @@
       <div id="cta">
         <h4>TALK TO AN EXPERT</h4>
         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod.</p>
-        <form action="#">
-          <input type="text" name="contact" placeholder="Phone or email" class="phone-input" />
-          <input type="text" name="name" placeholder="Name" class="name-input" / >
-          <input type="submit" value="Request Contact" class="btn_yellow" />
+        <form id="cta-form">
+          <input type="text" name="contact" id="cta-contact" placeholder="Phone or email" class="phone-input" required />
+          <input type="text" name="name" id="cta-name" placeholder="Name" class="name-input" required / >
+          <input type="submit" value="Request Contact" class="btn_yellow" id="submit_btn" />
         </form>
-        <span>We’ll be in touch within 24 hours.</span>
+        <span class="msg">We’ll be in touch within 24 hours.</span>
       </div>
 
     </div>

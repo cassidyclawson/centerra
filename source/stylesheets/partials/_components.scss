@@ -35,6 +35,20 @@ img {
   background: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  @include breakpoint(sm)  {
+    margin-bottom: 0px;
+    margin-bottom: 0rem;
+  }
+}
+
+h3, h4 {
+  @include breakpoint(sm)  {
+    margin-top: 30px;
+    margin-top: 3rem;
+  }
+}
+
 h5 {
   font-weight: normal;
 }

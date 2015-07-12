@@ -73,6 +73,10 @@
 
   p.footnote {
     margin-bottom: 3em;
+
+    @include breakpoint(sm)  {
+      margin-bottom: 2em;
+    }
   }
 }
 

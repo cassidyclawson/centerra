@@ -32,14 +32,14 @@
         </div>
         <div class="one-half column">
           <h2>OR SEND AN INQUIRY</h2>
-          <form action="#" class="contact-form">
-            <input type="text" name="name" placeholder="Name"  / >
-            <input type="text" name="contact" placeholder="Phone or email"  />
+          <form class="contact-form" id="contact-form">
+            <input type="text" name="name" id="cf-name" placeholder="Name" required  / >
+            <input type="text" name="contact" id="cf-contact" placeholder="Phone or email" required  />
             <span class="opt-label">Optional</span>
-            <input type="text" name="company" placeholder="Company"  / >
+            <input type="text" name="company" id="cf-company" placeholder="Company"  / >
             <span class="opt-label">Optional</span>
-            <textarea>Message</textarea>
-            <input type="submit" value="Request Contact" class="btn_yellow" />
+            <textarea name="message" placeholder="Message" id="cf-message"></textarea>
+            <input type="submit" value="Request Contact" class="btn_yellow" id="submit_btn" />
           </form>
         </div>
       </div>
