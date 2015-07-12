@@ -22,6 +22,7 @@ var jsSources = [
    'source/javascripts/fastclick.js',
    'source/javascripts/jquery.slicknav.js',
    'source/javascripts/scrollnav.js',
+   'source/javascripts/jquery.validate.js',
    'source/javascripts/magicline.js',
    'source/javascripts/centerra.js'
 ]

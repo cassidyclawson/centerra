@@ -376,6 +376,9 @@ input[type='submit'].btn_yellow {
     color: #fff; }
     .slicknav_nav a:hover {
       color: #fff; }
+    .slicknav_nav a span {
+      display: inline-block;
+      margin-right: 5px; }
   .slicknav_nav .slicknav_txtnode {
     margin-left: 15px; }
   .slicknav_nav .slicknav_item a {

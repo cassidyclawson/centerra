@@ -227,6 +227,10 @@ $color_hover_text: #222;
 		&:hover {
 			color: $color_text;
 		}
+		span {
+			display: inline-block;
+			margin-right: 5px;
+		}
 	}
 	.slicknav_txtnode {
 		margin-left: 15px;
