@@ -1,361 +1,317 @@
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* Flexnav Base Styles */
-// NOTE TO ALOK: WE SHOULD TRY TO REMOVE AS MUCH OF THIS AS POSSIBLE
-// So we can control styles ourselves
-
-.nav-container nav {
+.headernav {
 	float: right;
+	margin: 0px;
+	padding: 0px;
 	position: relative;
-	z-index: 101;
-
-	@include breakpoint(lg)  {
-		width: 100%;
-	}
-
-	@include breakpoint(lm)  {
-		width: 100%;
-	}
-
-}
-.flexnav {
-	-webkit-transition: none;
-  -moz-transition: none;
-  -ms-transition: none;
-  transition: none;
-	-webkit-transform-style: preserve-3d; // stop webkit flicker
-  overflow: hidden;
-	margin: 0px auto;
-	width: 100%;
-  max-height: 0;
-  padding: 0px;
-	float: right;
-
-  &.opacity {
-    opacity: 0;
-  }
-
-	&.flexnav-show {
-		max-height: 2000px;
-    opacity: 1;
-		-webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-		background: $dark_gray;
-	}
-	&.one-page {
-		position: fixed;
-		top: 50px;
-		right: 5%;
-	}
-
-	& > li:hover {
-		border-bottom: 6px solid $accent;
-	}
 
 	li {
-		font-size: 1.8rem;
-		position: relative;
-		overflow: hidden;
-    padding: 0em;
+		float: left;
+		list-style: none;
 
-		@include breakpoint(xl)  {
-			font-size: 15px;
-			font-size: 1.5rem;
-	  }
 
-		@include breakpoint(lg)  {
-			font-size: 15px;
-			font-size: 1.5rem;
-	  }
+		a {
+			font-family: $font-subheadline;
+			font-size: 18px;
+			font-size: 1.8rem;
+			font-weight: 700;
+			color: $nav_text;
+			line-height: 22px;
+			line-height: 2.2rem;
+			text-decoration: none;
+			padding: 32px 34px 31px;
+			display: block;
+			float: left;
+			box-sizing: border-box;
 
-		@include breakpoint(lm)  {
-			font-size: 15px;
-			font-size: 1.5rem;
-	  }
-	}
-	li a {
-		position: relative;
-		display: block;
-		padding: 0px 30.7px;
-		padding: 0rem 3.07rem;
-		z-index: 2;
-		overflow: hidden;
-		color: $nav_text;
-		text-transform: uppercase;
-		font-weight: bold;
-		font-family: $font-subheadline;
-    text-decoration: none;
-		height: 85px;
-		height: 8.5rem;
-		line-height: 85px;
-		line-height: 8.5rem;
-
-		@include breakpoint(xl)  {
-			padding: 0px 20.7px;
-	    padding: 0rem 2.07rem;
-	  }
-
-		@include breakpoint(lg)  {
-			padding: 0px 20.7px;
-	    padding: 0rem 2.07rem;
-	  }
-
-		@include breakpoint(lm)  {
-			padding: 0px 20.7px;
-	    padding: 0rem 2.07rem;
-	  }
-	}
-
-	li ul {
-		width: 190px;
-		width: 19.0rem;
-    padding: 0px;
-		text-align: center;
-		border-top: 6px solid $accent;
-
-		@include breakpoint(lg)  {
-			width: 100%;
-		}
-
-		@include breakpoint(lm)  {
-			width: 100%;
-		}
-
-		li {
-			font-size: 1.6rem;
-			position: relative;
-			overflow: hidden;
-      font-weight: 400;
-			text-align: right;
-
-			a {
-				height: 65px;
-				height: 6.5rem;
-				line-height: 65px;
-				line-height: 6.5rem;
+			span {
+				display: inline-block;
+				margin-right: 5px;
 			}
 		}
-	}
-	li ul.flexnav-show {
 
-		li {
-			overflow: visible;
+		ul {
+			display: none;
 		}
-	}
 
-	li ul li a {
-		display: block;
-		background: $dark_gray;
-			&:hover {
-
-			}
-	}
-	ul li ul li a {
-		background: $dark_gray;
-	}
-	ul li ul li ul li a {
-		background: $dark_gray;
-	}
-	.touch-button {
-		position: absolute;
-		z-index: 999;
-		top: 0;
-		right: 0;
-		width: 50px;
-		height: 50px;
-		display: none;
-		background: #acaca1;
-		background: rgba(0,0,0,.075);
-		text-align: center;
 		&:hover {
-			cursor: pointer;
-		}
-		.navicon {
-			position: relative;
-			top: 1.4em;
-			font-size: 12px;
-			color: #666;
+			ul {
+				background: $dark_gray;
+				border-top: $line-medium solid $accent;
+				position: absolute;
+				display: block;
+				top: (91px - $line-medium);
+				right: 0px;
+				z-index: 1;
+				padding: 0px;
+
+				li {
+					float: none;
+
+					a {
+						float: none;
+						text-align: right;
+						border-bottom: 2px solid rgba($light-gray, .25);
+						padding: 25px 34px;
+					}
+
+					&:last-child a {
+						border: none;
+					}
+
+				}
+			}
 		}
 	}
 }
-.menu-button {
+
+#magic-line {
+	position: absolute;
+	bottom: -$line-medium;
+	left: 0;
+	width: 100px;
+	height: $line-medium;
+	background: $accent;
+}
+
+/* Mobile Navigation (slicknav)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.slicknav_btn {
 	position: relative;
 	display: block;
-	padding:0em 1em;
-	background: $dark_gray;
-	color: $nav_text;
+	vertical-align: middle;
+	float: right;
+	padding: 0.438em 0.625em 0.438em 0.625em;
+	line-height: 1.125em;
 	cursor: pointer;
-	height: 91px;
-	height: 9.1rem;
-	text-align: right;
-	line-height: 91px;
-	line-height: 9.1rem;
-
-	&.one-page {
-		position: fixed;
-		top: 0;
-		right: 5%;
-		padding-right: 45px;
-	}
-
-	.touch-button {
-		background: transparent;
-		position: absolute;
-		z-index: 999;
-		top: 0;
-		right: 0;
-		width: 50px;
-		height: 50px;
-		display: none;
-		text-align: center;
-    display: none;
-
-		.navicon {
-			font-size: 16px;
-			position: relative;
-			top: 1em;
-			color: #666;
-		}
+	.slicknav_icon-bar + .slicknav_icon-bar {
+		margin-top: 0.188em;
 	}
 }
-
-@media all and (min-width: 800px) {
-	body.one-page {
-		padding-top: 70px;
+.slicknav_menu {
+	*zoom: 1;
+	.slicknav_menutxt {
+		display: block;
+		line-height: 1.188em;
+		float: left;
 	}
-	.flexnav {
-		overflow: visible;
-		&.opacity {
-		  opacity: 1;
-		}
-		&.one-page {
-			top: 0;
-			right: auto;
-			max-width: 1080px;
-		}
-		li {
-			position: relative;
-			list-style: none;
-			float: left;
-			display: block;
-			overflow: visible;
-		}
-		li a {
-			border-bottom: none;
-		}
-		li > ul {
-			position: absolute;
-			top: auto;
-			right: 0px;
-
-			li {
-				width: 100%;
-			}
-		}
-		li ul li > ul {
-			margin-left: 100%;
-			top: 0;
-		}
-		li ul li:hover > ul,
-		li ul li > ul.flexnav-show {
-		}
-		li ul li a {
-			border-bottom: 2px solid #666a6f;
-		}
-		li ul.open {
-			display: block;
-			opacity: 1;
-			visibility: visible;
-			z-index: 100;
-			li {
-				overflow: visible;
-				max-height: 100px;
-			}
-			ul.open {
-				margin-left: 100%;
-				top: 0;
-			}
-		}
+	.slicknav_icon {
+		float: left;
+		margin: 0.188em 0 0 0.438em;
 	}
-	.menu-button {
-		display: none;
+	.slicknav_no-text {
+		margin: 0;
+	}
+	.slicknav_icon-bar {
+		display: block;
+		width: 1.125em;
+		height: 0.125em;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	}
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
 	}
 }
-
-.oldie {
-	body.one-page {
-		padding-top: 70px;
+.slicknav_nav {
+	clear: both;
+	ul {
+		display: block;
 	}
-	.flexnav {
-		overflow: visible;
-		&.one-page {
-			top: 0;
-			right: auto;
-			max-width: 1080px;
+	li {
+		display: block;
+	}
+	.slicknav_arrow {
+		font-size: 0.8em;
+		margin: 0 0 0 0.4em;
+	}
+	.slicknav_item {
+		cursor: pointer;
+		a {
+			display: inline;
 		}
-		li {
-			position: relative;
-			list-style: none;
+	}
+	.slicknav_row {
+		display: block;
+	}
+	a {
+		display: block;
+	}
+	.slicknav_parent-link a {
+		display: inline;
+	}
+}
+.slicknav_brand {
+	float: left;
+}
+
+//colors
+$color_0: rgba(255, 255, 255, 0.75);
+$color_btn: #222;
+$color_text: #fff;
+$color_shadow: #000;
+$color_bg: #464C52;
+$color_hover_bg: #ccc;
+$color_hover_text: #222;
+
+.slicknav_menu {
+	font-size: 16px;
+	box-sizing: border-box;
+	background: $color_bg;
+	padding: 5px;
+	display: none;
+
+	* {
+		box-sizing: border-box;
+	}
+	.slicknav_menutxt {
+		color: $color_text;
+		font-weight: bold;
+		text-shadow: 0 1px 3px $color_shadow;
+	}
+	.slicknav_icon-bar {
+		background-color: $color_text;
+	}
+}
+.slicknav_btn {
+	margin: 22px 5px 6px;
+	margin: 2.2rem .5rem .6rem;
+	text-decoration: none;
+	text-shadow: 0 1px 1px $color_0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: $color_btn;
+}
+.slicknav_nav {
+	color: $color_text;
+	margin: 77px 0px 0px;
+	margin: 7.7rem 0rem 0rem;
+	padding: 0;
+	font-size: 0.875em;
+	list-style: none;
+	overflow: hidden;
+	li > a {
+		border-bottom: 2px solid rgba($light-gray, .25);
+	}
+	ul {
+		list-style: none;
+		overflow: hidden;
+		padding: 0;
+		margin: 0 0 0 20px;
+	}
+	.slicknav_row {
+		padding: 5px 10px;
+		margin: 2px 5px;
+		&:hover {
+			color: $color_text;
+		}
+	}
+	a {
+		padding: 5px 10px;
+		margin: 2px 5px;
+		text-decoration: none;
+		color: $color_text;
+		&:hover {
+			color: $color_text;
+		}
+		span {
 			display: inline-block;
+			margin-right: 5px;
+		}
+	}
+	.slicknav_txtnode {
+		margin-left: 15px;
+	}
+	.slicknav_item a {
+		padding: 0;
+		margin: 0;
+	}
+	.slicknav_parent-link a {
+		padding: 0;
+		margin: 0;
+	}
+}
+.slicknav_brand {
+	color: $color_text;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 7px 12px;
+	height: 44px;
+}
 
-			min-height: 50px;
-			overflow: visible;
-		}
-		li:hover > ul {
-			display: block;
-			width: 100%;
-			overflow: visible;
-			li {
-				width: 100%;
-				float: none;
-			}
-		}
-		li a {
-			border-bottom: none;
-			overflow: visible;
-		}
-		li > ul {
-			background:#acaca1;
+@include breakpoint(lg)  {
+	.headernav {
+		display:none;
+	}
+
+	.slicknav_menu {
+		display:block;
+	}
+
+	#navigation {
+		.three.columns{
 			position: absolute;
-			top: auto;
-			right: 0px;
-			display: none;
-			z-index: 1;
-			overflow: visible;
-		}
-		li ul li ul {
-			top: 0;
-		}
-		li ul li a {
-		border-bottom: 2px solid #666a6f;
-		}
-		li ul.open {
-			display: block;
-			width: 100%;
-			overflow: visible;
-			li {
-				width: 100%;
-			}
-			ul.open {
-				margin-left: 100%;
-				top: 0;
-  				display: block;
-				width: 100%;
-				overflow: visible;
-			}
-		}
-		ul li:hover ul {
-			margin-left: 100%;
-			top: 0;
+			top: 0px;
+			float: left;
+			width: auto;
+			z-index: 2;
 		}
 	}
-	.menu-button {
-		display: none;
+}
+
+@include breakpoint(lm)  {
+	.headernav {
+		display:none;
 	}
-	&.ie7 .flexnav li {
-		width: 19.9%;
+
+	.slicknav_menu {
+		display:block;
+	}
+
+	#navigation {
+		.three.columns{
+			position: absolute;
+			top: 0px;
+			float: left;
+			width: auto;
+			z-index: 2;
+		}
+	}
+}
+
+@include breakpoint(sm)  {
+	.headernav {
+		display:none;
+	}
+
+	.slicknav_menu {
+		display:block;
+	}
+
+	#navigation {
+		.three.columns{
+			position: absolute;
+			top: 0px;
+			float: left;
+			width: auto;
+			z-index: 2;
+
+			.logo {
+				max-width: 50%;
+			}
+		}
 	}
 }
