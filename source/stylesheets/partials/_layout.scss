@@ -32,7 +32,7 @@ hr {
 .content-block {
   min-height: 560px;
   min-height: 56.0rem;
-  
+
   @include breakpoint(lm)  {
     width: 100% !important;
     margin-left: 0px !important;
@@ -58,8 +58,8 @@ hr {
   margin-bottom: 2%;
   padding: 65px 75px;
   padding: 6.5rem 7.5rem;
-  min-height: 530px;
-  min-height: 53.0rem;
+  min-height: 620px;
+  min-height: 62.0rem;
 
   @include breakpoint(xl)  {
     padding: 15px 25px;

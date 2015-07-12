@@ -24,6 +24,8 @@ footer .footer-top {
    @include breakpoint(sm)  {
      padding: 42px !important;
      padding: 4.2rem !important;
+     font-size: 12px;
+     font-size: 1.2rem;
    }
 
    .one-half.column {
