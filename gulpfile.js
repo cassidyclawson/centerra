@@ -20,8 +20,9 @@ var jsSources = [
    'source/javascripts/jquery-1.11.3.js',
    'source/javascripts/hoverintent.js',
    'source/javascripts/fastclick.js',
-   'source/javascripts/jquery.flexnav.js',
+   'source/javascripts/jquery.slicknav.js',
    'source/javascripts/scrollnav.js',
+   'source/javascripts/magicline.js',
    'source/javascripts/centerra.js'
 ]
 

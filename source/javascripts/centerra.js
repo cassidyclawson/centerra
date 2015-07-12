@@ -4,7 +4,10 @@ jQuery(document).ready(function () {
     FastClick.attach(document.body);
 
     // Instantiate Meanmenu for mobile navigation
-    $(".flexnav").flexNav({ hoverIntent: true, hoverIntentTimeout: 50, calcItemWidths: false });
+    //$(".flexnav").flexNav({ hoverIntent: true, hoverIntentTimeout: 50, calcItemWidths: false });
+    $('.headernav').slicknav({
+      prependTo:'#navigation'
+    });
 
     // Instantiate secondary content navigation and setup classes.
     // Inserts before #cta
