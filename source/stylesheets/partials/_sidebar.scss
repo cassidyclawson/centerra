@@ -1,9 +1,12 @@
 /* Sidebar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .scroll-nav {
   @extend .bordered-box;
   padding: ($tab/2) $tab;
+
+  @include breakpoint(sm)  {
+    padding: ($tab/2);
+  }
 
   ol {
     list-style: none;
@@ -23,8 +26,10 @@
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 19px;
+    line-height: 1.9rem;
     display: inline-block;
     margin-bottom: 10px;
+    margin-bottom: 1.0rem;
   }
 
   .scroll-nav__link {
@@ -33,19 +38,59 @@
 
   .scroll-nav__sub-item {
     margin-left: 37px;
+    margin-left: 3.7rem;
+
+    @include breakpoint(sm)  {
+      width: 100%;
+      margin-left: 17px;
+      margin-left: 1.7rem;
+    }
 
     a {
       font-size: 16px;
       font-size: 1.6rem;
     }
+
+    &.active > a {
+      border-bottom: solid $accent ($line-thin*2);
+    }
   }
 
-  .active a {
-    border-bottom: solid $accent ($line-thin*2);
-  }
+
 }
 
 #cta {
   @extend .action-box;
   padding: $tab;
+  margin-top: 25px;
+  margin-top: 2.5rem;
+  margin-bottom: 60px;
+  margin-bottom: 6.0rem;
+
+  h4 {
+    margin: 0px;
+  }
+
+  p {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 12px;
+    line-height: 1.2rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+}
+aside {
+  @include breakpoint(lm)  {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
 }

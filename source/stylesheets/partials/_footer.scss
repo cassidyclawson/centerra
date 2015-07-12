@@ -24,6 +24,8 @@ footer .footer-top {
    @include breakpoint(sm)  {
      padding: 42px !important;
      padding: 4.2rem !important;
+     font-size: 12px;
+     font-size: 1.2rem;
    }
 
    .one-half.column {
@@ -174,7 +176,9 @@ footer .footer-top {
 footer .vcard {
   @include breakpoint(sm)  {
     margin-top: 15px;
-    margin-top: 1.5rem
+    margin-top: 1.5rem;
+    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
 }
 

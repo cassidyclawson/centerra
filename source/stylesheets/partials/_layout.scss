@@ -15,6 +15,11 @@
 article {
   margin: 0px 50px;
   margin: 0rem 5.0rem;
+
+  @include breakpoint(lm)  {
+    margin: 0px 30px;
+    margin: 0rem 3.0rem;
+  }
 }
 
 hr {
@@ -24,6 +29,27 @@ hr {
   border-top: $line-thin solid $light-gray;
 }
 
+.content-block {
+  min-height: 560px;
+  min-height: 56.0rem;
+
+  @include breakpoint(lm)  {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+
+  .indent {
+    @include breakpoint(md)  {
+      margin: 0px 16px !important;
+      margin: 0rem 1.6rem !important;
+    }
+
+    @include breakpoint(sm)  {
+      margin: 0px !important;
+    }
+  }
+}
+
 /* Services blocks on home page */
 .service-block {
   @extend .bordered-box;
@@ -31,8 +57,8 @@ hr {
   margin-bottom: 2%;
   padding: 65px 75px;
   padding: 6.5rem 7.5rem;
-  min-height: 530px;
-  min-height: 53.0rem;
+  min-height: 620px;
+  min-height: 62.0rem;
 
   @include breakpoint(xl)  {
     padding: 15px 25px;
@@ -127,4 +153,10 @@ hr {
         }
     }
   }
+}
+
+#contact-box {
+  @extend .action-box;
+  padding: $tab;
+  overflow: hidden;
 }

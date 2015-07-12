@@ -4,14 +4,20 @@ jQuery(document).ready(function () {
     FastClick.attach(document.body);
 
     // Instantiate Meanmenu for mobile navigation
-    $(".flexnav").flexNav({ hoverIntent: true, hoverIntentTimeout: 50, calcItemWidths: false });
+    //$(".flexnav").flexNav({ hoverIntent: true, hoverIntentTimeout: 50, calcItemWidths: false });
+    $('.headernav').slicknav({
+      prependTo:'#navigation'
+    });
 
     // Instantiate secondary content navigation and setup classes.
     // Inserts before #cta
-    /*$(".navigable").scrollNav({ insertTarget: "#cta",
-                                sections: "h3",
-                                subSections: "h4",
-                                showHeadline: false });*/
+    $(".content-block").scrollNav({
+                                insertTarget: "#cta",
+                                sections: ".navigable h3",
+                                subSections: ".navigable h4",
+                                showHeadline: false,
+                                showTopLink: false
+                              });
 
     // And setup fixed sidebar on scroll
     // Using this method to fix nav instead of the built in way so we can fix
@@ -19,13 +25,16 @@ jQuery(document).ready(function () {
 
     // Set sidebar height to same height as content area (article)
 
-    /*$('.sidebar-container').height( $('article').height() )
-    var length = $('.sidebar-container').height() - $('.sidebar').height() + $('.sidebar-container').offset().top;*/
+    if ($(window).width() > 980 && $('aside').length > 0 ) {
+        $('.sidebar-container').height( $('.content-block').height() )
+        var length = $('.sidebar-container').height() - $('.sidebar').height() + $('.sidebar-container').offset().top;
+    }
 
     // Consider refactoring this into classes and adding to css files.
 
-    /*$(window).scroll(function () {
+    $(window).scroll(function () {
 
+      if ($(window).width() > 980 && $('aside').length > 0 ) {
         var scroll = $(this).scrollTop();
         var height = $('.sidebar').height() + 'px';
 
@@ -50,5 +59,45 @@ jQuery(document).ready(function () {
                 'width': $('.sidebar-container').width()
             });
         }
-    });*/
+      }
+    });
+
+    //form validation
+    var formspree = 'http://formspree.io/alokjain@hsrtech.com';
+
+    $("#cta-form").validate({
+      submitHandler: function() {
+            $('#submit_btn').addClass('btn_loading');
+            $.post(formspree,
+            $('form#cta-form').serialize() ,
+            function(data){
+                $('#submit_btn').removeClass('btn_loading')
+                                .addClass('btn_success')
+                                .val('Success')
+                                .prop('disabled', true);
+                $("#cta .msg").addClass('pulse');
+                $('#cta-contact').prop('disabled', true);
+                $('#cta-name').prop('disabled', true);
+            }, "json");
+        }
+    });
+
+
+    $("#contact-form").validate({
+      submitHandler: function() {
+            $('#submit_btn').addClass('btn_loading');
+            $.post(formspree,
+            $('form#contact-form').serialize() ,
+            function(data){
+                $('#submit_btn').removeClass('btn_loading')
+                                .addClass('btn_success')
+                                .val('Success')
+                                .prop('disabled', true);
+                $('#cf-name').prop('disabled', true);
+                $('#cf-contact').prop('disabled', true);
+                $('#cf-company').prop('disabled', true);
+                $('#cf-message').prop('disabled', true);
+            }, "json");
+        }
+    });
 });

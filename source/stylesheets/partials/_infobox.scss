@@ -6,52 +6,238 @@ $infobox-indent: 50px;
 .infobox {
   @extend .bordered-box;
   margin: 50px 0px 70px;
+  margin: 5rem 0rem 7rem;
+
+    @include breakpoint(sm)  {
+      margin: 50px 0px;
+      margin: 5rem 0rem;
+    }
 
   header {
     background: $light-gray;
     padding: 0px 0px $line-thick $infobox-indent;
     overflow: hidden;
 
+    @include breakpoint(sm)  {
+      padding: 0px 0px $line-thick 0px;
+    }
+
     h2 {
       margin: 0px;
       font-size: 30px;
       float: left;
+
+      @include breakpoint(sm)  {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-bottom: 1rem;
+      }
     }
 
     .btn_yellow {
       float: right;
       width: 132px;
+      width: 13.2rem;
       text-align: center;
       line-height: 14px;
+      line-height: 1.4rem;
       padding: 5px 10px;
+      padding: 0.5rem 1.0rem;
       box-sizing: border-box;
+
+      @include breakpoint(sm)  {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+      }
     }
   }
 
-  .infobox-content {
-    padding: 50px;
+}
 
-    .indent {
-      margin: 0px $infobox-indent;
+.infobox-content {
+  padding: 50px;
+  padding: 5rem;
 
-      img {
-        margin-left: -$infobox-indent;
+  @include breakpoint(md)  {
+    padding: 30px;
+    padding: 3rem;
+  }
+
+  .indent {
+    margin: 0px $infobox-indent;
+
+    img {
+      margin-left: -$infobox-indent;
+
+      @include breakpoint(md)  {
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        float: none;
       }
     }
 
-    h3 {
-      line-height: 72px;
-      line-height: 7.2rem;
+    .quotes-para {
+      font-style: italic;
     }
 
-    h3, h4 {
-      margin: 5px 0px;
-    }
-
-    img {
+    .quotes-left {
       float: left;
-      margin: 1rem 2rem 0 0;
-      border-radius: $default-radius;
+      display: block;
+      font-size: 110px;
+      font-size: 11.0rem;
+      color: $light-gray;
+      margin-right: 20px;
+      margin-right: 2.0rem;
+    }
+
+    .icon-quotes-right {
+      color: $light-gray;
+    }
+  }
+
+  h3 {
+    line-height: 72px;
+    line-height: 7.2rem;
+
+    @include breakpoint(md)  {
+      line-height: 42px;
+      line-height: 4.2rem;
+    }
+
+
+  }
+
+  h3, h4 {
+    margin: 5px 0px;
+  }
+
+  img {
+    float: left;
+    margin: 1rem 2rem 0 0;
+    border-radius: $default-radius;
+  }
+}
+
+.infobox-bottom {
+  .one-half.column {
+    @include breakpoint(md)  {
+      width: 100%;
+      margin-left: 0px;
+    }
+    ul {
+      @include breakpoint(sm)  {
+        padding-left: 10px;
+        padding-left: 1.0rem;
+      }
+    }
+  }
+  h5 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.58;
+    height: 29px;
+    height: 2.9rem;
+    background-color: $light-gray;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 12px;
+    padding: 0rem 1.2rem;
+    font-family: $font-subheadline;
+  }
+
+  li {
+    list-style: none;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.58;
+    font-family: $font-subheadline;
+  }
+}
+
+.title-box {
+    @extend .action-box;
+    margin: 50px 50px 0px;
+    margin: 5rem 5rem 0rem;
+    text-align: center;
+    padding: 15px 0px 35px;
+    padding: 1.5rem 0px 3.5rem;
+
+    @include breakpoint(md)  {
+      margin: 30px 30px 0px;
+      margin: 3rem 3rem 0rem;
+    }
+
+    time {
+      font-size: 13.50px;
+      font-size: 1.35rem;
+      line-height: 1.20;
+      font-family: $font-subheadline;
+    }
+
+    h2 {
+      margin: 0px;
+      font-size: 44px;
+      font-size: 4.4rem;
+      line-height: 1.20;
+      font-family: $font-headline;
+
+      @include breakpoint(md)  {
+        font-size: 30px;
+        font-size: 3rem;
+      }
+
+      small{
+        display: block;
+        font-size: 20px;
+        font-size: 2.0rem;
+        line-height: 1.20;
+        font-family: $font-subheadline;
+        margin: 15px 0px;
+        margin: 1.5rem 0rem;
+      }
+    }
+}
+
+.transactions {
+  .infobox-content {
+    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-top: 2.0rem;
+
+    @include breakpoint(sm)  {
+      padding: 20px 0px 0px;
+      padding: 2rem 0rem 0rem;
+    }
+
+    hr {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+
+/* Funds */
+.funds {
+ ul{
+    @include breakpoint(sm)  {
+      padding-left: 0px;
+    }
+  }
+  .infobox-content {
+    padding-bottom: 0px;
+
+    hr {
+      margin-bottom: 0px;
+    }
+
+    .tag {
+      margin-left: 10px;
+      margin-left: 1.0rem
     }
   }
 }

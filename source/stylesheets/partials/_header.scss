@@ -8,6 +8,11 @@
   height: 9.1rem;
   border-radius: $default-radius $default-radius 0px 0px;
 
+  @include breakpoint(sm)  {
+    margin-top: 10px;
+    margin-top: 1rem;
+  }
+
   .columns {
     background: transparent;
   }

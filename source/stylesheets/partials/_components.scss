@@ -1,4 +1,4 @@
-/* GLobal Components
+/* Global Components
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 img {
   max-width: 100%;
@@ -35,8 +35,27 @@ img {
   background: none;
 }
 
-.btn_yellow {
+h1, h2, h3, h4, h5, h6 {
+  @include breakpoint(sm)  {
+    margin-bottom: 0px;
+    margin-bottom: 0rem;
+  }
+}
+
+h3, h4 {
+  @include breakpoint(sm)  {
+    margin-top: 30px;
+    margin-top: 3rem;
+  }
+}
+
+h5 {
+  font-weight: normal;
+}
+
+.btn_yellow, input[type='submit'].btn_yellow {
   background: $primary;
+  border: none;
   border-radius: $default-radius;
   color: $btns;
   display: inline-block;
@@ -50,6 +69,12 @@ img {
   line-height: 2.7rem;
   padding: 0px 10px;
   padding: 0px 1.0rem;
+}
+
+input[type='submit'].btn_yellow {
+  white-space: normal;
+  line-height: 14px;
+  letter-spacing: normal;
 }
 
 .tag {
@@ -71,4 +96,9 @@ img {
   top: -5px;
   top: -.5rem;
   margin-right: 18px;
+}
+
+.last-margin {
+  margin-bottom: 60px;
+  margin-bottom: 6.0rem;
 }

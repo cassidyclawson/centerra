@@ -1,0 +1,120 @@
+.contact-page {
+  .five.columns, .seven.columns {
+    @include breakpoint(lm)  {
+      width: 100%;
+    }
+  }
+}
+
+#contact-box {
+  .one-half.column {
+    @include breakpoint(xl)  {
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    @include breakpoint(lm)  {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+  h2 {
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+}
+.contact-info {
+  address {
+    font-style: normal;
+
+
+    span {
+      display: block;
+      line-height: 1.43;
+    }
+
+    &::before{
+       position: absolute;
+       content: "\e947";
+       font-family: 'icomoon';
+       font-size: 25px;
+       font-size: 2.5rem;
+       left: 0px;
+    }
+  }
+
+  .contact-tel, .contact-email, address {
+    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-left: 3.5rem;
+    color: $secondary;
+    font-family: $font-subheadline;
+    font-size: 20px;
+    font-size: 2.0rem;
+    text-decoration: none;
+
+    .icon-phone, .icon-envelop {
+      margin-right: 10px;
+      margin-right: 1.0rem;
+      font-size: 25px;
+      font-size: 2.5rem;
+    }
+  }
+
+  .contact-tel {
+
+    &::before{
+       position: absolute;
+       content: "\e942";
+       font-family: 'icomoon';
+       font-size: 25px;
+       font-size: 2.5rem;
+       left: 0px;
+    }
+  }
+
+  .contact-email {
+
+    &::before{
+       position: absolute;
+       content: "\e945";
+       font-family: 'icomoon';
+       font-size: 25px;
+       font-size: 2.5rem;
+       left: 0px;
+    }
+  }
+}
+
+.contact-form {
+  input[type='text'], textarea {
+    width: 100%;
+    font-family: $font-subheadline;
+    font-size: 18px;
+    font-size: 1.8rem;
+    outline: none;
+  }
+
+  textarea {
+    height:100px;
+    max-height: 100px;
+    min-height:100px;
+    line-height: 1.2;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .opt-label {
+    font-size: 8px;
+    line-height: 1.2;
+    font-family: $font-subheadline;
+    display: block;
+    margin-bottom: 3px;
+    margin-bottom: 0.3rem;
+    margin-left: 15px;
+    margin-left: 1.5rem;
+  }
+}
