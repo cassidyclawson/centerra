@@ -49,6 +49,7 @@
     a {
       font-size: 16px;
       font-size: 1.6rem;
+      border-bottom: solid #fff ($line-thin*2);
     }
 
     &.active > a {
