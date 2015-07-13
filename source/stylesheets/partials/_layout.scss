@@ -55,10 +55,10 @@ hr {
   @extend .bordered-box;
   margin-top: 2%;
   margin-bottom: 2%;
-  padding: 65px 75px;
-  padding: 6.5rem 7.5rem;
-  min-height: 620px;
-  min-height: 62.0rem;
+  padding: 45px 55px;
+  padding: 4.5rem 5.5rem;
+  min-height: 520px;
+  min-height: 52.0rem;
 
   @include breakpoint(xl)  {
     padding: 15px 25px;
@@ -124,6 +124,14 @@ hr {
           font-size: 6.5rem;
         }
 
+        @include breakpoint(md)  {
+          float: none;
+          text-align: center;
+          display: block;
+          margin: 10px auto 0px;
+          margin: 1.0rem auto 0px;
+        }
+
         @include breakpoint(sm)  {
           float: none;
           text-align: center;
@@ -145,6 +153,11 @@ hr {
           width: 27.0rem;
           margin-left: 10px;
           margin-left: 1.0rem;
+        }
+
+        @include breakpoint(md)  {
+          width: 100%;
+          margin-left: 0px;
         }
 
         @include breakpoint(sm)  {

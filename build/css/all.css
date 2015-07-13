@@ -48,10 +48,16 @@ p {
       font-size: 3.4rem;
       line-height: 49px;
       line-height: 4.9rem; } }
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .heading {
       font-size: 30px;
       font-size: 3.0rem;
+      line-height: 45px;
+      line-height: 4.5rem; } }
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 28px;
+      font-size: 2.8rem;
       line-height: 45px;
       line-height: 4.5rem; } }
 
@@ -205,6 +211,10 @@ input[type='submit'].btn_yellow {
   height: 91px;
   height: 9.1rem;
   border-radius: 3px 3px 0px 0px; }
+  @media (max-width: 768px) {
+    .nav-container {
+      margin-top: 16px;
+      margin-top: 1.6rem; } }
   @media (max-width: 480px) {
     .nav-container {
       margin-top: 10px;
@@ -218,6 +228,10 @@ input[type='submit'].btn_yellow {
   margin-left: 36px;
   margin-left: 3.6rem;
   display: inline-block; }
+  @media (max-width: 480px) {
+    .logo {
+      margin-left: 20px;
+      margin-left: 2rem; } }
   .logo img {
     height: 47px;
     height: 4.7rem;
@@ -230,7 +244,8 @@ input[type='submit'].btn_yellow {
   float: right;
   margin: 0px;
   padding: 0px;
-  position: relative; }
+  position: relative;
+  -webkit-font-smoothing: antialiased; }
   .headernav li {
     float: left;
     list-style: none; }
@@ -243,12 +258,14 @@ input[type='submit'].btn_yellow {
       line-height: 22px;
       line-height: 2.2rem;
       text-decoration: none;
-      padding: 32px 24px 31px;
-      padding: 3.2rem 2.4rem 3.1rem;
+      padding: 32px 20px 31px;
+      padding: 3.2rem 2.0rem 3.1rem;
       display: block;
       float: left;
       box-sizing: border-box;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -webkit-transition: all .25s ease;
+      transition: all .25s ease; }
       @media only screen and (min-width: 1025px) and (max-width: 1280px) {
         .headernav li a {
           padding: 32px 15px 31px;
@@ -259,18 +276,25 @@ input[type='submit'].btn_yellow {
         display: inline-block;
         margin-right: 5px; }
     .headernav li ul {
-      display: none; }
-    .headernav li:hover ul {
-      background: #464C52;
-      border-top: 6px solid #5DC1B7;
-      position: absolute;
-      display: block;
+      visibility: hidden;
+      opacity: 0;
       top: 85px;
       right: 0px;
       z-index: 1;
-      padding: 0px; }
+      padding: 0px;
+      -webkit-transition: all .25s ease;
+      transition: all .25s ease;
+      position: absolute;
+      background: #464C52;
+      border-top: 6px solid #5DC1B7;
+      border-radius: 0 0 0 3px; }
+    .headernav li:hover ul {
+      top: 85px;
+      opacity: 1;
+      visibility: visible; }
       .headernav li:hover ul li {
-        float: none; }
+        float: none;
+        width: 100%; }
         .headernav li:hover ul li a {
           float: none;
           text-align: right;
@@ -290,6 +314,9 @@ input[type='submit'].btn_yellow {
 
 .home #magic-line {
   display: none; }
+
+#navigation .column, #navigation .columns {
+  margin-left: 0px; }
 
 /* Mobile Navigation (slicknav)
 ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
@@ -382,7 +409,9 @@ input[type='submit'].btn_yellow {
   padding: 0;
   font-size: 0.875em;
   list-style: none;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: "effra", "Arial Black", Gadget, sans-serif;
+  text-transform: uppercase; }
   .slicknav_nav li > a {
     border-bottom: 2px solid rgba(236, 237, 237, 0.25); }
   .slicknav_nav ul {
@@ -399,7 +428,8 @@ input[type='submit'].btn_yellow {
     padding: 5px 10px;
     margin: 2px 5px;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-weight: 700; }
     .slicknav_nav a:hover {
       color: #fff; }
     .slicknav_nav a span {
@@ -506,10 +536,10 @@ hr {
 .service-block {
   margin-top: 2%;
   margin-bottom: 2%;
-  padding: 65px 75px;
-  padding: 6.5rem 7.5rem;
-  min-height: 620px;
-  min-height: 62.0rem; }
+  padding: 45px 55px;
+  padding: 4.5rem 5.5rem;
+  min-height: 520px;
+  min-height: 52.0rem; }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .service-block {
       padding: 15px 25px;
@@ -567,6 +597,13 @@ hr {
           line-height: 8.4rem;
           font-size: 65px;
           font-size: 6.5rem; } }
+      @media (max-width: 768px) {
+        .service-block .head .icon-box {
+          float: none;
+          text-align: center;
+          display: block;
+          margin: 10px auto 0px;
+          margin: 1.0rem auto 0px; } }
       @media (max-width: 480px) {
         .service-block .head .icon-box {
           float: none;
@@ -586,6 +623,10 @@ hr {
           width: 27.0rem;
           margin-left: 10px;
           margin-left: 1.0rem; } }
+      @media (max-width: 768px) {
+        .service-block .head .head-inner {
+          width: 100%;
+          margin-left: 0px; } }
       @media (max-width: 480px) {
         .service-block .head .head-inner {
           width: 100%;

@@ -8,6 +8,11 @@
   height: 9.1rem;
   border-radius: $default-radius $default-radius 0px 0px;
 
+  @include breakpoint(md)  {
+    margin-top: 16px;
+    margin-top: 1.6rem;
+  }
+
   @include breakpoint(sm)  {
     margin-top: 10px;
     margin-top: 1rem;
@@ -24,6 +29,11 @@
   margin-left: 36px;
   margin-left: 3.6rem;
   display: inline-block;
+
+  @include breakpoint(sm)  {
+    margin-left: 20px;
+    margin-left: 2rem;
+  }
 
   img{
     height: 47px;
