@@ -9,3 +9,8 @@ This will create a folder named 'node_modules'
 
 5. Run Gulp
 ```$ gulp```
+
+
+Code for gulp modules is added in gulpfile.js
+
+You can access website at http://localhost:4567 when gulp us running. 
