@@ -251,15 +251,15 @@ input[type='submit'].btn_yellow {
     list-style: none; }
     .headernav li a {
       font-family: "effra", "Arial Black", Gadget, sans-serif;
-      font-size: 18px;
-      font-size: 1.8rem;
+      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 700;
       color: #fff;
       line-height: 22px;
       line-height: 2.2rem;
       text-decoration: none;
-      padding: 32px 20px 31px;
-      padding: 3.2rem 2.0rem 3.1rem;
+      padding: 32px 17px 31px;
+      padding: 3.2rem 1.7rem 3.1rem;
       display: block;
       float: left;
       box-sizing: border-box;
@@ -538,8 +538,8 @@ hr {
   margin-bottom: 2%;
   padding: 45px 55px;
   padding: 4.5rem 5.5rem;
-  min-height: 520px;
-  min-height: 52.0rem; }
+  min-height: 590px;
+  min-height: 59.0rem; }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .service-block {
       padding: 15px 25px;
