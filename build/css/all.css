@@ -495,6 +495,16 @@ input[type='submit'].btn_yellow {
       max-width: 50%; } }
 /* Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Fix for typekit Flash of Unstyled Text (or FOUT)
+http://help.typekit.com/customer/portal/articles/6852-Controlling-the-Flash-of-Unstyled-Text-or-FOUT-using-Font-Events
+*/
+.wf-loading {
+  visibility: hidden; }
+
+.wf-active {
+  visibility: visible; }
+
 /* Generic Classes */
 .indent {
   margin: 0px 56px;
