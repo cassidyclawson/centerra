@@ -13699,8 +13699,8 @@ $(function() {
         .data("origLeft", $magicLine.position().left)
         .data("origWidth", $magicLine.width());
 
-    $(".headernav > li > a").hover(function() {
-        $el = $(this);
+    $(".headernav > li").hover(function() {
+        $el = $(this).children('a');
         leftPos = $el.position().left;
         newWidth = $el.parent().width();
         $magicLine.stop().animate({
