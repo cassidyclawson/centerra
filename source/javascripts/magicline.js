@@ -6,6 +6,7 @@ $(function() {
     $mainNav.append("<li id='magic-line'></li>");
     var $magicLine = $("#magic-line");
 
+    if ($('.active').length > 0)
     $magicLine
         .width($(".active").width())
         .css("left", $(".active a").position().left)

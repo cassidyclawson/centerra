@@ -275,7 +275,9 @@ input[type='submit'].btn_yellow {
           font-size: 1.5rem; } }
       .headernav li a span {
         display: inline-block;
-        margin-right: 5px; }
+        margin-right: 5px;
+        -webkit-transition: 200ms ease;
+                transition: 200ms ease; }
     .headernav li ul {
       visibility: hidden;
       opacity: 0;
@@ -304,6 +306,10 @@ input[type='submit'].btn_yellow {
           font-weight: 400; }
         .headernav li:hover ul li:last-child a {
           border: none; }
+    .headernav li:hover .icon-arrow {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
 
 #magic-line {
   position: absolute;

@@ -45,6 +45,7 @@
 			span {
 				display: inline-block;
 				margin-right: 5px;
+				transition: 200ms ease;
 			}
 		}
 
@@ -91,6 +92,10 @@
 					}
 
 				}
+			}
+
+			.icon-arrow {
+				transform: rotate(90deg);
 			}
 		}
 	}
