@@ -662,6 +662,9 @@ hr {
           width: 27.0rem;
           margin-left: 10px;
           margin-left: 1.0rem; } }
+      @media (max-width: 980px) {
+        .service-block .head .head-inner {
+          width: 80%; } }
       @media (max-width: 768px) {
         .service-block .head .head-inner {
           width: 100%;

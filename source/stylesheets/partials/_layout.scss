@@ -166,6 +166,10 @@ hr {
           margin-left: 1.0rem;
         }
 
+        @include breakpoint(lm)  {
+          width: 80%;
+        }
+
         @include breakpoint(md)  {
           width: 100%;
           margin-left: 0px;
