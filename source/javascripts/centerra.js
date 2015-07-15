@@ -6,6 +6,8 @@ jQuery(document).ready(function () {
     // Instantiate Meanmenu for mobile navigation
     //$(".flexnav").flexNav({ hoverIntent: true, hoverIntentTimeout: 50, calcItemWidths: false });
     $('.headernav').slicknav({
+      label: '',
+	    duration: 500,
       prependTo:'#navigation'
     });
 
@@ -63,7 +65,7 @@ jQuery(document).ready(function () {
     });
 
     //form validation
-    var formspree = 'http://formspree.io/alokjain@hsrtech.com';
+    var formspree = 'http://formspree.io/cassidyclawson@gmail.com';
 
     $("#cta-form").validate({
       submitHandler: function() {

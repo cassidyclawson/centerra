@@ -5,6 +5,7 @@
 	margin: 0px;
 	padding: 0px;
 	position: relative;
+	-webkit-font-smoothing:antialiased;
 
 	li {
 		float: left;
@@ -13,18 +14,26 @@
 
 		a {
 			font-family: $font-subheadline;
-			font-size: 18px;
-			font-size: 1.8rem;
+			font-size: 16px;
+			font-size: 1.6rem;
 			font-weight: 700;
 			color: $nav_text;
 			line-height: 22px;
 			line-height: 2.2rem;
 			text-decoration: none;
-			padding: 32px 24px 31px;
-			padding: 3.2rem 2.4rem 3.1rem;
+			padding: 32px 17px 31px;
+			padding: 3.2rem 1.7rem 3.1rem;
 			display: block;
 			float: left;
 			box-sizing: border-box;
+			text-transform: uppercase;
+			position: relative;
+
+			-webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
 
 			@include breakpoint(xl)  {
 				padding: 32px 15px 31px;
@@ -36,39 +45,56 @@
 			span {
 				display: inline-block;
 				margin-right: 5px;
+				transition: 200ms ease;
 			}
 		}
 
 		ul {
-			display: none;
+			visibility: hidden;
+			opacity: 0;
+			top: (71px - $line-medium);
+			right: 0px;
+			z-index: 1;
+			padding: 0px;
+
+			-webkit-transition: all .25s ease;
+		  -moz-transition: all .25s ease;
+			-ms-transition: all .25s ease;
+			-o-transition: all .25s ease;
+			transition: all .25s ease;
+
+			position: absolute;
+			background: $dark_gray;
+			border-top: $line-medium solid $accent;
+			border-radius: 0 0 0 $default-radius;
+
+			li {
+				float: none;
+				width: 100%;
+
+				a {
+					float: none;
+					text-align: right;
+					border-bottom: 2px solid rgba($light-gray, .25);
+					padding: 25px 34px;
+					font-weight: 400;
+				}
+
+				&:last-child a {
+					border: none;
+				}
+			}
 		}
 
 		&:hover {
 			ul {
-				background: $dark_gray;
-				border-top: $line-medium solid $accent;
-				position: absolute;
-				display: block;
 				top: (91px - $line-medium);
-				right: 0px;
-				z-index: 1;
-				padding: 0px;
+				opacity: 1;
+    		visibility: visible;
+			}
 
-				li {
-					float: none;
-
-					a {
-						float: none;
-						text-align: right;
-						border-bottom: 2px solid rgba($light-gray, .25);
-						padding: 25px 34px;
-					}
-
-					&:last-child a {
-						border: none;
-					}
-
-				}
+			.icon-arrow {
+				transform: rotate(90deg);
 			}
 		}
 	}
@@ -85,6 +111,12 @@
 
 .home #magic-line {
 	display: none;
+}
+
+#navigation {
+	.column, .columns{
+		margin-left: 0px;
+	}
 }
 
 /* Mobile Navigation (slicknav)
@@ -147,7 +179,8 @@
 	}
 	.slicknav_arrow {
 		font-size: 0.8em;
-		margin: 0 0 0 0.4em;
+		margin: 0 0.4em 0 0;
+		float: left;
 	}
 	.slicknav_item {
 		cursor: pointer;
@@ -198,8 +231,8 @@ $color_hover_text: #222;
 	}
 }
 .slicknav_btn {
-	margin: 22px 5px 6px;
-	margin: 2.2rem .5rem .6rem;
+	margin: 22px 5px 29px;
+	margin: 2.2rem .5rem 2.9rem;
 	text-decoration: none;
 	text-shadow: 0 1px 1px $color_0;
 	-webkit-border-radius: 4px;
@@ -215,6 +248,9 @@ $color_hover_text: #222;
 	font-size: 0.875em;
 	list-style: none;
 	overflow: hidden;
+	font-family: $font-subheadline;
+	text-transform: uppercase;
+
 	li > a {
 		border-bottom: 2px solid rgba($light-gray, .25);
 	}
@@ -236,6 +272,8 @@ $color_hover_text: #222;
 		margin: 2px 5px;
 		text-decoration: none;
 		color: $color_text;
+		font-weight: 700;
+
 		&:hover {
 			color: $color_text;
 		}

@@ -48,10 +48,16 @@ p {
       font-size: 3.4rem;
       line-height: 49px;
       line-height: 4.9rem; } }
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .heading {
       font-size: 30px;
       font-size: 3.0rem;
+      line-height: 45px;
+      line-height: 4.5rem; } }
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 28px;
+      font-size: 2.8rem;
       line-height: 45px;
       line-height: 4.5rem; } }
 
@@ -205,6 +211,10 @@ input[type='submit'].btn_yellow {
   height: 91px;
   height: 9.1rem;
   border-radius: 3px 3px 0px 0px; }
+  @media (max-width: 768px) {
+    .nav-container {
+      margin-top: 16px;
+      margin-top: 1.6rem; } }
   @media (max-width: 480px) {
     .nav-container {
       margin-top: 10px;
@@ -218,6 +228,10 @@ input[type='submit'].btn_yellow {
   margin-left: 36px;
   margin-left: 3.6rem;
   display: inline-block; }
+  @media (max-width: 480px) {
+    .logo {
+      margin-left: 20px;
+      margin-left: 2rem; } }
   .logo img {
     height: 47px;
     height: 4.7rem;
@@ -230,24 +244,29 @@ input[type='submit'].btn_yellow {
   float: right;
   margin: 0px;
   padding: 0px;
-  position: relative; }
+  position: relative;
+  -webkit-font-smoothing: antialiased; }
   .headernav li {
     float: left;
     list-style: none; }
     .headernav li a {
       font-family: "effra", "Arial Black", Gadget, sans-serif;
-      font-size: 18px;
-      font-size: 1.8rem;
+      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 700;
       color: #fff;
       line-height: 22px;
       line-height: 2.2rem;
       text-decoration: none;
-      padding: 32px 24px 31px;
-      padding: 3.2rem 2.4rem 3.1rem;
+      padding: 32px 17px 31px;
+      padding: 3.2rem 1.7rem 3.1rem;
       display: block;
       float: left;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      text-transform: uppercase;
+      position: relative;
+      -webkit-transition: all .25s ease;
+      transition: all .25s ease; }
       @media only screen and (min-width: 1025px) and (max-width: 1280px) {
         .headernav li a {
           padding: 32px 15px 31px;
@@ -256,27 +275,41 @@ input[type='submit'].btn_yellow {
           font-size: 1.5rem; } }
       .headernav li a span {
         display: inline-block;
-        margin-right: 5px; }
+        margin-right: 5px;
+        -webkit-transition: 200ms ease;
+                transition: 200ms ease; }
     .headernav li ul {
-      display: none; }
-    .headernav li:hover ul {
-      background: #464C52;
-      border-top: 6px solid #5DC1B7;
-      position: absolute;
-      display: block;
-      top: 85px;
+      visibility: hidden;
+      opacity: 0;
+      top: 65px;
       right: 0px;
       z-index: 1;
-      padding: 0px; }
-      .headernav li:hover ul li {
-        float: none; }
-        .headernav li:hover ul li a {
+      padding: 0px;
+      -webkit-transition: all .25s ease;
+      transition: all .25s ease;
+      position: absolute;
+      background: #464C52;
+      border-top: 6px solid #5DC1B7;
+      border-radius: 0 0 0 3px; }
+      .headernav li ul li {
+        float: none;
+        width: 100%; }
+        .headernav li ul li a {
           float: none;
           text-align: right;
           border-bottom: 2px solid rgba(236, 237, 237, 0.25);
-          padding: 25px 34px; }
-        .headernav li:hover ul li:last-child a {
+          padding: 25px 34px;
+          font-weight: 400; }
+        .headernav li ul li:last-child a {
           border: none; }
+    .headernav li:hover ul {
+      top: 85px;
+      opacity: 1;
+      visibility: visible; }
+    .headernav li:hover .icon-arrow {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
 
 #magic-line {
   position: absolute;
@@ -288,6 +321,9 @@ input[type='submit'].btn_yellow {
 
 .home #magic-line {
   display: none; }
+
+#navigation .column, #navigation .columns {
+  margin-left: 0px; }
 
 /* Mobile Navigation (slicknav)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -335,7 +371,8 @@ input[type='submit'].btn_yellow {
     display: block; }
   .slicknav_nav .slicknav_arrow {
     font-size: 0.8em;
-    margin: 0 0 0 0.4em; }
+    margin: 0 0.4em 0 0;
+    float: left; }
   .slicknav_nav .slicknav_item {
     cursor: pointer; }
     .slicknav_nav .slicknav_item a {
@@ -366,8 +403,8 @@ input[type='submit'].btn_yellow {
     background-color: #fff; }
 
 .slicknav_btn {
-  margin: 22px 5px 6px;
-  margin: 2.2rem .5rem .6rem;
+  margin: 22px 5px 29px;
+  margin: 2.2rem .5rem 2.9rem;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   border-radius: 4px;
@@ -380,7 +417,9 @@ input[type='submit'].btn_yellow {
   padding: 0;
   font-size: 0.875em;
   list-style: none;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: "effra", "Arial Black", Gadget, sans-serif;
+  text-transform: uppercase; }
   .slicknav_nav li > a {
     border-bottom: 2px solid rgba(236, 237, 237, 0.25); }
   .slicknav_nav ul {
@@ -397,7 +436,8 @@ input[type='submit'].btn_yellow {
     padding: 5px 10px;
     margin: 2px 5px;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-weight: 700; }
     .slicknav_nav a:hover {
       color: #fff; }
     .slicknav_nav a span {
@@ -462,6 +502,16 @@ input[type='submit'].btn_yellow {
       max-width: 50%; } }
 /* Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Fix for typekit Flash of Unstyled Text (or FOUT)
+http://help.typekit.com/customer/portal/articles/6852-Controlling-the-Flash-of-Unstyled-Text-or-FOUT-using-Font-Events
+*/
+.wf-loading {
+  visibility: hidden; }
+
+.wf-active {
+  visibility: visible; }
+
 /* Generic Classes */
 .indent {
   margin: 0px 56px;
@@ -504,10 +554,10 @@ hr {
 .service-block {
   margin-top: 2%;
   margin-bottom: 2%;
-  padding: 65px 75px;
-  padding: 6.5rem 7.5rem;
-  min-height: 620px;
-  min-height: 62.0rem; }
+  padding: 45px 55px;
+  padding: 4.5rem 5.5rem;
+  min-height: 590px;
+  min-height: 59.0rem; }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .service-block {
       padding: 15px 25px;
@@ -565,6 +615,13 @@ hr {
           line-height: 8.4rem;
           font-size: 65px;
           font-size: 6.5rem; } }
+      @media (max-width: 768px) {
+        .service-block .head .icon-box {
+          float: none;
+          text-align: center;
+          display: block;
+          margin: 10px auto 0px;
+          margin: 1.0rem auto 0px; } }
       @media (max-width: 480px) {
         .service-block .head .icon-box {
           float: none;
@@ -584,6 +641,10 @@ hr {
           width: 27.0rem;
           margin-left: 10px;
           margin-left: 1.0rem; } }
+      @media (max-width: 768px) {
+        .service-block .head .head-inner {
+          width: 100%;
+          margin-left: 0px; } }
       @media (max-width: 480px) {
         .service-block .head .head-inner {
           width: 100%;
@@ -738,15 +799,15 @@ hr {
   .banner-inner h1 {
     font-size: 100px;
     font-size: 10rem;
-    line-height: 140px;
-    line-height: 14rem; }
+    line-height: 240px;
+    line-height: 12rem; }
     @media (max-width: 768px) {
       .banner-inner h1 {
         font-size: 45px;
         font-size: 4.5rem;
         line-height: 60px;
         line-height: 6rem; } }
-  .banner-inner p {
+  .banner-inner h2 {
     margin: 0px; }
   .banner-inner .banner-head {
     float: left; }
@@ -755,7 +816,7 @@ hr {
     font-size: 13.0rem;
     float: left;
     margin-right: 23px;
-    margin-top: 40px; }
+    margin-top: 28px; }
 
 /* Sidebar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -794,7 +855,8 @@ hr {
         margin-left: 1.7rem; } }
     .scroll-nav .scroll-nav__sub-item a {
       font-size: 16px;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      border-bottom: solid #fff 6px; }
     .scroll-nav .scroll-nav__sub-item.active > a {
       border-bottom: solid #5DC1B7 6px; }
 
