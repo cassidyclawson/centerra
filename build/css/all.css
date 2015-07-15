@@ -864,8 +864,13 @@ hr {
     display: inline-block;
     margin-bottom: 10px;
     margin-bottom: 1.0rem; }
-  .scroll-nav .scroll-nav__link {
-    font-weight: 700; }
+  .scroll-nav .scroll-nav__item a {
+    font-weight: 700;
+    border-bottom: solid #FFF 6px;
+    -webkit-transition: .3s;
+            transition: .3s; }
+  .scroll-nav .scroll-nav__item.active > a {
+    border-bottom: solid #5DC1B7 6px; }
   .scroll-nav .scroll-nav__sub-item {
     margin-left: 37px;
     margin-left: 3.7rem; }
@@ -877,7 +882,10 @@ hr {
     .scroll-nav .scroll-nav__sub-item a {
       font-size: 16px;
       font-size: 1.6rem;
-      border-bottom: solid #fff 6px; }
+      font-weight: normal;
+      border-bottom: solid #FFF 6px;
+      -webkit-transition: .3s;
+              transition: .3s; }
     .scroll-nav .scroll-nav__sub-item.active > a {
       border-bottom: solid #5DC1B7 6px; }
 
