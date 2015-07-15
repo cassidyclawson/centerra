@@ -365,7 +365,8 @@ input[type='submit'].btn_yellow {
     display: block; }
   .slicknav_nav .slicknav_arrow {
     font-size: 0.8em;
-    margin: 0 0 0 0.4em; }
+    margin: 0 0.4em 0 0;
+    float: left; }
   .slicknav_nav .slicknav_item {
     cursor: pointer; }
     .slicknav_nav .slicknav_item a {
@@ -396,8 +397,8 @@ input[type='submit'].btn_yellow {
     background-color: #fff; }
 
 .slicknav_btn {
-  margin: 22px 5px 6px;
-  margin: 2.2rem .5rem .6rem;
+  margin: 22px 5px 29px;
+  margin: 2.2rem .5rem 2.9rem;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   border-radius: 4px;

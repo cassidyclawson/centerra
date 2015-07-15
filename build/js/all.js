@@ -13684,36 +13684,6 @@ if ( $.ajaxPrefilter ) {
 }
 
 }));
-$(function() {
-
-    var $el, leftPos, newWidth,
-        $mainNav = $(".headernav");
-
-    $mainNav.append("<li id='magic-line'></li>");
-    var $magicLine = $("#magic-line");
-
-    $magicLine
-        .width($(".active").width())
-        .css("left", $(".active a").position().left)
-        .data("origLeft", $magicLine.position().left)
-        .data("origWidth", $magicLine.width());
-
-    $(".headernav > li > a").hover(function() {
-        $el = $(this);
-        leftPos = $el.position().left;
-        newWidth = $el.parent().width();
-        $magicLine.stop().animate({
-            left: leftPos,
-            width: newWidth
-        });
-    }, function() {
-        $magicLine.stop().animate({
-            left: $magicLine.data("origLeft"),
-            width: $magicLine.data("origWidth")
-        });
-    });
-});
-
 jQuery(document).ready(function () {
 
     // Instantiate Fastclick for better mobile performance
@@ -13722,6 +13692,8 @@ jQuery(document).ready(function () {
     // Instantiate Meanmenu for mobile navigation
     //$(".flexnav").flexNav({ hoverIntent: true, hoverIntentTimeout: 50, calcItemWidths: false });
     $('.headernav').slicknav({
+      label: '',
+	    duration: 500,
       prependTo:'#navigation'
     });
 
@@ -13779,7 +13751,7 @@ jQuery(document).ready(function () {
     });
 
     //form validation
-    var formspree = 'http://formspree.io/alokjain@hsrtech.com';
+    var formspree = 'http://formspree.io/cassidyclawson@gmail.com';
 
     $("#cta-form").validate({
       submitHandler: function() {
@@ -13815,5 +13787,35 @@ jQuery(document).ready(function () {
                 $('#cf-message').prop('disabled', true);
             }, "json");
         }
+    });
+});
+
+$(function() {
+
+    var $el, leftPos, newWidth,
+        $mainNav = $(".headernav");
+
+    $mainNav.append("<li id='magic-line'></li>");
+    var $magicLine = $("#magic-line");
+
+    $magicLine
+        .width($(".active").width())
+        .css("left", $(".active a").position().left)
+        .data("origLeft", $magicLine.position().left)
+        .data("origWidth", $magicLine.width());
+
+    $(".headernav > li > a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLine.stop().animate({
+            left: leftPos,
+            width: newWidth
+        });
+    }, function() {
+        $magicLine.stop().animate({
+            left: $magicLine.data("origLeft"),
+            width: $magicLine.data("origWidth")
+        });
     });
 });

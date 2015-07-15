@@ -175,7 +175,8 @@
 	}
 	.slicknav_arrow {
 		font-size: 0.8em;
-		margin: 0 0 0 0.4em;
+		margin: 0 0.4em 0 0;
+		float: left;
 	}
 	.slicknav_item {
 		cursor: pointer;
@@ -226,8 +227,8 @@ $color_hover_text: #222;
 	}
 }
 .slicknav_btn {
-	margin: 22px 5px 6px;
-	margin: 2.2rem .5rem .6rem;
+	margin: 22px 5px 29px;
+	margin: 2.2rem .5rem 2.9rem;
 	text-decoration: none;
 	text-shadow: 0 1px 1px $color_0;
 	-webkit-border-radius: 4px;
