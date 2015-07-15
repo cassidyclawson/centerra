@@ -52,7 +52,7 @@
 		ul {
 			visibility: hidden;
 			opacity: 0;
-			top: (91px - $line-medium);
+			top: (71px - $line-medium);
 			right: 0px;
 			z-index: 1;
 			padding: 0px;
@@ -67,6 +67,23 @@
 			background: $dark_gray;
 			border-top: $line-medium solid $accent;
 			border-radius: 0 0 0 $default-radius;
+
+			li {
+				float: none;
+				width: 100%;
+
+				a {
+					float: none;
+					text-align: right;
+					border-bottom: 2px solid rgba($light-gray, .25);
+					padding: 25px 34px;
+					font-weight: 400;
+				}
+
+				&:last-child a {
+					border: none;
+				}
+			}
 		}
 
 		&:hover {
@@ -74,24 +91,6 @@
 				top: (91px - $line-medium);
 				opacity: 1;
     		visibility: visible;
-
-				li {
-					float: none;
-					width: 100%;
-
-					a {
-						float: none;
-						text-align: right;
-						border-bottom: 2px solid rgba($light-gray, .25);
-						padding: 25px 34px;
-						font-weight: 400;
-					}
-
-					&:last-child a {
-						border: none;
-					}
-
-				}
 			}
 
 			.icon-arrow {
