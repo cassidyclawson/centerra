@@ -13699,8 +13699,8 @@ $(function() {
         .data("origLeft", $magicLine.position().left)
         .data("origWidth", $magicLine.width());
 
-    $(".headernav > li > a").hover(function() {
-        $el = $(this);
+    $(".headernav > li").hover(function() {
+        $el = $(this).children('a');
         leftPos = $el.position().left;
         newWidth = $el.parent().width();
         $magicLine.stop().animate({
@@ -13790,7 +13790,8 @@ jQuery(document).ready(function () {
             $.post(formspree,
             $('form#cta-form').serialize() ,
             function(data){
-                $('#submit_btn').removeClass('btn_loading')
+                $('#submit_btn').delay(1000)
+                                .removeClass('btn_loading')
                                 .addClass('btn_success')
                                 .val('Success')
                                 .prop('disabled', true);
@@ -13808,7 +13809,8 @@ jQuery(document).ready(function () {
             $.post(formspree,
             $('form#contact-form').serialize() ,
             function(data){
-                $('#submit_btn').removeClass('btn_loading')
+                $('#submit_btn').delay(1000)
+                                .removeClass('btn_loading')
                                 .addClass('btn_success')
                                 .val('Success')
                                 .prop('disabled', true);

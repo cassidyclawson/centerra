@@ -224,10 +224,31 @@ $color_hover_text: #222;
 	.slicknav_menutxt {
 		color: $color_text;
 		font-weight: bold;
-		text-shadow: 0 1px 3px $color_shadow;
 	}
 	.slicknav_icon-bar {
 		background-color: $color_text;
+	}
+
+	.slicknav_icon-bar:nth-child(1), .slicknav_icon-bar:nth-child(3) {
+		transition: .3s;
+	}
+}
+
+.slicknav_open {
+	.slicknav_icon-bar:nth-child(1) {
+		transform-origin: 50% 50%;
+		transform: rotate3d(0,0,1,40deg);
+		top: 5px;
+		position: relative;
+	}
+	.slicknav_icon-bar:nth-child(2) {
+		visibility: hidden;
+	}
+	.slicknav_icon-bar:nth-child(3) {
+		transform-origin: 50% 50%;
+		transform: rotate3d(0,0,1,-40deg);
+		top: -5px;
+		position: relative;
 	}
 }
 .slicknav_btn {

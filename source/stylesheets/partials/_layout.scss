@@ -68,8 +68,8 @@ hr {
   margin-bottom: 2%;
   padding: 45px 55px;
   padding: 4.5rem 5.5rem;
-  min-height: 590px;
-  min-height: 59.0rem;
+  min-height: 550px;
+  min-height: 55.0rem;
 
   @include breakpoint(xl)  {
     padding: 15px 25px;
@@ -107,18 +107,18 @@ hr {
     overflow: hidden;
 
     .icon-box {
-      width: 104px;
-      height: 104px;
-      width: 10.4rem;
-      height: 10.4rem;
-      line-height: 104px;
-      line-height: 10.4rem;
+      width: 84px;
+      height: 84px;
+      width: 8.4rem;
+      height: 8.4rem;
+      line-height: 84px;
+      line-height: 8.4rem;
       float:left;
       background: $light-gray;
       border-radius: $default-radius;
       text-align: center;
-      font-size: 75px;
-      font-size: 7.5rem;
+      font-size: 65px;
+      font-size: 6.5rem;
       box-sizing: border-box;
       color: $secondary;
       margin-top: 10px;
@@ -154,8 +154,8 @@ hr {
 
     .head-inner {
       float: left;
-      width: 420px;
-      width: 42.0rem;
+      width: 330px;
+      width: 33.0rem;
       margin-left: 19px;
       margin-left: 1.9rem;
 
@@ -164,6 +164,10 @@ hr {
           width: 27.0rem;
           margin-left: 10px;
           margin-left: 1.0rem;
+        }
+
+        @include breakpoint(lm)  {
+          width: 80%;
         }
 
         @include breakpoint(md)  {
