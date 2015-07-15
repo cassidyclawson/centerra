@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* Global Variables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /* Breakpoints
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .bordered-box, .service-block, .scroll-nav, .infobox {
   border: solid #ECEDED 16px;
   border-radius: 3px; }
@@ -13,7 +13,7 @@
   border-radius: 3px; }
 
 /* Typogarphy
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 body {
   font-family: "ff-tisa-web-pro", Georgia, serif;
   font-size: 62.5% x;
@@ -35,11 +35,11 @@ p {
 
 .heading {
   font-family: "abril-titling-condensed", Georgia, serif;
-  font-size: 44px;
-  font-size: 4.4rem;
+  font-size: 40px;
+  font-size: 4.0rem;
   font-weight: bold;
-  line-height: 59px;
-  line-height: 5.9rem;
+  line-height: 55px;
+  line-height: 5.5rem;
   text-transform: none;
   margin: 0px; }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -116,7 +116,7 @@ p {
       margin: 0px 0px 1.6rem; } }
 
 /* Global Components
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 img {
   max-width: 100%; }
 
@@ -203,7 +203,7 @@ input[type='submit'].btn_yellow {
   margin-bottom: 6.0rem; }
 
 /* Header
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .nav-container {
   margin-top: 35px;
   margin-top: 3.5rem;
@@ -239,7 +239,7 @@ input[type='submit'].btn_yellow {
     width: 18.5rem; }
 
 /* Navigation
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .headernav {
   float: right;
   margin: 0px;
@@ -326,7 +326,7 @@ input[type='submit'].btn_yellow {
   margin-left: 0px; }
 
 /* Mobile Navigation (slicknav)
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .slicknav_btn {
   position: relative;
   display: block;
@@ -522,7 +522,7 @@ input[type='submit'].btn_yellow {
     #navigation .three.columns .logo {
       max-width: 50%; } }
 /* Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /*
 Fix for typekit Flash of Unstyled Text (or FOUT)
 http://help.typekit.com/customer/portal/articles/6852-Controlling-the-Flash-of-Unstyled-Text-or-FOUT-using-Font-Events
@@ -577,8 +577,8 @@ hr {
   margin-bottom: 2%;
   padding: 45px 55px;
   padding: 4.5rem 5.5rem;
-  min-height: 590px;
-  min-height: 59.0rem; }
+  min-height: 550px;
+  min-height: 55.0rem; }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .service-block {
       padding: 15px 25px;
@@ -610,18 +610,18 @@ hr {
     padding-bottom: 3.4rem;
     overflow: hidden; }
     .service-block .head .icon-box {
-      width: 104px;
-      height: 104px;
-      width: 10.4rem;
-      height: 10.4rem;
-      line-height: 104px;
-      line-height: 10.4rem;
+      width: 84px;
+      height: 84px;
+      width: 8.4rem;
+      height: 8.4rem;
+      line-height: 84px;
+      line-height: 8.4rem;
       float: left;
       background: #ECEDED;
       border-radius: 3px;
       text-align: center;
-      font-size: 75px;
-      font-size: 7.5rem;
+      font-size: 65px;
+      font-size: 6.5rem;
       box-sizing: border-box;
       color: #4A5157;
       margin-top: 10px;
@@ -652,8 +652,8 @@ hr {
           margin: 1.0rem auto 0px; } }
     .service-block .head .head-inner {
       float: left;
-      width: 420px;
-      width: 42.0rem;
+      width: 330px;
+      width: 33.0rem;
       margin-left: 19px;
       margin-left: 1.9rem; }
       @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -758,6 +758,10 @@ hr {
     .banner-home {
       height: 498px;
       height: 49.8rem; } }
+  @media (max-width: 480px) {
+    .banner-home {
+      height: 258px;
+      height: 25.8rem; } }
   .banner-home .banner-home-inner {
     width: 662px;
     width: 66.2rem;
@@ -776,6 +780,10 @@ hr {
       .banner-home .banner-home-inner {
         width: 302px;
         width: 30.2rem; } }
+    @media (max-width: 480px) {
+      .banner-home .banner-home-inner {
+        height: 258px;
+        height: 25.8rem; } }
   .banner-home .banner-content {
     width: 662px;
     width: 66.2rem;
@@ -840,7 +848,7 @@ hr {
     margin-top: 28px; }
 
 /* Sidebar
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .scroll-nav {
   padding: 2.85rem 5.7rem; }
   @media (max-width: 480px) {
@@ -916,7 +924,7 @@ hr {
     margin-left: 0px !important; } }
 
 /* Various Boxes in content
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .infobox {
   margin: 50px 0px 70px;
   margin: 5rem 0rem 7rem; }
@@ -1087,7 +1095,7 @@ hr {
     margin-left: 1rem; }
 
 /* Footer
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 footer .footer-top {
   background: #4B5258;
   box-shadow: inset rgba(0, 0, 0, 0.2);
@@ -1222,7 +1230,7 @@ footer .container .copyright {
   margin: 1.0rem 0rem; }
 
 /* Form Elements
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 textarea:focus, input:focus {
   outline: 0; }
 

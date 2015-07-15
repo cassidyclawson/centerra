@@ -98,6 +98,10 @@
     height: 49.8rem;
   }
 
+  @include breakpoint(sm)  {
+    height: 258px;
+    height: 25.8rem;
+  }
   .banner-home-inner {
     width: 662px;
     width: 66.2rem;
@@ -117,6 +121,11 @@
     @include breakpoint(md)  {
       width: 302px;
       width: 30.2rem;
+    }
+
+    @include breakpoint(sm)  {
+      height: 258px;
+      height: 25.8rem;
     }
   }
 
