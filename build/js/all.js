@@ -13790,7 +13790,8 @@ jQuery(document).ready(function () {
             $.post(formspree,
             $('form#cta-form').serialize() ,
             function(data){
-                $('#submit_btn').removeClass('btn_loading')
+                $('#submit_btn').delay(1000)
+                                .removeClass('btn_loading')
                                 .addClass('btn_success')
                                 .val('Success')
                                 .prop('disabled', true);
@@ -13808,7 +13809,8 @@ jQuery(document).ready(function () {
             $.post(formspree,
             $('form#contact-form').serialize() ,
             function(data){
-                $('#submit_btn').removeClass('btn_loading')
+                $('#submit_btn').delay(1000)
+                                .removeClass('btn_loading')
                                 .addClass('btn_success')
                                 .val('Success')
                                 .prop('disabled', true);
