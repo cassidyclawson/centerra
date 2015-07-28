@@ -185,4 +185,8 @@ hr {
   @extend .action-box;
   padding: $tab;
   overflow: hidden;
+
+  @include breakpoint(md)  {
+    padding: $tab/2;
+  }
 }
