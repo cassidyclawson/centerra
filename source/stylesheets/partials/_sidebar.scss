@@ -8,6 +8,10 @@
     padding: ($tab/2);
   }
 
+  @include breakpoint(lm)  {
+    display: none;
+  }
+
   ol {
     list-style: none;
     text-transform: uppercase;

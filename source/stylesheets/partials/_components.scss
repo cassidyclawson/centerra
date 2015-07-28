@@ -110,6 +110,10 @@ input[type='submit'].btn_yellow {
 .last-margin {
   margin-bottom: 60px;
   margin-bottom: 6.0rem;
+
+  @include breakpoint(lm)  {
+    margin-bottom: 0px;
+  }
 }
 
 .margin-btm {

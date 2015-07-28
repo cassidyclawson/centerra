@@ -223,6 +223,9 @@ input[type='submit'].btn_yellow {
 .last-margin {
   margin-bottom: 60px;
   margin-bottom: 6.0rem; }
+  @media (max-width: 980px) {
+    .last-margin {
+      margin-bottom: 0px; } }
 
 .margin-btm {
   margin-bottom: 50px;
@@ -261,8 +264,8 @@ input[type='submit'].btn_yellow {
   .logo img {
     height: 47px;
     height: 4.7rem;
-    width: 185px;
-    width: 18.5rem; }
+    width: 255px;
+    width: 25.5rem; }
 
 /* Navigation
 ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
@@ -355,7 +358,7 @@ input[type='submit'].btn_yellow {
   display: block;
   vertical-align: middle;
   float: right;
-  padding: 0.438em 0.625em 0.438em 0.625em;
+  padding: 0em 0.625em 0em 0.625em;
   line-height: 1.125em;
   cursor: pointer; }
   .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
@@ -369,14 +372,15 @@ input[type='submit'].btn_yellow {
     float: left; }
   .slicknav_menu .slicknav_icon {
     float: left;
-    margin: 0.188em 0 0 0.438em; }
+    margin: 0.188em 0 0 0.438em;
+    font-size: 40px; }
   .slicknav_menu .slicknav_no-text {
     margin: 0; }
   .slicknav_menu .slicknav_icon-bar {
     display: block;
     width: 1.125em;
     height: 0.125em;
-    border-radius: 1px;
+    border-radius: 5px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
   .slicknav_menu:before {
     content: " ";
@@ -433,7 +437,7 @@ input[type='submit'].btn_yellow {
           transform-origin: 50% 50%;
   -webkit-transform: rotate3d(0, 0, 1, 40deg);
           transform: rotate3d(0, 0, 1, 40deg);
-  top: 5px;
+  top: 13px;
   position: relative; }
 .slicknav_open .slicknav_icon-bar:nth-child(2) {
   visibility: hidden; }
@@ -443,7 +447,7 @@ input[type='submit'].btn_yellow {
           transform-origin: 50% 50%;
   -webkit-transform: rotate3d(0, 0, 1, -40deg);
           transform: rotate3d(0, 0, 1, -40deg);
-  top: -5px;
+  top: -13px;
   position: relative; }
 
 .slicknav_btn {
@@ -451,8 +455,7 @@ input[type='submit'].btn_yellow {
   margin: 2.2rem .5rem 2.9rem;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  border-radius: 4px;
-  background-color: #222; }
+  border-radius: 4px; }
 
 .slicknav_nav {
   color: #fff;
@@ -880,6 +883,9 @@ hr {
   @media (max-width: 480px) {
     .scroll-nav {
       padding: 2.85rem; } }
+  @media (max-width: 980px) {
+    .scroll-nav {
+      display: none; } }
   .scroll-nav ol {
     list-style: none;
     text-transform: uppercase;
