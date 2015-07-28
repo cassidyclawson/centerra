@@ -98,6 +98,15 @@ input[type='submit'].btn_yellow {
   margin-right: 18px;
 }
 
+.open-tag {
+  background: $primary;
+}
+
+.close-tag {
+  background: $dark_gray;
+  color: $background;
+}
+
 .last-margin {
   margin-bottom: 60px;
   margin-bottom: 6.0rem;

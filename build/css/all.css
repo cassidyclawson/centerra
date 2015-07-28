@@ -213,6 +213,13 @@ input[type='submit'].btn_yellow {
   top: -.5rem;
   margin-right: 18px; }
 
+.open-tag {
+  background: #B4E38E; }
+
+.close-tag {
+  background: #4A5157;
+  color: #FFF; }
+
 .last-margin {
   margin-bottom: 60px;
   margin-bottom: 6.0rem; }
@@ -1105,10 +1112,14 @@ hr {
 @media (max-width: 480px) {
   .funds ul {
     padding-left: 0px; } }
+.funds h5 {
+  margin-bottom: 100px;
+  margin-bottom: 10.0rem; }
 .funds .infobox-content {
-  padding-bottom: 0px; }
-  .funds .infobox-content hr {
-    margin-bottom: 0px; }
+  margin-bottom: 95px;
+  margin-bottom: 9.5rem; }
+  .funds .infobox-content ul {
+    padding-left: 0px; }
   .funds .infobox-content .tag {
     margin-left: 10px;
     margin-left: 1rem; }
