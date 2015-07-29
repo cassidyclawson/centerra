@@ -24,6 +24,7 @@ var jsSources = [
    'source/javascripts/scrollnav.js',
    'source/javascripts/jquery.validate.js',
    'source/javascripts/magicline.js',
+   'source/javascripts/jquery.textfill.min.js',
    'source/javascripts/centerra.js'
 ]
 
