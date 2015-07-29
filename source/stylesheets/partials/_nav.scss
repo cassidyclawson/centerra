@@ -56,11 +56,6 @@
 			right: 0px;
 			z-index: 1;
 			padding: 0px;
-
-			-webkit-transition: all .25s ease;
-		  -moz-transition: all .25s ease;
-			-ms-transition: all .25s ease;
-			-o-transition: all .25s ease;
 			transition: all .25s ease;
 
 			position: absolute;
@@ -226,8 +221,12 @@ $color_hover_text: #222;
 		background-color: $color_text;
 	}
 
-	.slicknav_icon-bar:nth-child(1), .slicknav_icon-bar:nth-child(3) {
+	.slicknav_icon-bar {
+		transform-origin: 13px 7px;
 		transition: .3s;
+		position: relative;
+		top:0px;
+		opacity: 1;
 	}
 }
 
@@ -239,7 +238,7 @@ $color_hover_text: #222;
 		position: relative;
 	}
 	.slicknav_icon-bar:nth-child(2) {
-		visibility: hidden;
+		opacity: 0;
 	}
 	.slicknav_icon-bar:nth-child(3) {
 		transform-origin: 50% 50%;

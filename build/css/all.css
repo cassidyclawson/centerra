@@ -315,7 +315,7 @@ input[type='submit'].btn_yellow {
       z-index: 1;
       padding: 0px;
       -webkit-transition: all .25s ease;
-      transition: all .25s ease;
+              transition: all .25s ease;
       position: absolute;
       background: #4A5157;
       border-top: 6px solid #FFD656;
@@ -427,9 +427,15 @@ input[type='submit'].btn_yellow {
     font-weight: bold; }
   .slicknav_menu .slicknav_icon-bar {
     background-color: #fff; }
-  .slicknav_menu .slicknav_icon-bar:nth-child(1), .slicknav_menu .slicknav_icon-bar:nth-child(3) {
+  .slicknav_menu .slicknav_icon-bar {
+    -webkit-transform-origin: 13px 7px;
+        -ms-transform-origin: 13px 7px;
+            transform-origin: 13px 7px;
     -webkit-transition: .3s;
-            transition: .3s; }
+            transition: .3s;
+    position: relative;
+    top: 0px;
+    opacity: 1; }
 
 .slicknav_open .slicknav_icon-bar:nth-child(1) {
   -webkit-transform-origin: 50% 50%;
@@ -440,7 +446,7 @@ input[type='submit'].btn_yellow {
   top: 13px;
   position: relative; }
 .slicknav_open .slicknav_icon-bar:nth-child(2) {
-  visibility: hidden; }
+  opacity: 0; }
 .slicknav_open .slicknav_icon-bar:nth-child(3) {
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;

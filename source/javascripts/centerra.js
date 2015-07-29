@@ -112,12 +112,12 @@ jQuery(document).ready(function () {
         }
     });
 
-    //
+    /*
     $('.banner-content h1').textfill({
       maxFontPixels: 88
     });
 
     $('.banner-content span').textfill({
       maxFontPixels: 40
-    });
+    });*/
 });
