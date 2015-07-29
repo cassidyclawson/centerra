@@ -13767,6 +13767,13 @@ jQuery(document).ready(function () {
                                 showTopLink: false
                               });
 
+    $(window).on('scroll', function() {
+      if ($('.scroll-nav__sub-item').hasClass('active')) {
+        $('.is-parent-item').removeClass('active');
+      }
+    })
+
+
     // And setup fixed sidebar on scroll
     // Using this method to fix nav instead of the built in way so we can fix
     // the call to action in the sidebar, as well.
