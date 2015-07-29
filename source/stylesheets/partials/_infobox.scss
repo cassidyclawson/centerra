@@ -8,9 +8,14 @@ $infobox-indent: 50px;
   margin: 50px 0px 70px;
   margin: 5rem 0rem 7rem;
 
+    @include breakpoint(lm)  {
+      margin: 40px 0px;
+      margin: 4rem 0rem;
+    }
+
     @include breakpoint(sm)  {
-      margin: 50px 0px;
-      margin: 5rem 0rem;
+      margin: 30px 0px;
+      margin: 3rem 0rem;
     }
 
   header {
@@ -232,11 +237,21 @@ $infobox-indent: 50px;
   h5 {
     margin-bottom: 100px;
     margin-bottom: 10.0rem;
+
+    @include breakpoint(lm)  {
+      margin-bottom: 30px;
+      margin-bottom: 3.0rem;
+    }
   }
 
   .infobox-content {
     margin-bottom: 95px;
     margin-bottom: 9.5rem;
+
+    @include breakpoint(lm)  {
+      margin-bottom: 45px;
+      margin-bottom: 4.5rem;
+    }
 
       ul{
         padding-left: 0px;

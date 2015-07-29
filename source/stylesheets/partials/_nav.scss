@@ -256,6 +256,8 @@ $color_hover_text: #222;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+	position: relative;
+	z-index: 10;
 }
 .slicknav_nav {
 	color: $color_text;
