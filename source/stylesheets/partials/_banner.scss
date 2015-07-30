@@ -103,15 +103,16 @@
     height: 25.8rem;
   }
   .banner-home-inner {
-    width: 1062px;
-    width: 106.2rem;
+    width: 78%;
+    /*max-width: 1062px;
+    max-width: 106.2rem;*/
     height: 698px;
     height: 69.8rem;
     display: table;
     vertical-align: middle;
     margin: 0 auto;
 
-    @include breakpoint(lm)  {
+    /*@include breakpoint(lm)  {
       width: 462px;
       width: 46.2rem;
       height: 498px;
@@ -126,16 +127,21 @@
     @include breakpoint(sm)  {
       height: 258px;
       height: 25.8rem;
-    }
+    }*/
   }
 
   .banner-content {
-    width: 1062px;
-    width: 106.2rem;
+    /*width: 1062px;
+    width: 106.2rem;*/
     text-align: center;
     margin: 0 auto;
     display: table-cell;
     vertical-align: middle;
+
+    /*@include breakpoint(xl)  {
+      width: 950px;
+      width: 95.0rem;
+    }
 
     @include breakpoint(lm)  {
       width: 462px;
@@ -145,29 +151,89 @@
     @include breakpoint(md)  {
       width: 302px;
       width: 30.2rem;
-    }
+    }*/
 
-    .banner-wrap {
-      border-top: 6px solid $dark_gray;
-      border-bottom: 6px solid $dark_gray;
-      position: relative;
 
       h1 {
+        text-align: center;
+        border-top: 6px solid $dark_gray;
         padding-top: 64px;
         padding-top: 6.4rem;
         padding-bottom: 10px;
         padding-bottom: 1rem;
-        font-size: 105px;
-        font-size: 10.5rem;
+        font-size: 100px;
+        font-size: 10rem;
         width: 100%;
+        position: relative;
+
+        /*@include breakpoint(xl)  {
+          font-size: 90px;
+          font-size: 9rem;
+        }
+
+        @include breakpoint(lg)  {
+          font-size: 70px;
+          font-size: 7rem;
+        }
+
+        @include breakpoint(lm)  {
+          font-size: 70px;
+          font-size: 7rem;
+        }
+
+        @include breakpoint(md)  {
+          font-size: 55px;
+          font-size: 5.5rem;
+        }
+
+        @include breakpoint(sm)  {
+          font-size: 32px;
+          font-size: 3.2rem;
+        }
+
+        @include breakpoint(xs)  {
+          font-size: 20px;
+          font-size: 2rem;
+        }*/
       }
 
       h2 {
+        border-bottom: 6px solid $dark_gray;
         font-size: 42px;
         font-size: 4.52rem;
         padding-bottom: 90px;
         padding-bottom:9rem;
         width: 100%;
+
+        /*@include breakpoint(xl)  {
+          font-size: 40px;
+          font-size: 4rem;
+        }
+
+        @include breakpoint(lg)  {
+          font-size: 32px;
+          font-size: 3.2rem;
+        }
+
+        @include breakpoint(lm)  {
+          font-size: 31px;
+          font-size: 3.1rem;
+        }
+
+        @include breakpoint(md)  {
+          font-size: 25px;
+          font-size: 2.5rem;
+        }
+
+        @include breakpoint(sm)  {
+          font-size: 16px;
+          font-size: 1.6rem;
+        }
+
+        @include breakpoint(xs)  {
+          font-size: 13px;
+          font-size: 1.3rem;
+        }*/
       }
 
       span {
@@ -187,7 +253,6 @@
         font-family: $font-subheadline;
       }
 
-    }
 
   }
 }
