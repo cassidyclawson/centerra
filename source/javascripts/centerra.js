@@ -115,12 +115,12 @@ jQuery(document).ready(function () {
         }
     });
 
-    /*
-    $('.banner-content h1').textfill({
-      maxFontPixels: 88
+
+    $('.banner-wrap h1').textfill({
+      maxFontPixels: 105
     });
 
-    $('.banner-content span').textfill({
-      maxFontPixels: 40
-    });*/
+    $('.banner-wrap h2').textfill({
+      maxFontPixels: 90
+    });
 });
