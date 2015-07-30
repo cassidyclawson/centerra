@@ -3,6 +3,8 @@
 .scroll-nav {
   @extend .bordered-box;
   padding: ($tab/2) $tab;
+  margin-top: 50px;
+  margin-top: 5rem;
 
   @include breakpoint(sm)  {
     padding: ($tab/2);

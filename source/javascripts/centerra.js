@@ -21,11 +21,14 @@ jQuery(document).ready(function () {
                                 showTopLink: false
                               });
 
-    $(window).on('scroll', function() {
+    updateActiveState();
+    $(window).on('scroll', function() { updateActiveState(); })
+
+    function updateActiveState() {
       if ($('.scroll-nav__sub-item').hasClass('active')) {
         $('.is-parent-item').removeClass('active');
       }
-    })
+    }
 
 
     // And setup fixed sidebar on scroll
