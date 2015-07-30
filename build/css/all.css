@@ -172,7 +172,7 @@ h5 {
   font-weight: normal; }
 
 .btn_yellow, input[type='submit'].btn_yellow {
-  background: #B4E38E;
+  background: #96CE69;
   border: none;
   border-radius: 3px;
   color: #494747;
@@ -214,7 +214,7 @@ input[type='submit'].btn_yellow {
   margin-right: 18px; }
 
 .open-tag {
-  background: #B4E38E; }
+  background: #96CE69; }
 
 .close-tag {
   background: #4A5157;
@@ -375,7 +375,8 @@ input[type='submit'].btn_yellow {
     margin: 0.188em 0 0 0.438em;
     font-size: 40px; }
   .slicknav_menu .slicknav_no-text {
-    margin: 0; }
+    margin: 0;
+    margin-top: 8px; }
   .slicknav_menu .slicknav_icon-bar {
     display: block;
     width: 1.125em;
@@ -786,7 +787,7 @@ hr {
       text-align: center; } }
 
 .banner-box, .banner-home, .banner-inner {
-  background: #B4E38E;
+  background: #96CE69;
   box-shadow: inset 0px 0px 80px 0px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 3px 3px; }
 
@@ -858,7 +859,7 @@ hr {
         top: -30px;
         left: 50%;
         margin-left: -10%;
-        background: #B4E38E;
+        background: #96CE69;
         text-transform: uppercase;
         display: block;
         padding: 0px 20px;

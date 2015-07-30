@@ -192,9 +192,9 @@ h5 { font-family: $font-body; font-style: italic; font-size: 1.8rem; line-height
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
+  color: $accent; }
+// a:hover {
+//   color: #0FA0CE; }
 
 
 /* Buttons
