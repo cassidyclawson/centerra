@@ -116,11 +116,13 @@ jQuery(document).ready(function () {
     });
 
 
-    $('.banner-wrap h1').textfill({
-      maxFontPixels: 105
+    /*$('.banner-wrap h1').textfill({
+      maxFontPixels: 105,
+      innerTag: 'h1'
     });
 
     $('.banner-wrap h2').textfill({
-      maxFontPixels: 90
-    });
+      maxFontPixels: 90,
+      innerTag: 'h2'
+    });*/
 });

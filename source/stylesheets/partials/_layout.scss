@@ -28,8 +28,8 @@ article {
   margin: 0rem 5.0rem;
 
   @include breakpoint(lm)  {
-    margin: 0px 30px;
-    margin: 0rem 3.0rem;
+    margin: 0px;
+    margin: 0rem;
   }
 }
 
