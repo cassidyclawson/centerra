@@ -6,13 +6,29 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     gutil = require('gulp-util'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    argv = require('yargs').argv,
+    gulpif = require('gulp-if'),
+    uglify = require('gulp-uglify');
+
+var outputDir, sassStyle, env;
+
+// use [gulp --production] for output in production folder
+if (argv.production) {
+  outputDir = 'builds/production/';
+  sassStyle = 'compressed';
+  env = 'production';
+} else {
+  outputDir = 'builds/development/';
+  sassStyle = 'expanded';
+  env = 'development';
+}
 
 //Paths
 var paths = {
     html_tempaltes: 'source/templates/',
     scssSource: 'source/stylesheets/',
-    cssDestination: 'build/css/'
+    imagesSource: 'source/images/'
 }
 
 var jsSources = [
@@ -31,12 +47,15 @@ var jsSources = [
 gulp.task('js', function() {
   return gulp.src(jsSources)
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('build/js/'))
-    .on('error', gutil.log)
+    .pipe(gulp.dest(outputDir + 'js/'))
+    .pipe(gulpif(env === 'production', uglify()))
+    .on('error', function (err) {
+        gutil.log('Error!', err.message);
+    })
     .pipe(connect.reload());;
 });
 
-gulp.task('fileinclude', function() {
+gulp.task('htmlinclude', function() {
     return gulp.src(paths.html_tempaltes + '*.tpl.html')
     .pipe(fileinclude())
     .on('error', gutil.log)
@@ -46,26 +65,37 @@ gulp.task('fileinclude', function() {
     .pipe(rename({
       extname: ".html"
     }))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest(outputDir))
     .pipe(connect.reload());;
 });
 
 //Task: Sass
 gulp.task('sass', function () {
     return sass(paths.scssSource, {sourcemap: true})
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(gulpif(env === 'development', sourcemaps.write('../maps')))
+        .pipe(gulpif(env === 'production', uglify()))
         .on('error', function (err) {
             gutil.log('Error!', err.message);
         })
-        .pipe(autoprefixer('last 2 versions'))
-        .pipe(sourcemaps.write('../maps'))
-        .pipe(gulp.dest(paths.cssDestination))
+        .pipe(gulp.dest(outputDir + 'css/'))
         .pipe(connect.reload());;
+});
+
+gulp.task('fonts', function() {
+    return gulp.src(paths.scssSource+'fonts/*')
+          .pipe(gulp.dest(outputDir + 'css/fonts/'));
+});
+
+gulp.task('images', function() {
+    return gulp.src(paths.imagesSource + '*')
+          .pipe(gulp.dest(outputDir + 'images'));
 });
 
 //Task: webserver
 gulp.task('webserver', function() {
   connect.server({
-    root: 'build',
+    root: outputDir,
     livereload: true,
     port: 4567
   });
@@ -74,8 +104,8 @@ gulp.task('webserver', function() {
 //Default task and watch expression
 gulp.task('watch', function() {
     gulp.watch(paths.scssSource + '**/*.scss', ['sass']);
-    gulp.watch(paths.html_tempaltes + '**/*.html', ['fileinclude']);
+    gulp.watch(paths.html_tempaltes + '**/*.html', ['htmlinclude']);
     gulp.watch(jsSources, ['js']);
 })
 
-gulp.task('default', ['webserver', 'sass', 'fileinclude', 'js', 'watch']);
+gulp.task('default', ['webserver', 'sass', 'htmlinclude', 'js', 'fonts', 'images', 'watch']);
