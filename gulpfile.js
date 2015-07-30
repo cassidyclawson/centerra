@@ -9,7 +9,10 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     argv = require('yargs').argv,
     gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    imagemin = require('gulp-imagemin'),
+    pngcrush = require('imagemin-pngcrush'),
+    minifyHTML = require('gulp-minify-html');
 
 var outputDir, sassStyle, env;
 
@@ -47,11 +50,11 @@ var jsSources = [
 gulp.task('js', function() {
   return gulp.src(jsSources)
     .pipe(concat('all.js'))
-    .pipe(gulp.dest(outputDir + 'js/'))
     .pipe(gulpif(env === 'production', uglify()))
     .on('error', function (err) {
         gutil.log('Error!', err.message);
     })
+    .pipe(gulp.dest(outputDir + 'js/'))
     .pipe(connect.reload());;
 });
 
@@ -65,16 +68,18 @@ gulp.task('htmlinclude', function() {
     .pipe(rename({
       extname: ".html"
     }))
+    .pipe(gulpif(env === 'production', minifyHTML()))
     .pipe(gulp.dest(outputDir))
     .pipe(connect.reload());;
 });
 
 //Task: Sass
 gulp.task('sass', function () {
-    return sass(paths.scssSource, {sourcemap: true})
+    return sass(paths.scssSource, { sourcemap: true,
+                                    style: sassStyle
+                                  })
         .pipe(autoprefixer('last 2 versions'))
         .pipe(gulpif(env === 'development', sourcemaps.write('../maps')))
-        .pipe(gulpif(env === 'production', uglify()))
         .on('error', function (err) {
             gutil.log('Error!', err.message);
         })
@@ -88,8 +93,14 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('images', function() {
-    return gulp.src(paths.imagesSource + '*')
-          .pipe(gulp.dest(outputDir + 'images'));
+  gulp.src(paths.imagesSource + '*')
+    .pipe(gulpif(env === 'production', imagemin({
+      progressive: true,
+      svgoPlugins: [{ removeViewBox: false }],
+      use: [pngcrush()]
+    })))
+    .pipe(gulp.dest(outputDir + 'images'))
+    .pipe(connect.reload())
 });
 
 //Task: webserver
@@ -108,4 +119,4 @@ gulp.task('watch', function() {
     gulp.watch(jsSources, ['js']);
 })
 
-gulp.task('default', ['webserver', 'sass', 'htmlinclude', 'js', 'fonts', 'images', 'watch']);
+gulp.task('default', ['htmlinclude', 'sass', 'js', 'fonts', 'images', 'webserver', 'watch']);
