@@ -25,7 +25,7 @@ body {
   color: #4A5157; }
 
 p {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   line-height: 1.46; }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     p {
@@ -37,7 +37,7 @@ p {
       font-size: 2.0rem; } }
 
 .listing-content {
-  font-size: 2.6rem;
+  font-size: 2rem;
   line-height: 1.46; }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .listing-content {
@@ -588,8 +588,8 @@ article {
       margin: 0rem 3.0rem; } }
 
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   border-width: 0;
   border-top: 3px solid #ECEDED; }
 
@@ -1108,7 +1108,8 @@ hr {
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.58;
-  font-family: "effra", "Arial Black", Gadget, sans-serif; }
+  font-family: "effra", "Arial Black", Gadget, sans-serif;
+  margin-bottom: .4em; }
 
 .title-box {
   margin: 50px 50px 0px;

@@ -9,7 +9,7 @@ body {
 }
 
 p  {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   line-height: 1.46;
 
   @include breakpoint(xl)  {
@@ -24,7 +24,7 @@ p  {
 }
 
 .listing-content  {
-  font-size: 2.6rem;
+  font-size: 2rem;
   line-height: 1.46;
 
   @include breakpoint(xl)  {

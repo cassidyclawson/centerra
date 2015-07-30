@@ -28,12 +28,12 @@
 - Media Queries
 */
 
-$background: #FFF;
-$primary: #FFCA26;
-$secondary: #4A5157;
-$accent: #5DC1B7;
-$lightest-gray: #F6F6F6;
-$light-gray: #ECEDED;
+// $background: #FFF;
+// $primary: #FFCA26;
+// $secondary: #4A5157;
+// $accent: #5DC1B7;
+// $lightest-gray: #F6F6F6;
+// $light-gray: #ECEDED;
 
 $font-headline: "abril-titling-condensed", Georgia, serif;
 $font-subheadline: "effra", "Arial Black", Gadget, sans-serif;
@@ -192,7 +192,7 @@ h5 { font-family: $font-body; font-style: italic; font-size: 1.8rem; line-height
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: $accent; }
+  color: #ECBC2A; }
 // a:hover {
 //   color: #0FA0CE; }
 
