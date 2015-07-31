@@ -116,12 +116,8 @@ jQuery(document).ready(function () {
     });
 
 
-    $('.banner-content h1').fitText(1.05);
-    $('.banner-content h2').fitText(2.42);
+    $('.banner-content h1').fitText(1.02);
+    $('.banner-content h2').fitText(2.31);
     $('.banner-content span').fitText(0.4, { minFontSize: '12px', maxFontSize: '45px' });
 
-    /*$('.banner-wrap h2').textfill({
-      maxFontPixels: 90,
-      innerTag: 'h2'
-    });*/
 });
