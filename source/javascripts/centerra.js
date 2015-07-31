@@ -116,8 +116,8 @@ jQuery(document).ready(function () {
     });
 
 
-    $('.banner-content h1').fitText(1.02);
-    $('.banner-content h2').fitText(2.31);
+    $('.banner-content h1').fitText(1.027);
+    $('.banner-content h2').fitText(2.33);
     $('.banner-content span').fitText(0.4, { minFontSize: '12px', maxFontSize: '45px' });
 
 });
