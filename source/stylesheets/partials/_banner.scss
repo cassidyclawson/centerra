@@ -104,54 +104,28 @@
   }
   .banner-home-inner {
     width: 78%;
-    /*max-width: 1062px;
-    max-width: 106.2rem;*/
     height: 698px;
     height: 69.8rem;
     display: table;
     vertical-align: middle;
     margin: 0 auto;
 
-    /*@include breakpoint(lm)  {
-      width: 462px;
-      width: 46.2rem;
+    @include breakpoint(lm)  {
       height: 498px;
       height: 49.8rem;
-    }
-
-    @include breakpoint(md)  {
-      width: 302px;
-      width: 30.2rem;
     }
 
     @include breakpoint(sm)  {
       height: 258px;
       height: 25.8rem;
-    }*/
+    }
   }
 
   .banner-content {
-    /*width: 1062px;
-    width: 106.2rem;*/
     text-align: center;
     margin: 0 auto;
     display: table-cell;
     vertical-align: middle;
-
-    /*@include breakpoint(xl)  {
-      width: 950px;
-      width: 95.0rem;
-    }
-
-    @include breakpoint(lm)  {
-      width: 462px;
-      width: 46.2rem;
-    }
-
-    @include breakpoint(md)  {
-      width: 302px;
-      width: 30.2rem;
-    }*/
 
 
       h1 {
@@ -161,40 +135,20 @@
         padding-top: 6.4rem;
         padding-bottom: 10px;
         padding-bottom: 1rem;
-        font-size: 100px;
-        font-size: 10rem;
+        font-size: 105px;
+        font-size: 10.5rem;
         width: 100%;
-        position: relative;
-
-        /*@include breakpoint(xl)  {
-          font-size: 90px;
-          font-size: 9rem;
-        }
-
-        @include breakpoint(lg)  {
-          font-size: 70px;
-          font-size: 7rem;
-        }
+        display: block;
 
         @include breakpoint(lm)  {
-          font-size: 70px;
-          font-size: 7rem;
-        }
-
-        @include breakpoint(md)  {
-          font-size: 55px;
-          font-size: 5.5rem;
+          padding-top: 44px;
+          padding-top: 4.4rem;
         }
 
         @include breakpoint(sm)  {
-          font-size: 32px;
-          font-size: 3.2rem;
+          padding-top: 34px;
+          padding-top: 3.4rem;
         }
-
-        @include breakpoint(xs)  {
-          font-size: 20px;
-          font-size: 2rem;
-        }*/
       }
 
       h2 {
@@ -204,53 +158,38 @@
         padding-bottom: 90px;
         padding-bottom:9rem;
         width: 100%;
-
-        /*@include breakpoint(xl)  {
-          font-size: 40px;
-          font-size: 4rem;
-        }
-
-        @include breakpoint(lg)  {
-          font-size: 32px;
-          font-size: 3.2rem;
-        }
+        display: block;
 
         @include breakpoint(lm)  {
-          font-size: 31px;
-          font-size: 3.1rem;
-        }
-
-        @include breakpoint(md)  {
-          font-size: 25px;
-          font-size: 2.5rem;
+          padding-bottom: 60px;
+          padding-bottom: 6rem;
         }
 
         @include breakpoint(sm)  {
-          font-size: 16px;
-          font-size: 1.6rem;
+          padding-bottom: 30px;
+          padding-bottom: 3rem;
         }
-
-        @include breakpoint(xs)  {
-          font-size: 13px;
-          font-size: 1.3rem;
-        }*/
       }
 
-      span {
-        position: absolute;
-        font-size: 45px;
-        font-size: 4.52rem;
-        line-height: 50px;
-        line-height: 5.0rem;
-        top: -30px;
-        left: 50%;
-        margin-left: -10%;
-        background: $primary;
-        text-transform: uppercase;
-        display: block;
-        padding: 0px 20px;
-        padding: 0rem 2rem;
-        font-family: $font-subheadline;
+      div {
+        position: relative;
+        text-align: center;
+        top: 30px;
+        width: 100%;
+
+        span {
+          font-size: 45px;
+          font-size: 4.52rem;
+          line-height: 50px;
+          line-height: 5.0rem;
+          background: $primary;
+          text-transform: uppercase;
+          display: inline-block;
+          padding: 0px 20px;
+          padding: 0rem 2rem;
+          font-family: $font-subheadline;
+          width: 195px;
+        }
       }
 
 
