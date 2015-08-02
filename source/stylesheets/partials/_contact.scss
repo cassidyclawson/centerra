@@ -21,6 +21,10 @@
   h2 {
     font-size: 28px;
     font-size: 2.8rem;
+
+    @include breakpoint(md)  {
+      margin-top: 0px;
+    }
   }
 }
 .contact-info {

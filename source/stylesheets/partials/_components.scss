@@ -54,7 +54,7 @@ h5 {
 }
 
 .btn_yellow, input[type='submit'].btn_yellow {
-  background: $primary;
+  background: $accent;
   border: none;
   border-radius: $default-radius;
   color: $btns;
@@ -69,6 +69,11 @@ h5 {
   line-height: 2.7rem;
   padding: 0px 10px;
   padding: 0px 1.0rem;
+}
+
+.service-block .btn_yellow {
+  position: relative;
+  top: -.2em;
 }
 
 input[type='submit'].btn_yellow {
@@ -98,7 +103,29 @@ input[type='submit'].btn_yellow {
   margin-right: 18px;
 }
 
+.open-tag {
+  background: $primary;
+}
+
+.close-tag {
+  background: $dark_gray;
+  color: $background;
+}
+
 .last-margin {
   margin-bottom: 60px;
   margin-bottom: 6.0rem;
+
+  @include breakpoint(lm)  {
+    margin-bottom: 0px;
+  }
+}
+
+.margin-btm {
+  margin-bottom: 50px;
+  margin-bottom: 5.0rem;
+}
+
+.hidden {
+  display: none;
 }

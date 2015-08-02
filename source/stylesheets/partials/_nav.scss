@@ -56,11 +56,6 @@
 			right: 0px;
 			z-index: 1;
 			padding: 0px;
-
-			-webkit-transition: all .25s ease;
-		  -moz-transition: all .25s ease;
-			-ms-transition: all .25s ease;
-			-o-transition: all .25s ease;
 			transition: all .25s ease;
 
 			position: absolute;
@@ -109,10 +104,6 @@
 	background: $accent;
 }
 
-.home #magic-line {
-	display: none;
-}
-
 #navigation {
 	.column, .columns{
 		margin-left: 0px;
@@ -127,7 +118,7 @@
 	display: block;
 	vertical-align: middle;
 	float: right;
-	padding: 0.438em 0.625em 0.438em 0.625em;
+	padding: 0em 0.625em 0em 0.625em;
 	line-height: 1.125em;
 	cursor: pointer;
 	.slicknav_icon-bar + .slicknav_icon-bar {
@@ -144,17 +135,19 @@
 	.slicknav_icon {
 		float: left;
 		margin: 0.188em 0 0 0.438em;
+		font-size: 40px;
 	}
 	.slicknav_no-text {
 		margin: 0;
+		margin-top: 8px;
 	}
 	.slicknav_icon-bar {
 		display: block;
 		width: 1.125em;
 		height: 0.125em;
-		-webkit-border-radius: 1px;
-		-moz-border-radius: 1px;
-		border-radius: 1px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
 		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 		-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
@@ -229,8 +222,12 @@ $color_hover_text: #222;
 		background-color: $color_text;
 	}
 
-	.slicknav_icon-bar:nth-child(1), .slicknav_icon-bar:nth-child(3) {
+	.slicknav_icon-bar {
+		transform-origin: 13px 7px;
 		transition: .3s;
+		position: relative;
+		top:0px;
+		opacity: 1;
 	}
 }
 
@@ -238,16 +235,16 @@ $color_hover_text: #222;
 	.slicknav_icon-bar:nth-child(1) {
 		transform-origin: 50% 50%;
 		transform: rotate3d(0,0,1,40deg);
-		top: 5px;
+		top: 13px;
 		position: relative;
 	}
 	.slicknav_icon-bar:nth-child(2) {
-		visibility: hidden;
+		opacity: 0;
 	}
 	.slicknav_icon-bar:nth-child(3) {
 		transform-origin: 50% 50%;
 		transform: rotate3d(0,0,1,-40deg);
-		top: -5px;
+		top: -13px;
 		position: relative;
 	}
 }
@@ -259,7 +256,8 @@ $color_hover_text: #222;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	background-color: $color_btn;
+	position: relative;
+	z-index: 10;
 }
 .slicknav_nav {
 	color: $color_text;

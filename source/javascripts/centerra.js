@@ -21,6 +21,16 @@ jQuery(document).ready(function () {
                                 showTopLink: false
                               });
 
+    updateActiveState();
+    $(window).on('scroll', function() { updateActiveState(); })
+
+    function updateActiveState() {
+      if ($('.scroll-nav__sub-item').hasClass('active')) {
+        $('.is-parent-item').removeClass('active');
+      }
+    }
+
+
     // And setup fixed sidebar on scroll
     // Using this method to fix nav instead of the built in way so we can fix
     // the call to action in the sidebar, as well.
@@ -104,4 +114,10 @@ jQuery(document).ready(function () {
             }, "json");
         }
     });
+
+
+    $('.banner-content h1').fitText(1.027);
+    $('.banner-content h2').fitText(2.33);
+    $('.banner-content span').fitText(0.4, { minFontSize: '12px', maxFontSize: '45px' });
+
 });

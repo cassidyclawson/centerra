@@ -82,7 +82,7 @@
 }
 
 .banner-box {
-  background: #FFCA26 ;
+  background: $primary;
   box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.10);
   border-radius: 0px 0px $default-radius $default-radius;
 }
@@ -103,8 +103,7 @@
     height: 25.8rem;
   }
   .banner-home-inner {
-    width: 662px;
-    width: 66.2rem;
+    width: 78%;
     height: 698px;
     height: 69.8rem;
     display: table;
@@ -112,15 +111,8 @@
     margin: 0 auto;
 
     @include breakpoint(lm)  {
-      width: 462px;
-      width: 46.2rem;
       height: 498px;
       height: 49.8rem;
-    }
-
-    @include breakpoint(md)  {
-      width: 302px;
-      width: 30.2rem;
     }
 
     @include breakpoint(sm)  {
@@ -130,33 +122,78 @@
   }
 
   .banner-content {
-    width: 662px;
-    width: 66.2rem;
     text-align: center;
     margin: 0 auto;
     display: table-cell;
     vertical-align: middle;
 
-    @include breakpoint(lm)  {
-      width: 462px;
-      width: 46.2rem;
-    }
 
-    @include breakpoint(md)  {
-      width: 302px;
-      width: 30.2rem;
-    }
+      h1 {
+        text-align: center;
+        border-top: 6px solid $dark_gray;
+        padding-top: 64px;
+        padding-top: 6.4rem;
+        padding-bottom: 10px;
+        padding-bottom: 1rem;
+        font-size: 105px;
+        font-size: 10.5rem;
+        width: 100%;
+        display: block;
 
-    h1 {
-      border-bottom: 6px solid $dark_gray;
-      padding-bottom: 44px;
-      padding-bottom: 4.4rem;
+        @include breakpoint(lm)  {
+          padding-top: 44px;
+          padding-top: 4.4rem;
+        }
 
         @include breakpoint(sm)  {
-          padding-bottom: 20px;
-          padding-bottom: 2.0rem;
+          padding-top: 34px;
+          padding-top: 3.4rem;
         }
-    }
+      }
+
+      h2 {
+        border-bottom: 6px solid $dark_gray;
+        font-size: 42px;
+        font-size: 4.52rem;
+        padding-bottom: 90px;
+        padding-bottom:9rem;
+        width: 100%;
+        display: block;
+
+        @include breakpoint(lm)  {
+          padding-bottom: 60px;
+          padding-bottom: 6rem;
+        }
+
+        @include breakpoint(sm)  {
+          padding-bottom: 30px;
+          padding-bottom: 3rem;
+        }
+      }
+
+      div {
+        position: relative;
+        text-align: center;
+        top: 30px;
+        width: 100%;
+
+        span {
+          font-size: 45px;
+          font-size: 4.52rem;
+          font-weight: 700;
+          line-height: 50px;
+          line-height: 5.0rem;
+          background: $primary;
+          text-transform: uppercase;
+          display: inline-block;
+          padding: 0px 20px;
+          padding: 0rem 2rem;
+          font-family: $font-subheadline;
+          width: 195px;
+        }
+      }
+
+
   }
 }
 

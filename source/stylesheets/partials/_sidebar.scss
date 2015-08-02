@@ -3,9 +3,15 @@
 .scroll-nav {
   @extend .bordered-box;
   padding: ($tab/2) $tab;
+  margin-top: 50px;
+  margin-top: 5rem;
 
   @include breakpoint(sm)  {
     padding: ($tab/2);
+  }
+
+  @include breakpoint(lm)  {
+    display: none;
   }
 
   ol {
@@ -77,6 +83,11 @@
   margin-top: 2.5rem;
   margin-bottom: 60px;
   margin-bottom: 6.0rem;
+
+  @include breakpoint(lm)  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
   h4 {
     margin: 0px;
