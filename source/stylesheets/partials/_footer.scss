@@ -27,9 +27,14 @@ footer .footer-top {
      padding: 4.2rem !important;
    }
 
+   @include breakpoint(lm)  {
+     padding: 27pxpx !important;
+     padding: 2.7rem !important;
+   }
+
    @include breakpoint(sm)  {
-     padding: 42px !important;
-     padding: 4.2rem !important;
+     padding: 27px !important;
+     padding: 2.7rem !important;
      font-size: 12px;
      font-size: 1.2rem;
    }

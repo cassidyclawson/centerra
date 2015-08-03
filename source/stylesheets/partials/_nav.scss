@@ -135,7 +135,7 @@
 	.slicknav_icon {
 		float: left;
 		margin: 0.188em 0 0 0.438em;
-		font-size: 40px;
+		font-size: 26px;
 	}
 	.slicknav_no-text {
 		margin: 0;
@@ -235,7 +235,7 @@ $color_hover_text: #222;
 	.slicknav_icon-bar:nth-child(1) {
 		transform-origin: 50% 50%;
 		transform: rotate3d(0,0,1,40deg);
-		top: 13px;
+		top: 8px;
 		position: relative;
 	}
 	.slicknav_icon-bar:nth-child(2) {
@@ -244,7 +244,7 @@ $color_hover_text: #222;
 	.slicknav_icon-bar:nth-child(3) {
 		transform-origin: 50% 50%;
 		transform: rotate3d(0,0,1,-40deg);
-		top: -13px;
+		top: -8px;
 		position: relative;
 	}
 }
