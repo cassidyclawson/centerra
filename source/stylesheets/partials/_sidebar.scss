@@ -50,6 +50,10 @@
     }
   }
 
+  .trans-nav .active a {
+    border-bottom: solid $accent ($line-thin*2);
+  }
+
   .scroll-nav__sub-item {
     margin-left: 37px;
     margin-left: 3.7rem;
