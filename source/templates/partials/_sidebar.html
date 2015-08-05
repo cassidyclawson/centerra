@@ -3,12 +3,12 @@
     <div class="sidebar">
       @@if (fixed != '') {
           <!-- code here -->
-          <nav class="scroll-nav">
+          <nav class="trans-nav-outer">
             <ol class="trans-nav">
               <li class="active"><a href="#">All Transactions</a></li>
-              <li><a href="#">Real Estate</a></li>
-              <li><a href="#">Finance</a></li>
-              <li><a href="#">Testimonials</a></li>
+              <li data-category=".real-estate"><a href="#">Real Estate</a></li>
+              <li data-category=".financial"><a href="#">Finance</a></li>
+              <li data-category=".testimonials"><a href="#">Testimonials</a></li>
             </ol>
           </nav>
       }

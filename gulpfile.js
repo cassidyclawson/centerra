@@ -39,6 +39,7 @@ var jsSources = [
    'source/javascripts/jquery-1.11.3.js',
    'source/javascripts/hoverintent.js',
    'source/javascripts/fastclick.js',
+   'source/javascripts/isotope.pkgd.js',
    'source/javascripts/jquery.slicknav.js',
    'source/javascripts/scrollnav.js',
    'source/javascripts/jquery.validate.js',

@@ -120,4 +120,13 @@ jQuery(document).ready(function () {
     $('.banner-content h2').fitText(2.33);
     $('.banner-content span').fitText(0.4, { minFontSize: '12px', maxFontSize: '45px' });
 
+    //Filtering for transactions page
+    $('.trans-nav a').on('click', function(e) {
+      e.preventDefault();
+      $('.trans-nav li').removeClass('active');
+      $(this).parent('li').addClass('active');
+      var sort = $(this).parent('li').data('category');
+      $('.transactions').isotope({ filter: sort })
+    })
+
 });

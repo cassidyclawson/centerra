@@ -1,6 +1,6 @@
 /* Sidebar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.scroll-nav {
+.scroll-nav, .trans-nav-outer {
   @extend .bordered-box;
   padding: ($tab/2) $tab;
   margin-top: 50px;
@@ -52,6 +52,10 @@
 
   .trans-nav .active a {
     border-bottom: solid $accent ($line-thin*2);
+  }
+
+  .trans-nav li a {
+    border-bottom: solid #fff ($line-thin*2);
   }
 
   .scroll-nav__sub-item {
