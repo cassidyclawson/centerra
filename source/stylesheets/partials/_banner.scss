@@ -90,8 +90,13 @@
 /* Banner area of home page */
 .banner-home {
   @extend .banner-box;
-  height: 698px;
-  height: 69.8rem;
+  height: 608px;
+  height: 60.8rem;
+
+  @include breakpoint(xl)  {
+    height: 490px;
+    height: 49rem;
+  }
 
   @include breakpoint(lm)  {
     height: 498px;
@@ -104,11 +109,16 @@
   }
   .banner-home-inner {
     width: 78%;
-    height: 698px;
-    height: 69.8rem;
+    height: 608px;
+    height: 60.8rem;
     display: table;
     vertical-align: middle;
     margin: 0 auto;
+
+    @include breakpoint(xl)  {
+      height: 490px;
+      height: 49rem;
+    }
 
     @include breakpoint(lm)  {
       height: 498px;
@@ -140,6 +150,11 @@
         width: 100%;
         display: block;
 
+        @include breakpoint(xl)  {
+          padding-top: 54px;
+          padding-top: 5.4rem;
+        }
+
         @include breakpoint(lm)  {
           padding-top: 44px;
           padding-top: 4.4rem;
@@ -159,6 +174,11 @@
         padding-bottom:9rem;
         width: 100%;
         display: block;
+
+        @include breakpoint(xl)  {
+          padding-bottom: 70px;
+          padding-bottom: 7rem;
+        }
 
         @include breakpoint(lm)  {
           padding-bottom: 60px;
