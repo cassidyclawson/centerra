@@ -75,7 +75,7 @@ jQuery(document).ready(function () {
     });
 
     //form validation
-    var formspree = 'http://formspree.io/cassidyclawson@gmail.com';
+    var formspree = 'http://formspree.io/paul@centerracapital.com';
 
     $("#cta-form").validate({
       submitHandler: function() {
