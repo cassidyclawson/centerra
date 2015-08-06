@@ -209,6 +209,11 @@
   display: table;
   box-sizing: border-box;
 
+  @include breakpoint(md)  {
+    height: 248px;
+    height: 24.8rem;
+  }
+
   @include breakpoint(sm)  {
     padding: 50px 20px !important;
     padding: 5.0rem 2rem !important;
@@ -226,19 +231,28 @@
     line-height: 12rem;
 
     @include breakpoint(md)  {
-      font-size: 45px;
-      font-size: 4.5rem;
-      line-height: 60px;
-      line-height: 6rem;
+      font-size: 35px;
+      font-size: 3.5rem;
+      line-height: 50px;
+      line-height: 5rem;
     }
   }
 
   h2 {
     margin: 0px;
+
+    @include breakpoint(md)  {
+      font-size: 28px;
+      font-size: 2.8rem;
+    }
   }
 
   .banner-head {
     float: left;
+
+    @include breakpoint(md)  {
+      width:80%;
+    }
   }
 
   span {
@@ -247,5 +261,11 @@
     float: left;
     margin-right: 23px;
     margin-top: 28px;
+
+    @include breakpoint(md)  {
+      font-size: 70px;
+      font-size: 7rem;
+      margin-top: 14px;
+    }
   }
 }
