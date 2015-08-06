@@ -30,6 +30,18 @@ jQuery(document).ready(function () {
       }
     }
 
+    //equal height of homepage boxes
+    if ($('.service-block').length > 0) {
+      var maxHeight = -1;
+      $('.service-block').each(function() {
+        maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+      });
+
+      $('.service-block').each(function() {
+        $(this).height(maxHeight);
+      });
+    }
+
 
     // And setup fixed sidebar on scroll
     // Using this method to fix nav instead of the built in way so we can fix
