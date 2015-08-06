@@ -236,6 +236,13 @@
       line-height: 50px;
       line-height: 5rem;
     }
+
+    @include breakpoint(sm)  {
+      font-size: 30px;
+      font-size: 3.0rem;
+      line-height: 45px;
+      line-height: 4.5rem;
+    }
   }
 
   h2 {
@@ -245,6 +252,11 @@
       font-size: 28px;
       font-size: 2.8rem;
     }
+
+    @include breakpoint(sm)  {
+      font-size: 25px;
+      font-size: 2.5rem;
+    }
   }
 
   .banner-head {
@@ -252,6 +264,14 @@
 
     @include breakpoint(md)  {
       width:80%;
+    }
+
+    @include breakpoint(sm)  {
+      width:70%;
+    }
+
+    @include breakpoint(ms)  {
+      width:100%;
     }
   }
 

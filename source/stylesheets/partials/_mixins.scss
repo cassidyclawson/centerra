@@ -5,6 +5,7 @@ $break-lg: 1024px;
 $break-lm: 980px;
 $break-md: 768px;
 $break-sm: 480px;
+$break-ms: 360px;
 $break-xs: 320px;
 
  @mixin breakpoint($point) {
@@ -24,6 +25,9 @@ $break-xs: 320px;
    @else if $point == sm {
       @media (max-width: $break-sm) { @content ; }
   }
+  @else if $point == ms {
+     @media (max-width: $break-ms) { @content ; }
+ }
   @else if $point == xs {
      @media (max-width: $break-xs) { @content ; }
 

@@ -51,6 +51,10 @@ h3, h4 {
 
 h5 {
   font-weight: normal;
+  @include breakpoint(sm)  {
+    margin-top: 30px;
+    margin-top: 3rem;
+  }
 }
 
 .btn_yellow, input[type='submit'].btn_yellow {
