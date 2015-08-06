@@ -76,28 +76,28 @@ hr {
   margin-bottom: 2%;
   padding: 45px 55px;
   padding: 4.5rem 5.5rem;
-  min-height: 550px;
-  min-height: 55.0rem;
+  min-height: 450px;
+  min-height: 45.0rem;
 
   @include breakpoint(xl)  {
     padding: 15px 25px;
     padding: 1.5rem 2.5rem;
-    min-height: 370px;
-    min-height: 37.0rem;
+    min-height: 350px;
+    min-height: 35.0rem;
   }
 
   @include breakpoint(lg)  {
     width: 100% !important;
     margin-left: 0px !important;
-    min-height: 430px;
-    min-height: 43.0rem;
+    min-height: 380px;
+    min-height: 38.0rem;
   }
 
   @include breakpoint(lm)  {
     width: 100% !important;
     margin-left: 0px !important;
-    min-height: 430px;
-    min-height: 43.0rem;
+    min-height: 330px;
+    min-height: 33.0rem;
   }
 
   @include breakpoint(sm)  {
