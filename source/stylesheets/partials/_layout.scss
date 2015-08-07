@@ -70,10 +70,14 @@ hr {
 }
 
 /* Services blocks on home page */
+.sb-row {
+  margin-bottom: 69px;
+  margin-bottom: 6.9rem;
+}
 .service-block {
   @extend .bordered-box;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 69px;
+  margin-top: 6.9rem;
   padding: 45px 55px;
   padding: 4.5rem 5.5rem;
   min-height: 450px;
