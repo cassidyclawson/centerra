@@ -90,8 +90,13 @@
 /* Banner area of home page */
 .banner-home {
   @extend .banner-box;
-  height: 698px;
-  height: 69.8rem;
+  height: 608px;
+  height: 60.8rem;
+
+  @include breakpoint(xl)  {
+    height: 490px;
+    height: 49rem;
+  }
 
   @include breakpoint(lm)  {
     height: 498px;
@@ -104,11 +109,16 @@
   }
   .banner-home-inner {
     width: 78%;
-    height: 698px;
-    height: 69.8rem;
+    height: 608px;
+    height: 60.8rem;
     display: table;
     vertical-align: middle;
     margin: 0 auto;
+
+    @include breakpoint(xl)  {
+      height: 490px;
+      height: 49rem;
+    }
 
     @include breakpoint(lm)  {
       height: 498px;
@@ -140,6 +150,11 @@
         width: 100%;
         display: block;
 
+        @include breakpoint(xl)  {
+          padding-top: 54px;
+          padding-top: 5.4rem;
+        }
+
         @include breakpoint(lm)  {
           padding-top: 44px;
           padding-top: 4.4rem;
@@ -159,6 +174,11 @@
         padding-bottom:9rem;
         width: 100%;
         display: block;
+
+        @include breakpoint(xl)  {
+          padding-bottom: 70px;
+          padding-bottom: 7rem;
+        }
 
         @include breakpoint(lm)  {
           padding-bottom: 60px;
@@ -209,6 +229,11 @@
   display: table;
   box-sizing: border-box;
 
+  @include breakpoint(md)  {
+    height: 248px;
+    height: 24.8rem;
+  }
+
   @include breakpoint(sm)  {
     padding: 50px 20px !important;
     padding: 5.0rem 2rem !important;
@@ -226,19 +251,48 @@
     line-height: 12rem;
 
     @include breakpoint(md)  {
-      font-size: 45px;
-      font-size: 4.5rem;
-      line-height: 60px;
-      line-height: 6rem;
+      font-size: 35px;
+      font-size: 3.5rem;
+      line-height: 50px;
+      line-height: 5rem;
+    }
+
+    @include breakpoint(sm)  {
+      font-size: 30px;
+      font-size: 3.0rem;
+      line-height: 45px;
+      line-height: 4.5rem;
     }
   }
 
   h2 {
     margin: 0px;
+
+    @include breakpoint(md)  {
+      font-size: 28px;
+      font-size: 2.8rem;
+    }
+
+    @include breakpoint(sm)  {
+      font-size: 25px;
+      font-size: 2.5rem;
+    }
   }
 
   .banner-head {
     float: left;
+
+    @include breakpoint(md)  {
+      width:80%;
+    }
+
+    @include breakpoint(sm)  {
+      width:70%;
+    }
+
+    @include breakpoint(ms)  {
+      width:100%;
+    }
   }
 
   span {
@@ -247,5 +301,11 @@
     float: left;
     margin-right: 23px;
     margin-top: 28px;
+
+    @include breakpoint(md)  {
+      font-size: 70px;
+      font-size: 7rem;
+      margin-top: 14px;
+    }
   }
 }
