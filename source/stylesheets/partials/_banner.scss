@@ -90,8 +90,8 @@
 /* Banner area of home page */
 .banner-home {
   @extend .banner-box;
-  height: 608px;
-  height: 60.8rem;
+  height: 558px;
+  height: 55.8rem;
 
   @include breakpoint(xl)  {
     height: 490px;
@@ -109,8 +109,8 @@
   }
   .banner-home-inner {
     width: 78%;
-    height: 608px;
-    height: 60.8rem;
+    height: 558px;
+    height: 55.8rem;
     display: table;
     vertical-align: middle;
     margin: 0 auto;
@@ -141,8 +141,8 @@
       h1 {
         text-align: center;
         border-top: 6px solid $dark_gray;
-        padding-top: 64px;
-        padding-top: 6.4rem;
+        padding-top: 54px;
+        padding-top: 5.4rem;
         padding-bottom: 10px;
         padding-bottom: 1rem;
         font-size: 105px;
@@ -170,8 +170,8 @@
         border-bottom: 6px solid $dark_gray;
         font-size: 42px;
         font-size: 4.52rem;
-        padding-bottom: 90px;
-        padding-bottom:9rem;
+        padding-bottom: 70px;
+        padding-bottom:7rem;
         width: 100%;
         display: block;
 
@@ -287,7 +287,7 @@
     }
 
     @include breakpoint(sm)  {
-      width:70%;
+      width:100%;
     }
 
     @include breakpoint(ms)  {
@@ -303,8 +303,8 @@
     margin-top: 28px;
 
     @include breakpoint(md)  {
-      font-size: 70px;
-      font-size: 7rem;
+      font-size: 50px;
+      font-size: 5rem;
       margin-top: 14px;
     }
   }
