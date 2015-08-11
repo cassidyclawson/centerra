@@ -132,6 +132,17 @@ jQuery(document).ready(function () {
     $('.banner-content h2').fitText(2.33);
     $('.banner-content span').fitText(0.4, { minFontSize: '12px', maxFontSize: '45px' });
 
+    var windowWidth = $(window).width();
+    if(windowWidth < 715) {
+      $('.banner-content h1').fitText(1.027, { minFontSize: '35px', maxFontSize: '50px' });
+    }
+
+    if(windowWidth < 480) {
+      $('.banner-content h1').fitText(1.1, { minFontSize: '27px', maxFontSize: '27px' });
+      $('.banner-content h2').fitText(2.33);
+      $('.banner-content span').fitText(0.4, { minFontSize: '12px', maxFontSize: '15px' });
+    }
+
     //Filtering for transactions page
     $('.trans-nav a').on('click', function(e) {
       e.preventDefault();
