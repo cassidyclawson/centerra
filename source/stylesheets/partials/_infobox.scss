@@ -237,6 +237,38 @@ $infobox-indent: 50px;
       margin-bottom: 5em;
     }
   }
+
+  .title-box {
+    margin: 0px 0px 50px;
+    margin: 0rem 0rem 5.0rem;
+    position: relative;
+
+    .tag {
+      top: 10px;
+      left:10px;
+      position: absolute;
+    }
+
+    .optional-tag {
+      top: 5px;
+      right:10px;
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 13.5px;
+      font-size: 1.35rem;
+      font-family: $font-subheadline;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-size: 3.2rem;
+
+      small{
+        font-size: 18px;
+        font-size: 1.8rem;
+      }
+    }
+  }
 }
 
 
