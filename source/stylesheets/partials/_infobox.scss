@@ -247,6 +247,15 @@ $infobox-indent: 50px;
     }
   }
 
+  .block {
+    width: 47%;
+    float: left;
+
+    &:nth-child(odd) {
+      margin-right: 6%;
+    }
+  }
+
   .title-box {
     margin: 0px 0px 50px;
     margin: 0rem 0rem 5.0rem;
