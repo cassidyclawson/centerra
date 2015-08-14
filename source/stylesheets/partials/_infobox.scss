@@ -187,6 +187,15 @@ $infobox-indent: 50px;
       margin: 3rem 3rem 0rem;
     }
 
+    &.with-img {
+      padding-top: 0px;
+    }
+
+    img {
+      width: 100%;
+      float: left;
+    }
+
     time {
       font-size: 13.50px;
       font-size: 1.35rem;
@@ -243,6 +252,13 @@ $infobox-indent: 50px;
     margin: 0rem 0rem 5.0rem;
     position: relative;
 
+    address {
+      background: $accent;
+      font-style: normal;
+      font-size: 13.5px;
+      font-size: 1.35rem;
+    }
+
     .tag {
       top: 10px;
       left:10px;
@@ -257,6 +273,13 @@ $infobox-indent: 50px;
       font-size: 13.5px;
       font-size: 1.35rem;
       font-family: $font-subheadline;
+    }
+
+    &.with-img {
+      .optional-tag {
+        color: $background;
+        text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+      }
     }
 
     h2 {
