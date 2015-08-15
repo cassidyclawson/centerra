@@ -152,4 +152,5 @@ jQuery(document).ready(function () {
       $('.transactions').isotope({ filter: sort })
     })
 
+
 });
