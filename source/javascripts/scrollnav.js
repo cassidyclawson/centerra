@@ -10,7 +10,6 @@
  // LOOK FOR MODIFIED COMMENTS
 
 (function($) {
-
   // Animate scrolling to section location
   var scroll_to = function(value, speed, offset, animated) {
     if ( $(value).length > 0 ) {
@@ -105,16 +104,23 @@
         $this_section.wrapAll('<' + S.settings.sectionElem + ' id="' + section_id + '" class="' + S.settings.className + '__section" />');
 
         if (S.settings.subSections) {
+
           var $sub_sections  = $this_section.filter(S.settings.subSections);
 
           if ($sub_sections.length > 0) {
+
             $sub_sections.each(function(i) {
+
               var sub_id      = section_id + '-' + (i + 1);
               var sub_text    = $(this).text();
               var $this_sub   = $this_section.filter($(this).nextUntil($sub_sections).andSelf());
 
-              $this_sub.wrapAll('<div id="' + sub_id + '" class="' + S.settings.className + '__sub-section" />');
-              sub_data.push( {id: sub_id, text: sub_text} );
+              // Warning: This conditional block added by user to prevent display of some h4 classes in navigation on some pages.
+              if ($this_sub[0].className != "no-nav") {
+                $this_sub.wrapAll('<div id="' + sub_id + '" class="' + S.settings.className + '__sub-section" />');
+                sub_data.push( {id: sub_id, text: sub_text} );
+
+              }
             });
           }
         }

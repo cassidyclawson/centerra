@@ -3,72 +3,32 @@
     border-radius: $default-radius;
     margin-top: 10px;
     margin-top: 1.0rem;
+    display: inline-block;
+    float: left;
+    margin: 0 1.6em .5em 0;
+  }
 
-    &.bio-img-left {
-      float: left;
-      margin-left: -50%;
-      margin-right: 40px;
-      margin-right: 4.0rem;
+  a {
+    text-decoration: none;
+  }
 
-      @include breakpoint(lm)  {
-        float: none;
-        display: block;
-        margin: 0 auto;
-      }
-    }
-
-    &.bio-img-right {
-      float: right;
-      margin-right: -50%;
-      margin-left: 40px;
-      margin-left: 4.0rem;
-
-      @include breakpoint(lm)  {
-        float: none;
-        display: block;
-        margin: 0 auto;
-      }
-    }
+  .icon-envelop {
+    font-size: 21px;
+    font-size: 2.1rem;
+    margin-left: .5em;
   }
 
   h3 {
-    font-size: 44px;
-    font-size: 4.4rem;
-    line-height: 1.16;
-    margin-bottom: 0px;
-
-    @include breakpoint(xl)  {
-      font-size: 34px;
-      font-size: 3.4rem;
-    }
-
-    @include breakpoint(lg)  {
-      font-size: 34px;
-      font-size: 3.4rem;
-    }
-
-      @include breakpoint(md)  {
-        margin-top: 30px;
-        margin-top: 3.0rem;
-      }
+    margin-bottom: .3em;
   }
 
   h4 {
-    font-size: 30px;
-    font-size: 3.0rem;
+    display: inline-block;
+    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 1.20;
     margin-bottom: 0px;
-    margin-top: 0px;
-
-    @include breakpoint(xl)  {
-      font-size: 20px;
-      font-size: 2.0rem;
-    }
-
-    @include breakpoint(lg)  {
-      font-size: 20px;
-      font-size: 2.0rem;
-    }
+    margin-top: 5px;
   }
 
   p.footnote {
@@ -76,21 +36,6 @@
 
     @include breakpoint(sm)  {
       margin-bottom: 2em;
-    }
-  }
-}
-
-.leadership {
-  .three.columns {
-    @include breakpoint(lm)  {
-      display: none;
-    }
-  }
-
-  .six.columns {
-    @include breakpoint(lm)  {
-      width: 100%;
-      margin-left: 0px;
     }
   }
 }
