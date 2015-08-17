@@ -165,23 +165,29 @@ footer .footer-top {
         margin: 0px 2.0rem 0.5rem;
         text-align: center;
       }
-
-       a {
-           .logo_abc {
-             margin-top: 3px;
-           }
-           .logo_ups {
-             margin-top: 4px;
-           }
-
-           .logo_ext {
-             position: relative;
-             top: -11px;
-           }
-
-       }
      }
    }
+}
+
+footer .client-logo {
+  float: left;
+}
+
+footer .ps {
+  float: left;
+  max-width:120px;
+}
+
+footer .fuzio {
+  top: 12px;
+  max-width:120px;
+  margin-left: 80px;
+}
+
+footer .ds {
+  margin-top: 28px;
+  float:right;
+  max-width:170px;
 }
 
 footer .vcard {
