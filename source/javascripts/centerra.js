@@ -144,13 +144,25 @@ jQuery(document).ready(function () {
     }
 
     //Filtering for transactions page
+    var $grid = $('.transactions').isotope();
     $('.trans-nav a').on('click', function(e) {
       e.preventDefault();
       $('.trans-nav li').removeClass('active');
       $(this).parent('li').addClass('active');
       var sort = $(this).parent('li').data('category');
-      $('.transactions').isotope({ filter: sort })
+      $grid.isotope({ filter: sort });
     })
+
+    /*$grid.on( 'arrangeComplete', function(event, filteredItems) {
+      var alternate = true;
+
+      for (i = 0; i < filteredItems.length; i++) {
+        var val = i % 2 ? 'even' : 'odd';
+        if (val == 'even') {
+          filteredItems[i].css({'left': "466px"});
+        }
+      }
+    } );*/
 
 
 });
