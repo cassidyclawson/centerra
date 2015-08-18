@@ -235,6 +235,10 @@ $trans-height: 330px;
 .transactions {
   width: 69.3% !important;
 
+    @include breakpoint(lm)  {
+      width: 100% !important;
+    }
+
   .infobox-content {
     padding-bottom: 0px;
     padding-top: 20px;
@@ -277,6 +281,8 @@ $trans-height: 330px;
       .trans-cell {
         display: table-cell;
         vertical-align: middle;
+        padding: 0px 20px;
+        padding: 0rem 2rem;
       }
     }
 
