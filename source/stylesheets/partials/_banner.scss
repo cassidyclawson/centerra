@@ -188,6 +188,7 @@
         @include breakpoint(sm)  {
           padding-top: 24px;
           padding-top: 2.4rem;
+          border-top: 3px solid $dark_gray;
         }
       }
 
@@ -221,6 +222,7 @@
           padding-bottom: 30px;
           padding-bottom: 3rem;
           margin-top: 0px;
+          border-bottom: 3px solid $dark_gray;
         }
       }
 

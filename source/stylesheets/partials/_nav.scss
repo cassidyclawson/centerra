@@ -210,6 +210,7 @@ $color_hover_text: #222;
 	background: $color_bg;
 	padding: 5px;
 	display: none;
+	border-radius: $default-radius $default-radius 0 0;
 
 	* {
 		box-sizing: border-box;
