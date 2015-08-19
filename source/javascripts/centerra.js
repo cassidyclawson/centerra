@@ -138,8 +138,8 @@ jQuery(document).ready(function () {
     }
 
     if(windowWidth < 480) {
-      $('.banner-content h1').fitText(1.1, { minFontSize: '27px', maxFontSize: '27px' });
-      $('.banner-content h2').fitText(2.33);
+      $('.banner-content h1').fitText(1.1, { minFontSize: '21px', maxFontSize: '21px' });
+      $('.banner-content h2').fitText(2.1);
       $('.banner-content span').fitText(0.4, { minFontSize: '12px', maxFontSize: '15px' });
     }
 

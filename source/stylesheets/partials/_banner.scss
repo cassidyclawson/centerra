@@ -98,14 +98,24 @@
     height: 49rem;
   }
 
+  @include breakpoint(lg)  {
+    height: 400px;
+    height: 40rem;
+  }
+
   @include breakpoint(lm)  {
-    height: 498px;
-    height: 49.8rem;
+    height: 398px;
+    height: 39.8rem;
+  }
+
+  @include breakpoint(md)  {
+    height: 358px;
+    height: 35.8rem;
   }
 
   @include breakpoint(sm)  {
-    height: 258px;
-    height: 25.8rem;
+    height: 208px;
+    height: 20.8rem;
   }
   .banner-home-inner {
     width: 78%;
@@ -120,14 +130,24 @@
       height: 49rem;
     }
 
+    @include breakpoint(lg)  {
+      height: 400px;
+      height: 40rem;
+    }
+
     @include breakpoint(lm)  {
-      height: 498px;
-      height: 49.8rem;
+      height: 358px;
+      height: 35.8rem;
+    }
+
+    @include breakpoint(md)  {
+      height: 298px;
+      height: 29.8rem;
     }
 
     @include breakpoint(sm)  {
-      height: 258px;
-      height: 25.8rem;
+      height: 168px;
+      height: 16.8rem;
     }
   }
 
@@ -155,14 +175,19 @@
           padding-top: 5.4rem;
         }
 
+        @include breakpoint(lg)  {
+          padding-top: 34px;
+          padding-top: 3.4rem;
+        }
+
         @include breakpoint(lm)  {
-          padding-top: 44px;
-          padding-top: 4.4rem;
+          padding-top: 34px;
+          padding-top: 3.4rem;
         }
 
         @include breakpoint(sm)  {
-          padding-top: 34px;
-          padding-top: 3.4rem;
+          padding-top: 24px;
+          padding-top: 2.4rem;
         }
       }
 
@@ -180,14 +205,22 @@
           padding-bottom: 7rem;
         }
 
-        @include breakpoint(lm)  {
+        @include breakpoint(lg)  {
           padding-bottom: 60px;
           padding-bottom: 6rem;
+          margin-top: 0px;
+        }
+
+        @include breakpoint(lm)  {
+          padding-bottom: 50px;
+          padding-bottom: 5rem;
+          margin-top: 0px;
         }
 
         @include breakpoint(sm)  {
           padding-bottom: 30px;
           padding-bottom: 3rem;
+          margin-top: 0px;
         }
       }
 
@@ -210,6 +243,10 @@
           padding: 0rem 2rem;
           font-family: $font-subheadline;
           width: 195px;
+
+          @include breakpoint(sm)  {
+            width: 65px;
+          }
         }
       }
 
