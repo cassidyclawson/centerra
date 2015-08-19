@@ -232,6 +232,10 @@ $trans-height: 330px;
     }
 }
 
+.transactions-page aside {
+  margin: 0px !important;
+}
+
 .transactions {
   width: 69.3% !important;
 
@@ -260,9 +264,17 @@ $trans-height: 330px;
     float: left;
     margin-right:6%;
 
+<<<<<<< HEAD
     /*&:nth-child(odd) {
       margin-right: 6%;
     }*/
+=======
+    @include breakpoint(lm)  {
+      &:nth-child(2n+0) {
+        margin-right: 0%;
+      }
+    }
+>>>>>>> origin/development
 
       @include breakpoint(md)  {
         width: 100%;
@@ -299,6 +311,7 @@ $trans-height: 330px;
     }
 
     address {
+      font-family: $font-subheadline;
       background: $accent;
       font-style: normal;
       font-size: 13.5px;
