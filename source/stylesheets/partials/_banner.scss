@@ -250,6 +250,13 @@
     line-height: 240px;
     line-height: 12rem;
 
+    @include breakpoint(lm)  {
+      font-size: 55px;
+      font-size: 5.5rem;
+      line-height: 70px;
+      line-height: 7rem;
+    }
+
     @include breakpoint(md)  {
       font-size: 35px;
       font-size: 3.5rem;
@@ -268,7 +275,7 @@
   h2 {
     margin: 0px;
 
-    @include breakpoint(md)  {
+    @include breakpoint(lm)  {
       font-size: 28px;
       font-size: 2.8rem;
     }
@@ -282,7 +289,7 @@
   .banner-head {
     float: left;
 
-    @include breakpoint(md)  {
+    @include breakpoint(lm)  {
       width:80%;
     }
 
@@ -301,6 +308,12 @@
     float: left;
     margin-right: 23px;
     margin-top: 28px;
+
+    @include breakpoint(lm)  {
+      font-size: 80px;
+      font-size: 8rem;
+      margin-top: 18px;
+    }
 
     @include breakpoint(md)  {
       font-size: 50px;
