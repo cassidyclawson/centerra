@@ -238,6 +238,8 @@ $trans-height: 330px;
 
 .transactions {
   width: 69.3% !important;
+  margin-top: 25px;
+  margin-top: 2.5rem;
 
     @include breakpoint(lm)  {
       width: 100% !important;
