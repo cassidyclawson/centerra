@@ -264,12 +264,6 @@ $trans-height: 330px;
       margin-right: 6%;
     }*/
 
-    @include breakpoint(lm)  {
-      &:nth-child(2n+0) {
-        margin-right: 0%;
-      }
-    }
-
       @include breakpoint(md)  {
         width: 100%;
         float: none;
