@@ -76,10 +76,10 @@ hr {
 .service-block {
   @extend .bordered-box;
   margin-top: 2%;
-  padding: 45px 55px;
-  padding: 4.5rem 5.5rem;
-  min-height: 450px;
-  min-height: 45.0rem;
+  padding: 45px 45px;
+  padding: 4.5rem 4.5rem;
+  min-height: 400px;
+  min-height: 40.0rem;
 
   @include breakpoint(xl)  {
     padding: 15px 25px;
