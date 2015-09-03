@@ -31,7 +31,7 @@ if (argv.production) {
 var paths = {
     html_tempaltes: 'source/templates/',
     scssSource: 'source/stylesheets/',
-    imagesSource: 'source/images/'
+    imagesSource: 'source/images/',
 }
 
 var jsSources = [
