@@ -9,8 +9,9 @@ body {
 }
 
 a.green {
-  color: $primary;
+  color: $dark_gray;
   text-decoration: none;
+  border-bottom: 3px solid $accent;
 }
 
 p  {

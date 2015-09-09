@@ -23,36 +23,54 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-animal:before {
-	content: "\e600";
-}
-.icon-investment-04:before {
-	content: "\e601";
+.icon-investments:before {
+	content: "\e60b";
 }
 .icon-agriculture:before {
-	content: "\e602";
+	content: "\e60c";
 }
 .icon-real-estate:before {
-	content: "\e603";
+	content: "\e60d";
 }
-.icon-corporate:before {
-	content: "\e604";
+.icon-advisory-lg:before {
+	content: "\e60e";
+}
+.icon-advisory-sm:before {
+	content: "\e60f";
 }
 .icon-phone:before {
-	content: "\e942";
+	content: "\e610";
+}
+.icon-file-text:before {
+	content: "\e600";
 }
 .icon-envelop:before {
-	content: "\e945";
+	content: "\e601";
 }
 .icon-location:before {
-	content: "\e947";
+	content: "\e602";
 }
 .icon-quotes-left:before {
-	content: "\e977";
+	content: "\e603";
 }
 .icon-quotes-right:before {
-	content: "\e978";
+	content: "\e604";
+}
+.icon-earth:before {
+	content: "\e605";
+}
+.icon-attachment:before {
+	content: "\e606";
+}
+.icon-cross:before {
+	content: "\e607";
 }
 .icon-checkmark:before {
-	content: "\ea10";
+	content: "\e608";
+}
+.icon-arrow {
+	content: "\e609";
+}
+.icon-file-pdf:before {
+	content: "\e60a";
 }

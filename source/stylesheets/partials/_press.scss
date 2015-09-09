@@ -83,7 +83,7 @@
       &.pdf-btn {
 
         &::before{
-          content: "\e945";
+          content: "\e60a";
           left:42px;
 
           @include breakpoint(lm)  {
@@ -99,7 +99,7 @@
       &.web-btn {
 
         &::before{
-          content: "\e945";
+          content: "\e605";
           left:30px;
 
           @include breakpoint(lm)  {
