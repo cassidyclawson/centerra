@@ -164,5 +164,12 @@ jQuery(document).ready(function () {
       }
     } );*/
 
-
+    //Agriculture Page Popup
+    $('.ag-pop-preview').click(function() {
+      $( $.parseHTML( $('.ag-pop-preview').data().popupContent )[1] ).bPopup({
+             content:'image', //'ajax', 'iframe' or 'image'
+             contentContainer:'.content',
+             loadUrl:'/images/agtech_insight_map_summer_2015.jpg',
+         });
+    })
 });

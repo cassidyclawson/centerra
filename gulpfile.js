@@ -45,6 +45,7 @@ var jsSources = [
    'source/javascripts/jquery.validate.js',
    'source/javascripts/magicline.js',
    'source/javascripts/jquery.fittext.js',
+   'source/javascripts/bpopup.js',
    'source/javascripts/centerra.js'
 ]
 
